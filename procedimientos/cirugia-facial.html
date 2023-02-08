@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/tailwind.css" rel="stylesheet">
+
+    <!-- boxicons  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- star header -->
+    <header class="fixed z-30 w-full   hover:bg-neutral-800 group/head" id="header">
+        <!-- header top -->
+        <div class="group-hover/head:bg-neutral-900 py-1  hidden md:block" id="head-top">
+
+            <div class="container">
+                <div class="grid grid-cols-2 md:grid-cols-3  text-white">
+                    <!-- horario  -->
+                    <div class="text-xs my-auto">
+                        <p><span class='bx bx-time-five'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
+                    </div>
+                    <!-- promo -->
+                    <div class="justify-self-center text-xs my-auto hidden md:block">
+                        <span>
+                            50% descuento en cita todo enero
+                        </span>
+                    </div>
+                    <!-- redes -->
+                    <div class="justify-self-end">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href=""><i class='bx bxl-facebook'></i></a>
+                        <a href=""><i class='bx bxl-tiktok'></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="container grid grid-cols-3 ">
+
+            <!-- boton -->
+            <button class=" justify-self-start mx-3" id="btn-nav">
+                <i class='text-white text-2xl  bx bx-menu align-middle'></i>
+            </button>
+
+            <!-- logo  -->
+            <div class="justify-self-center py-2">
+                <a class="" href="../index.html">
+                    <img class="h-11" src="../img/logo-dr-julio.svg" alt="">
+                </a>
+            </div>
+            <!-- boton link -->
+            <div class=" justify-self-end my-auto" id="btn-nav">
+                <!-- <i class='text-white text-xl  bx bx-calendar-check align-middle'></i> -->
+                <a class="btn-wtp mx-3" href="#">Agendar cita</a>
+
+                <!-- <a class="text-white uppercase text-xs font-bold"  href="">Agendar cita</a> -->
+            </div>
+        </div>
+
+        <!-- head bot -->
+        <div class="group-hover/head:bg-neutral-900" id="head-bot">
+
+            <!-- lista de anclas -->
+            <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
+
+                <ul class=" md:flex justify-center uppercase text-xs text-white  text-center">
+
+                    <li class="p-3   group/cont">
+                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                            href="">Especialidad<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- items -->
+                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="p-3   group/cont">
+                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                            href="">Equipo<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- items -->
+                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="p-3">
+                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                            href="">Tour Virtual</a>
+                    </li>
+
+                    <li class="p-3  group/cont">
+                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Sobre nosotros<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <ul
+                            class="bg-white absolute text-black flex  justify-evenly w-screen left-0   invisible  group-hover/cont:visible">
+                            <li><a href="#"></a>
+                                <img src="" alt="">
+                                <span>Nuestra filosofia</span>
+                            </li>
+
+                            <li><a href="#"></a>
+                                <img src="" alt="">
+                                <span>Nuestra filosofia</span>
+                            </li>
+
+                            <li><a href="#"></a>
+                                <img src="" alt="">
+                                <span>Nuestra filosofia</span>
+                            </li>
+
+                            <li><a href="#"></a>
+                                <img src="" alt="">
+                                <span>Nuestra filosofia</span>
+                            </li>
+
+                            <li><a href="#"></a>
+                                <img src="" alt="">
+                                <span>Nuestra filosofia</span>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="p-3"><a
+                            class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Resultados<i class='bx bx-chevron-down'></i>
+                        </a>
+                    </li>
+
+                    <li class="p-3"><a
+                            class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                            href="">Preguntas (FAQ)</a></li>
+
+                    <li class="p-3"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <!-- end header -->
+
+    <main>
+        <!-- seleccione parte facial -->
+        <section class=" bg-cover h-screen  bg-center  grid relative"
+            style="background-image: url(../img/bg-img/bg-facial.jpg);">
+
+            <!-- cuadro de puntos -->
+            <div class="bg-red-600/5 relative  w-auto    mx-auto h-screen">
+                <!-- otoplastia -->
+                <div class="-left-20 top-1/2  text-white  absolute bg-neutral-800/10 group/surgy">
+                    <a href="#quieplastia"><i class='bx bx-plus-circle'></i></a>
+                    <div    class="px-3 py-1 rounded-md bg-neutral-800/50 relative -top-14 -left-14   hidden  group-hover/surgy:block">
+                        <span>Lifting</span>
+                    </div>
+                </div>
+                <!-- blefaroplastia -->
+                <div class="left-3  top-60 text-white  absolute  group/surgy">
+                    <a href="#blefaroplastia"><i class='bx bx-plus-circle'></i></a>
+                    <div    class="px-3 py-1 rounded-md bg-neutral-800/50 relative -top-14 -left-14   hidden  group-hover/surgy:block">
+                        <span>Blefaroplastia</span>
+                    </div>
+                </div>
+                <!-- rinoplastia -->
+                <div class="left-24 top-96  text-white  absolute bg-neutral-800/10  group/surgy">
+                    <a href="#rinoplastia"><i class='bx bx-plus-circle'></i></a>
+                    <div    class="px-3 py-1 rounded-md bg-neutral-800/50 relative -top-14 -left-14   hidden  group-hover/surgy:block">
+                        <span>Rinoplastia</span>
+                    </div>
+                </div>
+                <!-- otoplastia -->
+                <div class="-left-48 top-1/3  text-white  absolute bg-neutral-800/10 group/surgy">
+                    <a href="#quieplastia"><i class='bx bx-plus-circle'></i></a>
+                    <div    class="px-3 py-1 rounded-md bg-neutral-800/50 relative -top-14 -left-14   hidden  group-hover/surgy:block">
+                        <span>Otoplastia</span>
+                    </div>
+                </div>
+                <!-- bicheptomia -->
+                <div class="-left-10 top-80  text-white  absolute bg-neutral-800/10 group/surgy">
+                    <a href="#quieplastia"><i class='bx bx-plus-circle'></i></a>
+                    <div    class="px-3 py-1 rounded-md bg-neutral-800/50 relative -top-14 -left-14   hidden  group-hover/surgy:block">
+                        <span>Bicheptiomia</span>
+                    </div>
+                </div>
+                <!-- quieplastia -->
+                <div class="left-20 top-2/4  text-white  absolute bg-neutral-800/10 group/surgy">
+                    <a href="#quieplastia"><i class='bx bx-plus-circle'></i></a>
+                    <div    class="px-3 py-1 rounded-md bg-neutral-800/50 relative -top-14 -left-14   hidden  group-hover/surgy:block">
+                        <span>Quieplastia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-0     text-white text-center w-full pb-16 px-5   bg-gradient-to-t from-neutral-800/50 to-neutral-800/0">
+                <h1 class="font-cinzel text-4xl font-bellefair uppercase mb-4">Cirugía de Rostro</h1>
+                <p>Elige el área de tu cuerpo que te gustaría trabajar para ver los procedimientos disponibles.</p>
+                <div class="mt-10">
+                    <a class="btn-transparet" href="#">Agendar Evaluación</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- end -->
+
+
+
+        <div class="bg-neutral-900 text-neutral-300 py-3 text-center">
+            <span class="uppercase font-medium tracking-wide">Estas apunto de iniciar un gran viaje</span>
+        </div>
+
+        <!-- tu medico -->
+        <section class="py-6  bg-neutral-50">
+            <div class="container">
+
+                <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center"
+                    id="blefaroplastia">
+
+                    <div class="">
+                        <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
+                    </div>
+
+                    <!-- box details -->
+                    <div class="self-center md:w-11/12 lg:w-3/4 ">
+
+                        <div class="p-5  text-center">
+
+                            <span class="mb-2    uppercase text-sm font-manrope    tracking-widest    font-extrabold">
+                                Lifting Facial</span>
+                            <h2 class="mb-1 text-3xl font-bellefair text-center font-medium uppercase tracking-wide">
+                                Rejuvenecimiento
+                                facial
+                            </h2>
+
+                            <p class="text-justify text-base font-monts">
+                                También conocido como estiramiento facial o ritidectomía, el lifting facial es un
+                                procedimiento
+                                quirúrgico destinado a mejorar los signos visibles de envejecimiento en la cara y el
+                                cuello.
+                                <br>
+                                Conforme el individuo envejece, la piel y los músculos del rostro pierden tonicidad. Con
+                                esta
+                                intervención se consigue detener este deterioro y mejorar los signos más evidentes del
+                                envejecimiento.
+                                <br>
+                                Indicado para tratar la laxitud y las arrugas de los tercios medio e inferior de la cara
+                                y
+                                el
+                                cuello. Las incisiones se realizan alrededor de las orejas para que queden ocultas. La
+                                intervención consiste en despegar la piel del rostro para poder tirar de ella y
+                                aislarla.
+                                <br>
+                                En el cuello se tratan las bandas que aparecen en la parte anterior y que se deben a la
+                                laxitud
+                                del músculo situado justo bajo la piel. Al tratar estas bandas y estirar la piel, el
+                                cuello
+                                recupera un aspecto juvenil, redefiniéndose el ángulo entre el mentón y la cara anterior
+                                del
+                                cuello. A través de una liposucción, se extrae la grasa que se acumula en la zona
+                                submandibular
+                                (papada).
+                                <br>
+                                En esta intervención se debe procurar no estirar, sino reposicionar los tejidos y
+                                redefinir
+                                el
+                                cuello y la mandíbula, dando volumen a la zona de los pómulos y restableciendo el óvalo
+                                de
+                                la
+                                juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
+                            </p>
+
+                            <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
+                                <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                    href="">Mostrar Más</a>
+
+                                <a class="border-2 border-neutral-800 px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                    href="">Agendar Evaluación</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Rejuvenecimiento facial -->
+        <section class="py-5" id="blefaroplastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center" id="blefaroplastia">
+
+                <div class="md:order-last  overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- box details -->
+                <div class="self-center md:w-11/12 lg:w-3/5  ">
+
+                    <div class="px-5 text-center">
+
+                        <span
+                                class="mb-2    uppercase text-sm font-manrope    tracking-widest    font-extrabold">
+                                Lifting Facial</span>
+                            <h2 class="mb-1 text-3xl font-bellefair text-center font-medium uppercase tracking-wide">Rejuvenecimiento
+                                facial
+                            </h2>
+
+                        <p class="p-1 text-base font-monts">
+                            También conocido como estiramiento facial o ritidectomía, el lifting facial es un
+                            procedimiento
+                            quirúrgico destinado a mejorar los signos visibles de envejecimiento en la cara y el cuello.
+                            <br>
+                            Conforme el individuo envejece, la piel y los músculos del rostro pierden tonicidad. Con
+                            esta
+                            intervención se consigue detener este deterioro y mejorar los signos más evidentes del
+                            envejecimiento.
+                            <br>
+                            Indicado para tratar la laxitud y las arrugas de los tercios medio e inferior de la cara y
+                            el
+                            cuello. Las incisiones se realizan alrededor de las orejas para que queden ocultas. La
+                            intervención consiste en despegar la piel del rostro para poder tirar de ella y aislarla.
+                            <br>
+                            En el cuello se tratan las bandas que aparecen en la parte anterior y que se deben a la
+                            laxitud
+                            del músculo situado justo bajo la piel. Al tratar estas bandas y estirar la piel, el cuello
+                            recupera un aspecto juvenil, redefiniéndose el ángulo entre el mentón y la cara anterior del
+                            cuello. A través de una liposucción, se extrae la grasa que se acumula en la zona
+                            submandibular
+                            (papada).
+                            <br>
+                            En esta intervención se debe procurar no estirar, sino reposicionar los tejidos y redefinir
+                            el
+                            cuello y la mandíbula, dando volumen a la zona de los pómulos y restableciendo el óvalo de
+                            la
+                            juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
+                        </p>
+                        <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
+                            <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Mostrar Más</a>
+
+                            <a class="border-2 border-neutral-800 px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Agendar Evaluación</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blefaroplastia -->
+        <section class="py-5" id="quieplastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center" id="blefaroplastia">
+
+                <div class=" ">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- box details -->
+                <div class="self-center md:w-11/12 lg:w-3/5 ">
+                    <div class="px-5">
+
+                        <p
+                            class="mb-2  text-center  uppercase text-xl font-manrope    tracking-widest    font-extrabold">
+                            blefaroplastia</p>
+                        <h2 class="mb-3 text-4xl font-bellefair text-center font-medium uppercase tracking-wide">Cirugía
+                            para
+                            parpados</h2>
+
+                        <p class="text-justify text-base font-manrope">
+                            También conocido como estiramiento facial o ritidectomía, el lifting facial es un
+                            procedimiento
+                            quirúrgico destinado a mejorar los signos visibles de envejecimiento en la cara y el cuello.
+                            <br>
+                            Conforme el individuo envejece, la piel y los músculos del rostro pierden tonicidad. Con
+                            esta
+                            intervención se consigue detener este deterioro y mejorar los signos más evidentes del
+                            envejecimiento.
+                            <br>
+                            Indicado para tratar la laxitud y las arrugas de los tercios medio e inferior de la cara y
+                            el
+                            cuello. Las incisiones se realizan alrededor de las orejas para que queden ocultas. La
+                            intervención consiste en despegar la piel del rostro para poder tirar de ella y aislarla.
+                            <br>
+                            En el cuello se tratan las bandas que aparecen en la parte anterior y que se deben a la
+                            laxitud
+                            del músculo situado justo bajo la piel. Al tratar estas bandas y estirar la piel, el cuello
+                            recupera un aspecto juvenil, redefiniéndose el ángulo entre el mentón y la cara anterior del
+                            cuello. A través de una liposucción, se extrae la grasa que se acumula en la zona
+                            submandibular
+                            (papada).
+                            <br>
+                            En esta intervención se debe procurar no estirar, sino reposicionar los tejidos y redefinir
+                            el
+                            cuello y la mandíbula, dando volumen a la zona de los pómulos y restableciendo el óvalo de
+                            la
+                            juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
+                        </p>
+                        <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
+                            <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Mostrar Más</a>
+
+                            <a class="border-2 border-neutral-800 px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Agendar Evaluación</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rinoplastia -->
+        <section class="py-5" id="blefaroplastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center" id="blefaroplastia">
+
+                <div class="md:order-last  ">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- box details -->
+                <div class="self-center md:w-11/12 lg:w-3/5  ">
+                    <div class="px-5">
+
+                        <p
+                            class="mb-2  text-center  uppercase text-base font-monts    tracking-widest    font-semibold ">
+                            Rinoplastia</p>
+                        <h2 class="mb-3 text-4xl font-bellefair text-center font-medium uppercase tracking-wide">Cirugía
+                            para nariz</h2>
+
+                        <p class="text-justify text-base font-monts">
+                            También conocido como estiramiento facial o ritidectomía, el lifting facial es un
+                            procedimiento
+                            quirúrgico destinado a mejorar los signos visibles de envejecimiento en la cara y el cuello.
+                            <br>
+                            Conforme el individuo envejece, la piel y los músculos del rostro pierden tonicidad. Con
+                            esta
+                            intervención se consigue detener este deterioro y mejorar los signos más evidentes del
+                            envejecimiento.
+                            <br>
+                            Indicado para tratar la laxitud y las arrugas de los tercios medio e inferior de la cara y
+                            el
+                            cuello. Las incisiones se realizan alrededor de las orejas para que queden ocultas. La
+                            intervención consiste en despegar la piel del rostro para poder tirar de ella y aislarla.
+                            <br>
+                            En el cuello se tratan las bandas que aparecen en la parte anterior y que se deben a la
+                            laxitud
+                            del músculo situado justo bajo la piel. Al tratar estas bandas y estirar la piel, el cuello
+                            recupera un aspecto juvenil, redefiniéndose el ángulo entre el mentón y la cara anterior del
+                            cuello. A través de una liposucción, se extrae la grasa que se acumula en la zona
+                            submandibular
+                            (papada).
+                            <br>
+                            En esta intervención se debe procurar no estirar, sino reposicionar los tejidos y redefinir
+                            el
+                            cuello y la mandíbula, dando volumen a la zona de los pómulos y restableciendo el óvalo de
+                            la
+                            juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
+                        </p>
+                        <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
+                            <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Mostrar Más</a>
+
+                            <a class="border-2 border-neutral-800 px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Agendar Evaluación</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bicheptiomia -->
+        <section class="py-5" id="blefaroplastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center" id="blefaroplastia">
+
+                <div class="  ">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- box details -->
+                <div class="self-center md:w-3/4 ">
+                    <div class="px-5">
+
+                        <p class="text-center  uppercase text-sm font-monts font-semibold">Lifting Facial</p>
+                        <h2 class="text-3xl font-cinzel text-center">Rejuvenecimiento Facial</h2>
+
+                        <p class="text-justify text-sm font-sans">
+                            También conocido como estiramiento facial o ritidectomía, el lifting facial es un
+                            procedimiento
+                            quirúrgico destinado a mejorar los signos visibles de envejecimiento en la cara y el cuello.
+                            <br>
+                            Conforme el individuo envejece, la piel y los músculos del rostro pierden tonicidad. Con
+                            esta
+                            intervención se consigue detener este deterioro y mejorar los signos más evidentes del
+                            envejecimiento.
+                            <br>
+                            Indicado para tratar la laxitud y las arrugas de los tercios medio e inferior de la cara y
+                            el
+                            cuello. Las incisiones se realizan alrededor de las orejas para que queden ocultas. La
+                            intervención consiste en despegar la piel del rostro para poder tirar de ella y aislarla.
+                            <br>
+                            En el cuello se tratan las bandas que aparecen en la parte anterior y que se deben a la
+                            laxitud
+                            del músculo situado justo bajo la piel. Al tratar estas bandas y estirar la piel, el cuello
+                            recupera un aspecto juvenil, redefiniéndose el ángulo entre el mentón y la cara anterior del
+                            cuello. A través de una liposucción, se extrae la grasa que se acumula en la zona
+                            submandibular
+                            (papada).
+                            <br>
+                            En esta intervención se debe procurar no estirar, sino reposicionar los tejidos y redefinir
+                            el
+                            cuello y la mandíbula, dando volumen a la zona de los pómulos y restableciendo el óvalo de
+                            la
+                            juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
+                        </p>
+                        <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
+                            <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Mostrar Más</a>
+
+                            <a class="border-2 border-neutral-800 px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                href="">Agendar Evaluación</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- pie -->
+    <footer class="bg-neutral-900 w-full h-7">
+
+
+    </footer>
+
+
+    <!-- scrip -->
+</body>
+
+</html>

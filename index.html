@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+
+<body   class="font-manrope">
+
+    <header class="fixed z-30 w-full   hover:bg-neutral-800 group/head" id="header">
+        <!-- header top -->
+        <div class="bg-neutral-900 py-1  hidden md:block" id="head-top">
+
+            <div class="container">
+                <div class="grid grid-cols-2 md:grid-cols-3  text-white">
+                    <!-- horario  -->
+                    <div class="text-xs my-auto ">
+                        <p><span class='bx bx-time-five'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
+                    </div>
+                    <!-- promo -->
+                    <div class="justify-self-center text-xs my-auto hidden md:block">
+                        <span>
+                            50% descuento en cita todo enero
+                        </span>
+                    </div>
+                    <!-- redes -->
+                    <div class="justify-self-end ">
+                        <ul class="flex">
+                            <li class="mx-2"><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-facebook'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-tiktok'></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="container grid grid-cols-3 ">
+
+            <!-- boton -->
+            <button class=" justify-self-start ml-5   md:invisible  " id="btn-nav">
+                <i class='text-white text-2xl  bx bx-menu align-middle'></i>
+            </button>
+
+            <!-- logo  -->
+            <div class="justify-self-center py-3">
+                <a class="" href="../index.html">
+                    <img class="h-11" src="img/logo-dr-julio.svg" alt="">
+                </a>
+            </div>
+            <!-- boton link -->
+            <div class=" justify-self-end my-auto hidden md:block" id="btn-nav">
+                <!-- <i class='text-white text-xl  bx bx-calendar-check align-middle'></i> -->
+                <a class="border-2 border-white px-5 py-1 rounded-2xl text-xs font-semibold tracking-wider  uppercase hover:animate-pulse  duration-500  transition-all text-white" href="#">Agendar cita</a>
+
+                <!-- <a class="text-white uppercase text-xs font-bold"  href="">Agendar cita</a> -->
+            </div>
+        </div>
+
+        <!-- head bot -->
+        <div class="group-hover/head:bg-neutral-900" id="head-bot">
+
+            <!-- lista de anclas -->
+            <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
+
+                <ul class=" md:flex justify-center uppercase font-manrope font-semibold tracking-wider text-xs text-white  text-center">
+                    
+                    <!-- items -->
+                    <li class="py-2  pl-2 pr-0   group/cont">
+                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="">Especialidad<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- subitems -->
+                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- items -->
+                    <li class="py-2  pl-2 pr-0   group/cont">
+                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="">Equipo<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- items -->
+                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- items -->
+                    <li class="p-2">
+                        <a class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
+                            href="">Tour Virtual</a>
+                    </li>   
+
+                    <!-- item -->
+                    <li class="py-2  pl-2 pr-0"><a
+                            class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Resultados<i class='bx bx-chevron-down'></i>
+                        </a>
+                    </li>
+
+                    <!-- items -->
+                    <li class="py-2  pl-2 pr-0  group/cont">
+                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Novedades<i class='bx bx-chevron-down'></i>
+                        </a>
+                        
+                    </li>
+
+                    <!-- item -->
+                    <li class="p-2"><a
+                            class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
+                            href="">Preguntas (FAQ)</a></li>
+
+                    <li class="p-2"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+        <!-- main -->
+        <div class="h-screen object-cover relative">
+            <video class="w-full h-full object-cover bg-black " autoplay loop muted>
+                <source src="img/indexble.mp4" type="video/mp4" />
+            </video>
+
+            <div>
+
+                <div
+                    class="absolute bottom-0   text-white text-center w-full   bg-gradient-to-t from-neutral-800/50 to-neutral-800/0">
+
+                    <div class="pb-16 px-5">
+                        <h1 class="text-white font-bellefair uppercase  font-normal text-3xl mb-4">CiruGía estética &
+                            reconstructiva</h1>
+                        <p>Consideramos de vital importancia que nuestros pacientes estén
+                            bien informados <br> para su bienestar y seguridad.
+                        </p>
+                        <div class="mt-10 ">
+                            <a class="btn-transparet" href="#">Descubre tu mejor
+                                version</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end main -->
+
+
+        <!-- tu medico -->
+        <section class="py-6  bg-neutral-50">
+            <div class="container">
+
+                <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center"
+                    id="blefaroplastia">
+
+                    <div class="">
+                        <img class=" h-full w-full object-cover" src="img/IMG-03-facial-treatments.webp" alt="">
+                    </div>
+
+                    <!-- box details -->
+                    <div class="self-center md:w-11/12 lg:w-3/4 ">
+                        <div class="p-5  md:pr-0">
+
+                            <p
+                                class="mb-2  text-center  uppercase text-sm font-manrope    tracking-widest    font-extrabold">
+                                Cirujano
+                                Plástico Certificado & Experiencia</p>
+                            <h2 class="mb-1 text-4xl font-bellefair text-center font-medium uppercase tracking-wide">Dr.
+                                Julio Suca
+                            </h2>
+                            <p
+                                class="mb-4  text-center  uppercase text-sm  md:text-base font-monts    tracking-widest    font-semibold ">
+                                CMP
+                                21159 - RNE 020496</p>
+                            <p class="text-justify text-base md:text-base">
+                                El Dr. Julio Suca se graduó como "Médico Cirujano" en la Universidad Nacional de San
+                                Agustín
+                                de
+                                Arequipa, Perú. Su pasión por la cirugía plástica lo llevó a emigrar a Brasil, donde se
+                                incorporó en el
+                                curso de especialización en cirugía general en el Servicio de Cirugía General 17va
+                                Enfemaria
+                                del
+                                Hospital Geral da Santa Casa da Misericordia do Rio de Janeiro por un período de 3 años,
+                                luego ingreso
+                                al curso de Postgrado en Cirugía Plástica del servicio del Prof. Ivo Pitanguy de la
+                                Pontificia
+                                Universidad Católica de Rio de Janeiro.
+                            </p>
+                            <div class="text-justify text-base  font-monts">
+                                <h3
+                                    class="py-2 m-2 text-center  uppercase text-sm  md:text-base font-manrope    tracking-widest    font-bold ">
+                                    membrecía y Sociedades</h3>
+                                <ul class="">
+                                    <li class="inline-flex align-middle mb-3 mx-3"><i
+                                            class='bx bx-check my-auto p-1.5 text-white bg-neutral-800 rounded-lg'></i>
+                                        <p class="ml-3">Miembro del Colegio Médico del Perú (CMP).</p>
+                                    </li>
+
+                                    <li class="inline-flex align-middle mb-3 mx-3"><i
+                                            class='bx bx-check my-auto p-1.5 text-white bg-neutral-800 rounded-lg'></i>
+                                        <p class="ml-3">Miembro de la Sociedad Brasileña de Cirugía Plástica (SBCP).</p>
+                                    </li>
+                                    <li class="inline-flex align-middle mb-3 mx-3"><i
+                                            class='bx bx-check my-auto p-1.5 text-white bg-neutral-800 rounded-lg'></i>
+                                        <p class="ml-3">Miembro de Asociación de ex-alumnos Ivo Pitanguy (AEXPI).</p>
+                                    </li>
+                                    <li class="inline-flex align-middle mb-3 mx-3"><i
+                                            class='bx bx-check my-auto p-1.5 text-white bg-neutral-800 rounded-lg'></i>
+                                        <p class="ml-3">Más de 25 años de experiencia como Cirujano Plástico.</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="mt-8 mb-4 text-center">
+                                <a class="btn-dark" href="">Más información</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- reconocimiento -->
+        <section class="py-6">
+            <div class="container">
+
+                <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                    <div class="md:order-last">
+                        <video class="h-full w-full object-cover" src="img/blog-entrevista.mp4" controls></video>
+                    </div>
+
+                    <!-- box details -->
+                    <div class="self-center md:w-11/12 lg:w-3/4 ">
+                        <div class="p-5  md:pl-0">
+
+                            <p
+                                class="mb-2  text-center  uppercase text-sm font-manrope    tracking-widest    font-extrabold">
+                                Entrevista
+                                desde brasil</p>
+                            <h2 class="mb-3 text-3xl font-bellefair text-center font-medium uppercase tracking-wide">
+                                reconocimiento
+                                internacional</h2>
+                            <p class="text-justify text-base font-monts">
+                                Contamos con experiencia y reconocimiento a nivel internacional. Pudiendo sobresalir en
+                                el rubro gracias
+                                al esmero y calidad que hemos impregnado en nuestro trabajo a lo largo de todos estos
+                                años de
+                                experiencia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- equipo medico  -->
+        <section class="py-6  bg-neutral-50">
+            <div class="container">
+
+                <!-- title seccion -->
+                <div>
+                    <h2 class="mb-5  text-center  uppercase text-2xl font-monts    tracking-widest    font-semibold">
+                        Equipo medico
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1  sm:grid-cols-3  lg:grid-cols-6 gap-5 ">
+
+                    <!-- bx -->
+                    <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0"
+                        style="background-image: url(/public/img/drafilpo-826x1024.jpg)">
+
+                        <div class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                            <h3 class="uppercase text-xs font-manrope    tracking-wider    font-extrabold">Dr. Julio
+                                Suca</h3>
+                            <p class="text-sm tracking-wider">Cirujano Plástico</p>
+                            <a class="btn-line" href="#">Conoce más</a>
+                        </div>
+                    </div>
+
+                    <!-- bx -->
+                    <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0"
+                        style="background-image: url(/public/img/drafilpo-826x1024.jpg)">
+
+                        <div class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                            <h3 class="font-bold uppercase text-xs font-manrope tracking-widest">Dra. Melania Paredes
+                            </h3>
+                            <p class="text-sm tracking-wider">Medicina Estética</p>
+                            <a class="btn-line" href="#">Conoce más</a>
+                        </div>
+                    </div><!-- bx -->
+                    <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0"
+                        style="background-image: url(/public/img/drafilpo-826x1024.jpg)">
+
+                        <div class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                            <h3 class="uppercase text-xs font-manrope    tracking-widest    font-extrabold">Dr.
+                                Alexander Flores</h3>
+                            <p class="text-sm tracking-wider">Cirujano Plástico</p>
+                            <a class="btn-line" href="#">Conoce más</a>
+                        </div>
+                    </div><!-- bx -->
+                    <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0"
+                        style="background-image: url(/public/img/drafilpo-826x1024.jpg)">
+
+                        <div class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                            <h3 class="uppercase text-xs font-manrope    tracking-widest    font-extrabold">Dra.
+                                Patricia Bolaños</h3>
+                            <p class="text-sm tracking-wider">Medicina Estética</p>
+                            <a class="btn-line" href="#">Conoce más</a>
+                        </div>
+                    </div><!-- bx -->
+                    <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0"
+                        style="background-image: url(/public/img/drafilpo-826x1024.jpg)">
+
+                        <div class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                            <h3 class="uppercase text-xs font-manrope    tracking-widest    font-extrabold">Dra. Gina
+                                Chavez</h3>
+                            <p class="text-sm tracking-wider">Otorrinolaringología</p>
+                            <a class="btn-line" href="#">Conoce más</a>
+                        </div>
+                    </div><!-- bx -->
+                    <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0"
+                        style="background-image: url(/public/img/drafilpo-826x1024.jpg)">
+
+                        <div class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                            <h3 class="uppercase text-xs font-manrope    tracking-widest    font-extrabold">Dr. Harold
+                                Caceres</h3>
+                            <p class="text-sm tracking-wider">Dermatología</p>
+                            <a class="btn-line" href="#">Conoce más</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- informarte -->
+        <section class="py-6">
+            <div class="container">
+
+                <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center"
+                    id="blefaroplastia">
+
+                    <div class=" ">
+                        <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                    </div>
+
+                    <!-- box details -->
+                    <div class="self-center md:w-11/12 lg:w-3/4 ">
+                        <div class="p-5  sm:pr-0">
+
+                            <p
+                                class="mb-2  text-center  uppercase text-sm font-manrope    tracking-widest    font-extrabold">
+                                Nuestra
+                                prioridad es informarte</p>
+                            <h2 class="mb-3 text-3xl font-bellefair text-center font-medium uppercase tracking-wide">
+                                Cuidar tu salud &
+                                bienestar
+                            </h2>
+
+                            <p class="text-justify text-base font-monts">
+                                El Dr. Julio Suca se graduó como "Médico Cirujano" en la Universidad Nacional de San
+                                Agustín de
+                                Arequipa, Perú. Su pasión por la cirugía plástica lo llevó a emigrar a Brasil, donde se
+                                incorporó en el
+                                curso de especialización en cirugía general en el Servicio de Cirugía General 17va
+                                Enfemaria del
+                                Hospital Geral da Santa Casa da Misericordia do Rio de Janeiro por un período de 3 años,
+                                luego ingreso
+                                al curso de Postgrado en Cirugía Plástica del servicio del Prof. Ivo Pitanguy de la
+                                Pontificia
+                                Universidad Católica de Rio de Janeiro.
+                            </p>
+                            <div class="mt-6 text-center">
+                                <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
+                                    href="">como trabajamos</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- especialidad  -->
+        <section class="py-6  bg-neutral-50">
+            <div class="container">
+
+                <!-- title seccion -->
+                <div>
+                    <h2 class="mb-5  text-center  uppercase text-2xl font-monts    tracking-widest    font-semibold">
+                        Especialidad
+                    </h2>
+                </div>
+
+                <div class="grid gap-5   md:grid-cols-3">
+
+                    <!-- surgy 1 bx -->
+                    <div class="relative   overflow-hidden ">
+
+                        <img class="hover:scale-105 transition duration-1000 ease-in-out" src="img/sect-surgy-2.jpg"
+                            alt="">
+
+                        <div class="absolute text-center  bottom-10     inset-x-0">
+                            <h3 class="font-bellefair font-normal uppercase text-4xl mb-4  text-white tracking-wides">
+                                cirugía facial
+                            </h3>
+                            <div class="mt-8">
+                                <a class="btn-transparet" href="procedimientos/cirugia-facial.html">Mostrar todas</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- hover -->
+                    <!-- surgy 1 bx -->
+                    <div class="relative    overflow-hidden rounded-md">
+
+                        <img class="hover:scale-105 transition duration-1000 ease-in-out" src="img/sect-surgy-2.jpg"
+                            alt="">
+
+                        <div class="absolute text-center   bottom-10     inset-x-0   ">
+                            <h3 class="font-bellefair font-normal uppercase text-4xl mb-4  text-white tracking-wides">
+                                Cirugía Corporal
+                            </h3>
+                            <div class="mt-8">
+                                <a class="border-2 hover:px-10 hover:bg-white hover:text-neutral-800   transition-all duration-700   border-white px-6 py-2 rounded-3xl text-base text-white uppercase font-manrope font-semibold tracking-widest"
+                                    href="#">Mostrar todas</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- surgy 1 bx -->
+                    <div class="relative  overflow-hidden">
+
+                        <img class="hover:scale-105 transition duration-1000 ease-in-out" src="img/sect-surgy-2.jpg"
+                            alt="">
+
+                        <div class="absolute text-center   bottom-10     inset-x-0   ">
+                            <h3 class="font-bellefair font-normal uppercase text-4xl mb-4  text-white tracking-wides">
+                                Cirugía
+                                reconstructiva</h3>
+                            <div class="mt-8">
+                                <a class="border-2 hover:px-10 transition-all duration-700   border-white px-6 py-2 rounded-3xl text-base text-white uppercase font-manrope font-semibold tracking-widest"
+                                    href="#">Mostrar todas</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- complementos btn -->
+        <section>
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center" id="blefaroplastia">
+
+                <div class="">
+                    <img class=" h-full w-full object-cover" src="img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- box details -->
+                <div class="self-center md:w-11/12 lg:w-3/5  ">
+                    <div class="">
+
+                        <p
+                            class="mb-2  text-center  uppercase text-xl font-manrope    tracking-widest    font-extrabold ">
+                            Lifting Facial</p>
+                        <h2 class="mb-3 text-3xl font-bellefair text-center font-medium uppercase tracking-wide">
+                            Rejuvenecimiento
+                            facial</h2>
+
+                        <p class="text-justify text-base font-manrope">
+                            También conocido como estiramiento facial o ritidectomía, el lifting facial es un
+                            procedimiento
+                            quirúrgico destinado a mejorar los signos visibles de envejecimiento en la cara y el cuello.
+                            <br>
+                            Conforme el individuo envejece, la piel y los músculos del rostro pierden tonicidad. Con
+                            esta
+                            intervención se consigue detener este deterioro y mejorar los signos más evidentes del
+                            envejecimiento.
+                            <br>
+                            Indicado para tratar la laxitud y las arrugas de los tercios medio e inferior de la cara y
+                            el
+                            cuello. Las incisiones se realizan alrededor de las orejas para que queden ocultas. La
+                            intervención consiste en despegar la piel del rostro para poder tirar de ella y aislarla.
+                            <br>
+                            En el cuello se tratan las bandas que aparecen en la parte anterior y que se deben a la
+                            laxitud
+                            del músculo situado justo bajo la piel. Al tratar estas bandas y estirar la piel, el cuello
+                            recupera un aspecto juvenil, redefiniéndose el ángulo entre el mentón y la cara anterior del
+                            cuello. A través de una liposucción, se extrae la grasa que se acumula en la zona
+                            submandibular
+                            (papada).
+                            <br>
+                            En esta intervención se debe procurar no estirar, sino reposicionar los tejidos y redefinir
+                            el
+                            cuello y la mandíbula, dando volumen a la zona de los pómulos y restableciendo el óvalo de
+                            la
+                            juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
+                        </p>
+                        <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
+                            <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm "
+                                href="">Mostrar Más</a>
+
+                            <a class="border border-neutral-800 px-6 py-3 rounded-3xl text-sm " href="">Agendar
+                                Evaluación</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- cumunicate conmigo -->
+        <section   class="py-10" >
+            <div    class="h-96 bg-cover bg-center relative"    style="background-image: url(img/young-caucasian-smile-girl-woman-bedroom-sofa-smile-camera.jpg);">
+                <div class="container">
+                    <div class="absolute bottom-12 md:w-1/3    mx-auto   md:right-96    flex justify-center">
+                        <div class="bg-red-500/5    w-full px-5">
+                            <h5 class="mb-6">New arrivals</h5>
+                            <h3 class="mb-5">Decor collection</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquid, vel obcaecati quod nesciunt excepturi placeat enim dolorum nisi laudantium aperiam atque quas, ipsum delectus, velit sit!</p>
+                            <a  class="btn-transparet  inline-flex   mt-12" href="">Programar consulta</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- scrip -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
