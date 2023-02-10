@@ -241,9 +241,9 @@
                     <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
-                <!-- box details -->
+                <!-- grid content -->
                 <div class="self-center md:w-11/12 lg:w-3/5  ">
-
+                    <!-- box-detail -->
                     <div class="p-5  md:pl-0 text-center dark:text-white">
 
                         <span class="detail-title-main">
@@ -465,32 +465,34 @@
 
     </main>
 
+    <div    class=" fixed bottom-20  right-5  bg-black rounded-lg " id="btn-swap-theme">
+        <button  class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  "id="moon" >
+            <i class='bx bxs-moon '></i>
+        </button>
+    
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  "id="sun">
+            <i class='bx bxs-sun' ></i>
+        </button>
+    </div>
+
+    <div    class="fixed bottom-5 right-5 bg-black rounded-lg animate-bounce">
+        <button  class="h-8 w-8 leading-9 rounded-full  text-lg text-white" >
+            <i class='bx bxs-chevron-up' ></i>
+        </button>
+    </div>
+
+
     <!-- pie -->
     <footer class="bg-black w-full h-7 text-white">
         <span>Dr. Julio Suca</span>
 
     </footer>
-
-    <div    class="bg-neutral-900 text-white rounded-lg  h-8 w-8 fixed right-5 bottom-20 text-center pt-1.5">
-        <i class='bx bxs-sun ' ></i>
-    </div>
-
-    <div    class="bg-neutral-900 text-white rounded-lg  h-8 w-8 fixed right-5 bottom-5 text-center pt-1.5 animate-bounce">
-        <i class='bx bxs-chevron-up' ></i>
-    </div>
     
     <!-- scrip -->
+    <script src="../js/dark-mode.js"></script>
+ 
 
-    <script src="../js/swap-theme.js"></script>
-    <script>
+    <!-- auto swap theme -->
 
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
-
-    </script>
-</body>
 
 </html>

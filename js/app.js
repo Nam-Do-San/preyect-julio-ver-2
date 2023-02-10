@@ -1,25 +1,39 @@
-const header = document.getElementById( 'header' );
+const header = document.getElementById('header');
 const head_bot = document.getElementById('head-bot');
 let prevY = window.scrollY;
-window.addEventListener('scroll', function( ){
-  
 
-  if( window.scrollY > 1 ){
+
+const scroll_down = document.getElementById('scroll-down');
+
+
+window.addEventListener('scroll', function () {
+
+
+  if (window.scrollY > 1) {
     header.classList.add('bg-neutral-800');
-   
+
     head_bot.classList.add('bg-neutral-900');
-  }else{
+  } else {
     header.classList.remove('bg-neutral-800');
     head_bot.classList.remove('bg-neutral-900');
   }
   // prevY = window.scrollY;
   // console.log(prevY = window.scrollY);
-} );
+
+
+  // scroll down to up 
+  if (window.scrollY > 1500) {
+    scroll_down.classList.remove('hidden');
+  }
+  else{
+    scroll_down.classList.add('hidden');
+  }
+});
 
 
 
 
-// button navbar
+// button navbar --- se puede mejorar el code
 let btn_nav = document.getElementById('btn-nav');
 btn_nav.onclick = alert;
 
@@ -38,11 +52,11 @@ function alert(params) {
 
 
 // swap teme
-const swap_theme =document.getElementById('swap-theme');
+const swap_theme = document.getElementById('swap-theme');
 
 
 function aletswap(params) {
-  
+
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
     console.log('adddark');
@@ -53,11 +67,11 @@ function aletswap(params) {
 
   localStorage.theme = 'light'
 
-// Whenever the user explicitly chooses dark mode
-localStorage.theme = 'dark'
+  // Whenever the user explicitly chooses dark mode
+  localStorage.theme = 'dark'
 
-// Whenever the user explicitly chooses to respect the OS preference
-localStorage.removeItem('theme')
+  // Whenever the user explicitly chooses to respect the OS preference
+  localStorage.removeItem('theme')
 
 
 }

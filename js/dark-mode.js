@@ -1,32 +1,26 @@
+let btn_swap_theme = document.getElementById('btn-swap-theme')
+// iconos de button
+const icon_sun = document.getElementById('sun');
+const icon_moon = document.getElementById('moon');
 
-
-
-var themeToggleDarkIcon = document.getElementById('swap-theme');
-var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-// Change the icons inside the button based on previous settings
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    themeToggleLightIcon.classList.remove('hidden');
+// scrit html or js
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark')
+    
 } else {
-    themeToggleDarkIcon.classList.remove('hidden');
+    document.documentElement.classList.remove('dark')
 }
+// end scrip previously
 
 
+// button  swap theme 
 
+btn_swap_theme.addEventListener('click', function (params) {
+    console.log('hola')
 
-var btn_dark = document.getElementById('btn-dark');
-
-btn_dark.onclick = touch;
-
-function touch (){
-  console.log('dsds')
-}
-
-btn_dark.addEventListener('click', function() {
-
-    // toggle icons inside button
-    themeToggleDarkIcon.classList.toggle('hidden');
-    themeToggleLightIcon.classList.toggle('hidden');
+    // los iconos cambian entre si por el tog
+    icon_moon.classList.toggle('hidden');
+    icon_sun.classList.toggle('hidden');
 
     // if set via local storage previously
     if (localStorage.getItem('color-theme')) {
@@ -48,5 +42,5 @@ btn_dark.addEventListener('click', function() {
             localStorage.setItem('color-theme', 'dark');
         }
     }
-    
-});
+
+})

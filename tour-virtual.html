@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body>
+    
+    <header class="fixed z-30 w-full   hover:bg-neutral-800 group/head" id="header">
+        <!-- header top -->
+        <div class="bg-neutral-900 py-1  hidden md:block" id="head-top">
+
+            <div class="container">
+                <div class="grid grid-cols-2 md:grid-cols-3  text-white">
+                    <!-- horario  -->
+                    <div class="text-xs my-auto ">
+                        <p><span class='bx bx-time-five'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
+                    </div>
+                    <!-- promo -->
+                    <div class="justify-self-center text-xs my-auto hidden md:block">
+                        <span>
+                            50% descuento en cita todo enero
+                        </span>
+                    </div>
+                    <!-- redes -->
+                    <div class="justify-self-end ">
+                        <ul class="flex">
+                            <li class="mx-2"><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-facebook'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-tiktok'></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="container grid grid-cols-3 ">
+
+            <!-- boton -->
+            <button class=" justify-self-start ml-5   md:invisible  " id="btn-nav">
+                <i class='text-white text-2xl  bx bx-menu align-middle'></i>
+            </button>
+
+            <!-- logo  -->
+            <div class="justify-self-center py-3">
+                <a class="" href="../index.html">
+                    <img class="h-11" src="img/logo-dr-julio.svg" alt="">
+                </a>
+            </div>
+            <!-- boton link -->
+            <div class=" justify-self-end my-auto hidden md:block" id="btn-nav">
+                <!-- <i class='text-white text-xl  bx bx-calendar-check align-middle'></i> -->
+                <a class="border-2 border-white px-5 py-1 rounded-2xl text-xs font-semibold tracking-wider  uppercase hover:animate-pulse  duration-500  transition-all text-white"
+                    href="#">Agendar cita</a>
+
+                <!-- <a class="text-white uppercase text-xs font-bold"  href="">Agendar cita</a> -->
+            </div>
+        </div>
+
+        <!-- head bot -->
+        <div class="group-hover/head:bg-neutral-900" id="head-bot">
+
+            <!-- lista de anclas -->
+            <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
+
+                <ul
+                    class=" md:flex justify-center uppercase font-manrope font-semibold tracking-wider text-xs text-white  text-center">
+
+                    <!-- items -->
+                    <li class="py-2  pl-2 pr-0   group/cont">
+                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="">Especialidad<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- subitems -->
+                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- items -->
+                    <li class="py-2  pl-2 pr-0   group/cont">
+                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="">Equipo<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- items -->
+                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- items -->
+                    <li class="p-2">
+                        <a class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
+                            href="">Tour Virtual</a>
+                    </li>
+
+                    <!-- item -->
+                    <li class="py-2  pl-2 pr-0"><a
+                            class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Resultados<i class='bx bx-chevron-down'></i>
+                        </a>
+                    </li>
+
+                    <!-- items -->
+                    <li class="py-2  pl-2 pr-0  group/cont">
+                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Novedades<i class='bx bx-chevron-down'></i>
+                        </a>
+
+                    </li>
+
+                    <!-- item -->
+                    <li class="p-2"><a
+                            class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
+                            href="">Preguntas (FAQ)</a></li>
+
+                    <li class="p-2"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+        <!-- picture -->
+        <div class="h-screen object-cover bg-center relative"   style="background-image: url(img/star-toure.jpg);">
+
+            <div class="absolute w-full bottom-0 pb-10 bg-gradient-to-t from-neutral-800/50 to-neutral-800/0 ">
+                <div class="p-5 text-center">
+                    <h1 class="text-white font-bellefair uppercase  font-normal text-3xl mb-4">Tour Virtual</h1>
+                    <p>Estas apunto de iniciar un gran viaje</p>
+                </div>
+            </div>
+        </div>
+
+        <div    class="h-screen relative ">
+            <img class="w-full h-full object-cover"   src="img/star-toure.jpg" alt="">
+
+            <div    class="absolute bottom-0 w-full pb-10 bg-gradient-to-t from-neutral-800/50 to-neutral-800/0">
+                <div class="p-5 text-white text-center">
+                    <h1>Tour virtual</h1>
+                    <p>Estas a punto de iniciar un gran viaje</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- paso 1 -->
+        <section class="py-8">
+            <div class="container">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6">
+                    <!-- picture -->
+                    <div    class="md:order-last col-span-2">
+                        <img   class="w-full h-full object-cover"  src="img/especial.webp" alt="">
+                    </div>
+                    
+                    <!-- detail -->
+                    <div class="self-center">
+                        <div class="p-5  md:pl-0 text-center">
+
+                            <span class="detail-title-main">Paso 1</span>
+                            <h2 class="detail-title-sub">Tour virtual</h2>
+                            <p class="detail-description">
+                                En nuestra web puedes encontrar información sobre todos los trámites que realizamos, nuestra clínica y nuestro equipo. También tenemos secciones de preguntas frecuentes, opiniones de algunos de nuestros pacientes y nuestro blog, donde podrá conocer más sobre cómo trabajamos
+                            </p>
+                            <div class="mt-8 mb-4 text-center">
+                                <a class="btn-dark" href="">Más información</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- paso 2 -->
+        <section class="py-8">
+            <div class="container">
+
+                <div class="grid  grid-cols-1  md:grid-cols-3 md:gap-6">
+                    <!-- picture -->
+                    <div    class=" md:col-span-2">
+                        <img   class="w-full h-full object-cover"  src="img/especial.webp" alt="">
+                    </div>
+                    
+                    <!-- detail -->
+                    <div class="self-center">
+                        <div class="p-5  md:pr-0 text-center">
+
+                            <span class="detail-title-main">Paso 2</span>
+                            <h2 class="detail-title-sub">TU PRIMERA CONSULTA</h2>
+                            <p class="detail-description">
+                                ¡El día de tu primera cita con nosotros, prepárate para estar bien informado!, la primera consulta es lo más importante, porque hablamos de tu caso, te explicamos detalladamente cómo es el procedimiento, cuáles son los riesgos, y cómo funciona nuestro servicio. Es más, o menos así: Su tratamiento consta de tres pasos muy importantes. El período preoperatorio, donde ahora encontramos el intraoperatorio (es decir, la cirugía) y el postoperatorio”.
+                            </p>
+                            <div class="mt-8 mb-4 text-center">
+                                <a class="btn-dark" href="">Más información</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- paso 3 -->
+        <section class="py-8">
+            <div class="container">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6">
+                    <!-- picture -->
+                    <div    class="md:order-last col-span-2">
+                        <img   class="w-full h-full object-cover"  src="img/especial.webp" alt="">
+                    </div>
+                    
+                    <!-- detail -->
+                    <div class="self-center">
+                        <div class="p-5  md:pl-0 text-center">
+
+                            <span class="detail-title-main">Paso 3</span>
+                            <h2 class="detail-title-sub">TRABAJAMOS JUNTOS</h2>
+                            <p class="detail-description">
+                                En nuestra web puedes encontrar información sobre todos los trámites que realizamos, nuestra clínica y nuestro equipo. También tenemos secciones de preguntas frecuentes, opiniones de algunos de nuestros pacientes y nuestro blog, donde podrá conocer más sobre cómo trabajamos
+                            </p>
+                            <div class="mt-8 mb-4 text-center">
+                                <a class="btn-dark" href="">Más información</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+
+    </footer>
+
+    <!-- scrip -->
+
+
+</body>
+</html>
