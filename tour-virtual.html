@@ -8,10 +8,14 @@
 
     <!-- tailwind -->
     <link rel="stylesheet" href="css/tailwind.css">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     
-    <header class="fixed z-30 w-full   hover:bg-neutral-800 group/head" id="header">
+    <header class="fixed z-50 w-full   hover:bg-neutral-800 group/head" id="header">
         <!-- header top -->
         <div class="bg-neutral-900 py-1  hidden md:block" id="head-top">
 
@@ -51,7 +55,7 @@
 
             <!-- logo  -->
             <div class="justify-self-center py-3">
-                <a class="" href="../index.html">
+                <a class="" href="index.html">
                     <img class="h-11" src="img/logo-dr-julio.svg" alt="">
                 </a>
             </div>
@@ -71,62 +75,64 @@
             <!-- lista de anclas -->
             <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
 
-                <ul
-                    class=" md:flex justify-center uppercase font-manrope font-semibold tracking-wider text-xs text-white  text-center">
+                <ul class="w-2/3 md:w-full  mx-auto    md:flex md:justify-center uppercase font-manrope font-semibold tracking-wider text-xs text-white  text-center h-full bg-red-900">
 
                     <!-- items -->
-                    <li class="py-2  pl-2 pr-0   group/cont">
-                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                    <li class="py-4 md:p-2   group/cont">
+                        <a class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="">Especialidad<i class='bx bx-chevron-down'></i>
                         </a>
-                        <!-- subitems -->
-                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                        <!-- items -->
+                        <ul class="p-4   relative md:absolute md:mt-3   bg-neutral-900/75  border-neutral-900/20 border-2  rounded-md  text-justify    hidden  group-hover/cont:block ">
                             <li class="p-2"><a href="">Cirugía Facial</a></li>
                             <li class="p-2"><a href="">Cirugía Corporal</a></li>
                             <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                    
                         </ul>
                     </li>
 
                     <!-- items -->
-                    <li class="py-2  pl-2 pr-0   group/cont">
-                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                    <li class="py-4 md:p-2  group/cont">
+                        <a class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="">Equipo<i class='bx bx-chevron-down'></i>
                         </a>
                         <!-- items -->
-                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
-                            <li class="p-2"><a href="">Cirugía Facial</a></li>
-                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
-                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        <ul class="p-4   relative md:absolute md:mt-3  bg-neutral-900/75  border-neutral-900/20 border-2  rounded-md text-justify    hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Dr. Julio Suca</a></li>
+                            <li class="p-2"><a href="">Dra. Melania Paredes</a></li>
+                            <li class="p-2"><a href="">Dr. Alexander Flores</a></li>
+                            <li class="p-2"><a href="">Dra. Patricia Bolaños</a></li>
+                            <li class="p-2"><a href="">Dra. Gina Chavez</a></li>
+                            <li class="p-2"><a href="">Dr. Harold Caceres</a></li>
                         </ul>
                     </li>
 
                     <!-- items -->
-                    <li class="p-2">
+                    <li class="py-4 md:p-2">
                         <a class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
                             href="">Tour Virtual</a>
                     </li>
 
                     <!-- item -->
-                    <li class="py-2  pl-2 pr-0"><a
-                            class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                    <li class="py-4 md:p-2"><a
+                            class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="#">Resultados<i class='bx bx-chevron-down'></i>
                         </a>
                     </li>
 
                     <!-- items -->
-                    <li class="py-2  pl-2 pr-0  group/cont">
-                        <a class="after:border-l after:relative after:left-0 after:inline-block after:h-3 after:top-0.5"
+                    <li class="py-4 md:p-2 group/cont">
+                        <a class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="#">Novedades<i class='bx bx-chevron-down'></i>
                         </a>
 
                     </li>
 
                     <!-- item -->
-                    <li class="p-2"><a
+                    <li class="p-4 md:p-2"><a
                             class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
                             href="">Preguntas (FAQ)</a></li>
-
-                    <li class="p-2"><a href="#">Contacto</a></li>
+                    <li class="p-4 md:p-2"><a href="#">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -136,30 +142,24 @@
 
     <main>
         <!-- picture -->
-        <div class="h-screen object-cover bg-center relative"   style="background-image: url(img/star-toure.jpg);">
+        <div class="h-screen/65 bg-cover bg-center relative"   style="background-image: url(img/star-toure.jpg);">
 
-            <div class="absolute w-full bottom-0 pb-10 bg-gradient-to-t from-neutral-800/50 to-neutral-800/0 ">
-                <div class="p-5 text-center">
-                    <h1 class="text-white font-bellefair uppercase  font-normal text-3xl mb-4">Tour Virtual</h1>
-                    <p>Estas apunto de iniciar un gran viaje</p>
+            <div class="absolute bottom-0 w-full bg-gradient-to-t from-neutral-800/50 to-neutral-800/0 text-white text-center ">
+                <div class="pb-10 px-5">
+                    <h1 class="font-bellefair uppercase  font-normal text-3xl mb-3">Tour Virtual</h1>
+                    <p>Consideramos de vital importancia que nuestros pacientes estén informados <br> para su bienestar y seguridad.
+                    </p>
+                    <div class="mt-8 ">
+                        <a class="btn-transparet" href="#">Descubre tu mejor
+                            version</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div    class="h-screen relative ">
-            <img class="w-full h-full object-cover"   src="img/star-toure.jpg" alt="">
-
-            <div    class="absolute bottom-0 w-full pb-10 bg-gradient-to-t from-neutral-800/50 to-neutral-800/0">
-                <div class="p-5 text-white text-center">
-                    <h1>Tour virtual</h1>
-                    <p>Estas a punto de iniciar un gran viaje</p>
-                </div>
-            </div>
-        </div>
-
-
+        
         <!-- paso 1 -->
-        <section class="py-8">
+        <section class="py-8  dark:bg-zinc-900">
             <div class="container">
 
                 <div class="grid grid-cols-1 md:grid-cols-3 md:gap-6">
@@ -170,7 +170,7 @@
                     
                     <!-- detail -->
                     <div class="self-center">
-                        <div class="p-5  md:pl-0 text-center">
+                        <div class="p-5  md:pl-0 text-center dark:text-white">
 
                             <span class="detail-title-main">Paso 1</span>
                             <h2 class="detail-title-sub">Tour virtual</h2>
@@ -188,18 +188,18 @@
         </section>
 
         <!-- paso 2 -->
-        <section class="py-8">
+        <section class="py-8    dark:bg-black">
             <div class="container">
 
                 <div class="grid  grid-cols-1  md:grid-cols-3 md:gap-6">
                     <!-- picture -->
-                    <div    class=" md:col-span-2">
-                        <img   class="w-full h-full object-cover"  src="img/especial.webp" alt="">
+                    <div    class=" md:col-span-2 dark:saturate-0  dark:hover:filter-none   transition duration-1000  overflow-hidden">
+                        <img   class="w-full h-full object-cover    hover:scale-105 transition duration-1000 "  src="img/tour-9.jpg" alt="">
                     </div>
                     
                     <!-- detail -->
                     <div class="self-center">
-                        <div class="p-5  md:pr-0 text-center">
+                        <div class="p-5  md:pr-0 text-center dark:text-white">
 
                             <span class="detail-title-main">Paso 2</span>
                             <h2 class="detail-title-sub">TU PRIMERA CONSULTA</h2>
@@ -247,13 +247,33 @@
 
     </main>
 
+    <!-- down-up -->
+    <div    class="fixed bottom-16 right-5 bg-black rounded-lg z-40 animate-bounce hidden" id="scroll-down">
+        <button  class="h-8 w-8 leading-9 rounded-full  text-xl text-white" >
+            <i class='bx bxs-chevron-up' ></i>
+        </button>
+    </div>
 
+    <!-- button-theme -->
+    <div    class=" fixed bottom-5  right-5  bg-black rounded-lg z-40" id="btn-swap-theme">
+        <button  class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  "id="moon" >
+            <i class='bx bxs-moon '></i>
+        </button>
+    
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  "id="sun">
+            <i class='bx bxs-sun' ></i>
+        </button>
+    </div>
+
+    <!-- footer - pie de pagina -->
     <footer>
 
 
     </footer>
 
     <!-- scrip -->
+    <script src="js/app.js"></script>
+    <script src="js/dark-mode.js"></script>
 
 
 </body>
