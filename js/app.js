@@ -2,23 +2,23 @@ const header = document.getElementById('header');
 const head_bot = document.getElementById('head-bot');
 let prevY = window.scrollY;
 
-
+// scroll var 
 const scroll_down = document.getElementById('scroll-down');
 
 
 window.addEventListener('scroll', function () {
-
-
   if (window.scrollY > 1) {
-    header.classList.add('bg-neutral-800');
+    header.classList.add('md:bg-red-700/100');
 
-    head_bot.classList.add('bg-neutral-900');
+    head_bot.classList.add('bg-custom-primary');
   } else {
-    header.classList.remove('bg-neutral-800');
-    head_bot.classList.remove('bg-neutral-900');
+    header.classList.remove('md:bg-red-700/100');
+    head_bot.classList.remove('bg-custom-primary');
   }
   // prevY = window.scrollY;
-  // console.log(prevY = window.scrollY);
+  console.log(prevY = window.scrollY);
+
+
 
 
   // scroll down to up 
@@ -34,48 +34,23 @@ window.addEventListener('scroll', function () {
 
 
 // button navbar --- se puede mejorar el code
-let btn_nav = document.getElementById('btn-nav');
-btn_nav.onclick = alert;
+let btn_menu = document.getElementById('btn-menu');
+let btn_open = document.getElementById('btn-open');
+let btn_close = document.getElementById('btn-close');
 
 
-function alert(params) {
+btn_menu.addEventListener('click', function (params) {
   let menu_drop = document.getElementById('menu-drop')
-  console.log('click');
+  console.log('click2');
+
+  btn_open.classList.toggle('hidden');
+  btn_close.classList.toggle('hidden');
+
   header.classList.add('bg-neutral-900')
   header.classList.remove('bg-neutral-900')
 
   menu_drop.classList.toggle('hidden');
   menu_drop.classList.toggle('block')
 
-}
-
-
-
-// swap teme
-const swap_theme = document.getElementById('swap-theme');
-
-
-function aletswap(params) {
-
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-    console.log('adddark');
-  } else {
-    document.documentElement.classList.toggle('dark')
-    console.log('renove');
-  }
-
-  localStorage.theme = 'light'
-
-  // Whenever the user explicitly chooses dark mode
-  localStorage.theme = 'dark'
-
-  // Whenever the user explicitly chooses to respect the OS preference
-  localStorage.removeItem('theme')
-
-
-}
-
-
-
+})
 
