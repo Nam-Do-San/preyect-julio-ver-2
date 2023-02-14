@@ -8,11 +8,10 @@ const scroll_down = document.getElementById('scroll-down');
 
 window.addEventListener('scroll', function () {
   if (window.scrollY > 1) {
-    header.classList.add('md:bg-red-700/100');
-
+    header.classList.add('md:bg-custom-secondary');
     head_bot.classList.add('bg-custom-primary');
   } else {
-    header.classList.remove('md:bg-red-700/100');
+    header.classList.remove('md:bg-custom-secondary');
     head_bot.classList.remove('bg-custom-primary');
   }
   // prevY = window.scrollY;

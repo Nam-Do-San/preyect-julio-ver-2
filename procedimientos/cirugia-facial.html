@@ -13,30 +13,36 @@
 
 <body>
 
-    <!-- star header -->
-    <header class="fixed z-30 w-full   hover:bg-neutral-800 group/head" id="header">
+    <!-- header -->
+    <header
+        class="fixed z-50 w-full  bg-custom-primary md:bg-custom-secondary/0   md:hover:bg-custom-primary group/head"
+        id="header">
         <!-- header top -->
-        <div class="group-hover/head:bg-neutral-900 py-1  hidden md:block" id="head-top">
+        <div class="bg-custom-primary hidden md:block">
 
             <div class="container">
-                <div class="grid grid-cols-2 md:grid-cols-3  text-white">
+                <div class="grid grid-cols-2 lg:grid-cols-3  content-center   text-white">
                     <!-- horario  -->
-                    <div class="text-xs my-auto">
-                        <p><span class='bx bx-time-five'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
+                    <div class="text-complement   px-3   py-2   my-auto ">
+                        <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
                     </div>
-                    <!-- promo -->
-                    <div class="justify-self-center text-xs my-auto hidden md:block">
-                        <span>
-                            50% descuento en cita todo enero
-                        </span>
-                    </div>
-                    <!-- redes -->
-                    <div class="justify-self-end">
-                        <a href="#"><i class='bx bxl-instagram'></i></a>
-                        <a href=""><i class='bx bxl-facebook'></i></a>
-                        <a href=""><i class='bx bxl-tiktok'></i></a>
-                    </div>
+                    <!-- end-horario -->
 
+                    <!-- promo -->
+                    <div class="text-complement   justify-self-center  my-auto   py-2   hidden lg:block align-bottom">
+                        <P>30% dscto. en consultas por campaña <span class='bx bxs-discount align-middle'></span></P>
+                    </div>
+                    <!-- end-promo -->
+
+                    <!-- rs -->
+                    <div class="justify-self-end my-auto px-1">
+                        <ul class="flex text-base">
+                            <li class="mx-2"><a href="#"><i class='bx bxl-instagram align-middle'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-facebook   align-middle'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-tiktok     align-middle'></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- end-rs -->
                 </div>
             </div>
 
@@ -44,120 +50,111 @@
 
         <!-- header center -->
         <div class="container grid grid-cols-3 ">
-
             <!-- boton -->
-            <button class=" justify-self-start mx-3" id="btn-nav">
-                <i class='text-white text-2xl  bx bx-menu align-middle'></i>
-            </button>
+
+            <div class="my-auto" id="btn-menu">
+                <button class=" justify-self-start ml-5   md:invisible" id="btn-open">
+                    <i class='bx bx-menu text-white text-3xl align-middle'></i>
+                </button>
+
+                <button class=" justify-self-start ml-5 hidden" id="btn-close">
+                    <i class='bx bx-x       text-white text-3xl align-middle'></i>
+                </button>
+            </div>
 
             <!-- logo  -->
-            <div class="justify-self-center py-2">
-                <a class="" href="../index.html">
-                    <img class="h-11" src="../img/logo-dr-julio.svg" alt="">
+            <div class="justify-self-center py-3">
+                <a class="" href="index.html">
+                    <img class="h-11" src="img/logo-dr-julio.svg" alt="">
                 </a>
             </div>
             <!-- boton link -->
-            <div class=" justify-self-end my-auto" id="btn-nav">
+            <div class=" justify-self-end my-auto hidden md:block" id="btn-nav">
                 <!-- <i class='text-white text-xl  bx bx-calendar-check align-middle'></i> -->
-                <a class="btn-wtp mx-3" href="#">Agendar cita</a>
+                <a class="border-2 border-white px-5 py-1 rounded-2xl text-xs font-semibold tracking-wider  uppercase hover:animate-pulse  duration-500  transition-all text-white"
+                    href="#">Agendar cita</a>
 
                 <!-- <a class="text-white uppercase text-xs font-bold"  href="">Agendar cita</a> -->
             </div>
         </div>
 
         <!-- head bot -->
-        <div class="group-hover/head:bg-neutral-900" id="head-bot">
+        <div class="group-hover/head:bg-custom-primary" id="head-bot">
 
             <!-- lista de anclas -->
             <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
+                <!--  bg-red-900  -->
+                <ul
+                    class="w-2/3 md:w-full  mx-auto    md:flex md:justify-center uppercase text-xs font-manrope tracking-wider font-bold text-white  text-center h-full">
 
-                <ul class=" md:flex justify-center uppercase text-xs text-white  text-center">
-
-                    <li class="p-3   group/cont">
-                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                    <!-- items -->
+                    <li class="py-4 md:p-2   group/cont">
+                        <a class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="">Especialidad<i class='bx bx-chevron-down'></i>
                         </a>
                         <!-- items -->
-                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
+                        <ul
+                            class="p-4   relative md:absolute md:mt-3   bg-neutral-900/75  border-neutral-900/20 border-2  rounded-md  text-justify    hidden  group-hover/cont:block ">
                             <li class="p-2"><a href="">Cirugía Facial</a></li>
                             <li class="p-2"><a href="">Cirugía Corporal</a></li>
                             <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+
                         </ul>
                     </li>
 
-                    <li class="p-3   group/cont">
-                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                    <!-- items -->
+                    <li class="py-4 md:p-2  group/cont">
+                        <a class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="">Equipo<i class='bx bx-chevron-down'></i>
                         </a>
                         <!-- items -->
-                        <ul class="relative md:absolute md:mt-3  bg-red-900/50      hidden  group-hover/cont:block ">
-                            <li class="p-2"><a href="">Cirugía Facial</a></li>
-                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
-                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+                        <ul
+                            class="p-4   relative md:absolute md:mt-3  bg-neutral-900/75  border-neutral-900/20 border-2  rounded-md text-justify    hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Dr. Julio Suca</a></li>
+                            <li class="p-2"><a href="">Dra. Melania Paredes</a></li>
+                            <li class="p-2"><a href="">Dr. Alexander Flores</a></li>
+                            <li class="p-2"><a href="">Dra. Patricia Bolaños</a></li>
+                            <li class="p-2"><a href="">Dra. Gina Chavez</a></li>
+                            <li class="p-2"><a href="">Dr. Harold Caceres</a></li>
                         </ul>
                     </li>
 
-                    <li class="p-3">
-                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                    <!-- items -->
+                    <li class="py-4 md:p-2">
+                        <a class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
                             href="">Tour Virtual</a>
                     </li>
 
-                    <li class="p-3  group/cont">
-                        <a class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
-                            href="#">Sobre nosotros<i class='bx bx-chevron-down'></i>
-                        </a>
-                        <ul
-                            class="bg-white absolute text-black flex  justify-evenly w-screen left-0   invisible  group-hover/cont:visible">
-                            <li><a href="#"></a>
-                                <img src="" alt="">
-                                <span>Nuestra filosofia</span>
-                            </li>
-
-                            <li><a href="#"></a>
-                                <img src="" alt="">
-                                <span>Nuestra filosofia</span>
-                            </li>
-
-                            <li><a href="#"></a>
-                                <img src="" alt="">
-                                <span>Nuestra filosofia</span>
-                            </li>
-
-                            <li><a href="#"></a>
-                                <img src="" alt="">
-                                <span>Nuestra filosofia</span>
-                            </li>
-
-                            <li><a href="#"></a>
-                                <img src="" alt="">
-                                <span>Nuestra filosofia</span>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="p-3"><a
-                            class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
+                    <!-- item -->
+                    <li class="py-4 md:p-2"><a
+                            class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
                             href="#">Resultados<i class='bx bx-chevron-down'></i>
                         </a>
                     </li>
 
-                    <li class="p-3"><a
-                            class="after:border-l after:relative after:left-3 after:inline-block after:h-3 after:top-0.5"
-                            href="">Preguntas (FAQ)</a></li>
+                    <!-- items -->
+                    <li class="py-4 md:p-2 group/cont">
+                        <a class="after:border-l after:relative after:left-1 after:inline-block after:h-3 after:top-0.5"
+                            href="#">Novedades<i class='bx bx-chevron-down'></i>
+                        </a>
 
-                    <li class="p-3"><a href="#">Contacto</a></li>
+                    </li>
+
+                    <!-- item -->
+                    <li class="p-4 md:p-2"><a
+                            class="after:border-l after:relative after:left-2 after:inline-block after:h-3 after:top-0.5"
+                            href="">Preguntas (FAQ)</a></li>
+                    <li class="p-4 md:p-2"><a href="#">Contacto</a></li>
                 </ul>
             </nav>
 
         </div>
 
     </header>
-    <!-- end header -->
+    <!-- end-header -->
 
     <main>
-        <!-- seleccione parte facial -->        
+        <!-- seleccione parte facial -->
         <section class=" bg-cover h-screen  bg-center  grid relative"
             style="background-image: url(../img/bg-img/bg-facial-1900.jpg);">
 
@@ -233,7 +230,7 @@
 
 
         <!-- Rejuvenecimiento facial -->
-        <section class="py-5 dark:bg-black" id="">
+        <section class="py-5 dark:bg-custom-primary">
 
             <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
 
@@ -242,9 +239,9 @@
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 lg:w-3/5  ">
+                <div class="self-center md:w-11/12 ">
                     <!-- box-detail -->
-                    <div class="p-5  md:pl-0 text-center dark:text-white">
+                    <div class="p-5 text-center dark:text-white">
 
                         <span class="detail-title-main">
                             Lifting Facial</span>
@@ -280,6 +277,29 @@
                             la
                             juventud. El relleno con grasa (Coleman) ayuda a conseguir estos objetivos.
                         </p>
+                        <div class="text-justify">
+                            <h3 class="py-2 text-benefits">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-benefits"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Miembro del Colegio Médico del Perú (CMP).</p>
+                                </li>
+
+                                <li class="items-benefits"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Miembro de la Sociedad Brasileña de Cirugía Plástica (SBCP).</p>
+                                </li>
+                                <li class="items-benefits"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Miembro de Asociación de ex-alumnos Ivo Pitanguy (AEXPI).</p>
+                                </li>
+                                <li class="items-benefits"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Más de 25 años de experiencia como Cirujano Plástico.</p>
+                                </li>
+
+                            </ul>
+                        </div>
                         <div class="mt-6 grid grid-rows-2 lg:flex gap-3 text-center  justify-evenly">
                             <a class="border-2 border-neutral-800 bg-neutral-800 text-white  px-6 py-3 rounded-3xl text-sm font-monts uppercase font-semibold"
                                 href="">Mostrar Más</a>
@@ -294,7 +314,7 @@
         </section>
 
         <!-- Blefaroplastia -->
-        <section class="py-5 bg-neutral-50  dark:bg-neutral-900" id="blefa">
+        <section class="py-5 bg-neutral-50  dark:bg-custom-secondary" id="blefa">
 
             <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center" id="blefaroplastia">
 
@@ -303,8 +323,8 @@
                 </div>
 
                 <!-- box details -->
-                <div class="self-center md:w-11/12 lg:w-3/5 ">
-                    <div class="p-5  md:pr-0 text-center dark:text-white">
+                <div class="self-center md:w-11/12 ">
+                    <div class="p-5 text-center dark:text-white">
                         <span class="detail-title-main">blefaroplastia</span>
                         <h2 class="detail-title-sub">Cirugía para parpados</h2>
                         <p class="detail-description">
@@ -465,19 +485,19 @@
 
     </main>
 
-    <div    class=" fixed bottom-20  right-5  bg-black rounded-lg " id="btn-swap-theme">
-        <button  class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  "id="moon" >
+    <div class=" fixed bottom-20  right-5  bg-black rounded-lg " id="btn-swap-theme">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  " id="moon">
             <i class='bx bxs-moon '></i>
         </button>
-    
-        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  "id="sun">
-            <i class='bx bxs-sun' ></i>
+
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  " id="sun">
+            <i class='bx bxs-sun'></i>
         </button>
     </div>
 
-    <div    class="fixed bottom-5 right-5 bg-black rounded-lg animate-bounce">
-        <button  class="h-8 w-8 leading-9 rounded-full  text-lg text-white" >
-            <i class='bx bxs-chevron-up' ></i>
+    <div class="fixed bottom-5 right-5 bg-black rounded-lg animate-bounce">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg text-white">
+            <i class='bx bxs-chevron-up'></i>
         </button>
     </div>
 
@@ -487,12 +507,12 @@
         <span>Dr. Julio Suca</span>
 
     </footer>
-    
-    <!-- scrip -->
-    <script src="../js/dark-mode.js"></script>
- 
 
-    <!-- auto swap theme -->
+    <!-- scrip -->
+    <script src="../js/app.js"></script>
+    <script src="../js/dark-mode.js"></script>
+
+</body>
 
 
 </html>
