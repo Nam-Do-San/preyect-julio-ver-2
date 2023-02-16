@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../css/tailwind.css">
+
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body   id="gotoup">
+
+    <!-- no es el oficial -->
+    <!-- header -->
+    <header
+        class="fixed z-50 w-full  bg-custom-primary md:bg-custom-secondary/0   md:hover:bg-custom-primary group/head"
+        id="header">
+        <!-- header top -->
+        <div class="bg-custom-primary hidden md:block">
+
+            <div class="container">
+                <div class="grid grid-cols-2 lg:grid-cols-3  content-center   text-white">
+                    <!-- horario  -->
+                    <div class="text-complement   px-3   py-2   my-auto ">
+                        <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
+                    </div>
+                    <!-- end-horario -->
+
+                    <!-- promo -->
+                    <div class="text-complement   justify-self-center  my-auto   py-2   hidden lg:block align-bottom">
+                        <P>30% dscto. en consultas por campaña <span class='bx bxs-discount align-middle'></span></P>
+                    </div>
+                    <!-- end-promo -->
+
+                    <!-- rs -->
+                    <div class="justify-self-end my-auto px-1">
+                        <ul class="flex text-base">
+                            <li class="mx-2"><a href="#"><i class='bx bxl-instagram align-middle'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-facebook   align-middle'></i></a></li>
+                            <li class="mx-2"><a href=""><i class='bx bxl-tiktok     align-middle'></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- end-rs -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- header center -->
+        <div class="container grid grid-cols-3 ">
+            <!-- boton -->
+
+            <div class="my-auto" id="btn-menu">
+                <button class=" justify-self-start ml-5   md:invisible" id="btn-open">
+                    <i class='bx bx-menu text-white text-3xl align-middle'></i>
+                </button>
+
+                <button class=" justify-self-start ml-5 hidden" id="btn-close">
+                    <i class='bx bx-x       text-white text-3xl align-middle'></i>
+                </button>
+            </div>
+
+            <!-- logo  -->
+            <div class="justify-self-center py-3">
+                <a class="" href="index.html">
+                    <img class="h-11" src="../img/logo-dr-julio.svg" alt="">
+                </a>
+            </div>
+            <!-- boton link -->
+            <div class=" justify-self-end my-auto hidden md:block" id="btn-nav">
+                <!-- <i class='text-white text-xl  bx bx-calendar-check align-middle'></i> -->
+                <a class="py-2.5 px-8 border-2 border-white   rounded-2xl text-white uppercase tracking-wider text-sm font-bold font-manrope hover:bg-white hover:text-custom-secondary duration-500  "
+                    href="">Agendar Cita</i></a>
+
+                <!-- <a class="text-white uppercase text-xs font-bold"  href="">Agendar cita</a> -->
+            </div>
+        </div>
+
+        <!-- head bot -->
+        <div class="group-hover/head:bg-custom-primary" id="head-bot">
+
+            <!-- lista de anclas -->
+            <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
+                <!--  bg-red-900  -->
+                <ul
+                    class="w-4/5 md:w-full  mx-auto    md:flex md:justify-center uppercase text-xs font-manrope tracking-wider font-bold text-white  text-center">
+
+                    <!-- items -->
+                    <li class="border-b md:border-none  py-4 md:p-2   group/cont">
+                        <a class="md:after-line-r" href="">Especialidad<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- items -->
+                        <ul
+                            class="pl-5 md:p-4   relative md:absolute md:mt-3   bg-custom-primary/75  border-neutral-900/20 border-2  rounded-md  text-justify    hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Cirugía Facial</a></li>
+                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
+                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- items -->
+                    <li class="border-b md:border-none py-4 md:p-2  group/cont">
+                        <a class="md:after-line-r" href="">Equipo<i class='bx bx-chevron-down'></i>
+                        </a>
+                        <!-- items -->
+                        <ul
+                            class="pl-5 md:p-4   relative md:absolute md:mt-3  bg-custom-primary/75  border-neutral-900/20 border-2  rounded-md text-justify    hidden  group-hover/cont:block ">
+                            <li class="p-2"><a href="">Dr. Julio Suca</a></li>
+                            <li class="p-2"><a href="">Dra. Melania Paredes</a></li>
+                            <li class="p-2"><a href="">Dr. Alexander Flores</a></li>
+                            <li class="p-2"><a href="">Dra. Patricia Bolaños</a></li>
+                            <li class="p-2"><a href="">Dra. Gina Chavez</a></li>
+                            <li class="p-2"><a href="">Dr. Harold Caceres</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- items -->
+                    <li class="border-b md:border-none py-4 md:p-2">
+                        <a class="md:after-line-r" href="">Tour Virtual</a>
+                    </li>
+
+                    <!-- item -->
+                    <li class="border-b md:border-none py-4 md:p-2"><a class="md:after-line-r" href="#">Resultados<i
+                                class='bx bx-chevron-down'></i>
+                        </a>
+                    </li>
+
+                    <!-- items -->
+                    <li class="border-b md:border-none py-4 md:p-2 group/cont">
+                        <a class="md:after-line-r" href="#">Novedades<i class='bx bx-chevron-down'></i>
+                        </a>
+
+                    </li>
+
+                    <!-- item -->
+                    <li class="border-b md:border-none p-4 md:p-2"><a class="md:after-line-r" href="">Preguntas
+                            (FAQ)</a></li>
+                    <li class="p-4 md:p-2"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <!-- end-header -->
+
+    <main>
+        <!-- poster-corporal -->
+        <section class=" bg-cover h-screen  bg-center  grid relative"
+            style="background-image: url(../img/bg-img/bg-corporal.jpg);">
+
+            <!-- cuadro de puntos -->
+            <div class="bg-red-600/25 relative  mx-auto  h-screen">
+
+                <!-- reduction -->
+                <div class="lg:left-20 top-52  text-white  absolute  hover:animate-bounce p-2   group/surgy">
+                    <a href="#reduccion-de-mamas" class="relative ">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Mamoplastia Reductora</span>
+                    </a>
+                </div>
+
+                <!-- aumento -->
+                <div class="left-28 top-56 lg:left-56 text-white  absolute  hover:animate-bounce    group/surgy">
+                    <a href="#aumento-de-mamas" class="relative">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Mamoplastia de Aumento</span>
+                    </a>
+                </div>
+
+                <!-- abd -->
+                <div class="left-20 top-1/2 lg:left-36  text-white  absolute hover:animate-bounce    group/surgy">
+                    <a href="#abdominoplastia" class="relative">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Abdominoplastia</span></a>
+                </div>
+
+                <!-- bra -->
+                <div
+                    class="-left-28  top-44  lg:-left-56 lg:top-52  text-white  absolute    hover:animate-bounce    group/surgy">
+                    <a href="#braquioplastia" class="relative">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Braquiplastia</span>
+                    </a>
+                </div>
+
+                <!-- lip -->
+                <div class="-left-10 top-1/2  text-white  absolute  hover:animate-bounce    group/surgy">
+                    <a href="#liposuccion" class="relative">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Liposucción</span>
+                    </a>
+                </div>
+
+                <!-- Lev -->
+                <div class="-left-28 top-3/4  text-white  absolute  hover:animate-bounce    group/surgy">
+                    <a href="#gluteo-plastia" class="relative">
+                        <i class='bx bx-plus-circle'></i>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Levantamiento de glúteos</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 w-full p-5 text-center text-white">
+                <h1 class="text-3xl font-bellefair uppercase my-1">Cirugías corporal</h1>
+                <span class="title-main">Elige el area de tu cuerpo</span>
+                <div class="mb-2.5 mt-6">
+                    <a  class="btn-white-line" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar Evaluación</a>
+                </div>
+            </div>
+        </section>
+        <!-- end-poster -->
+
+        <!-- Mamoplastia-de-aumento -->
+        <section class="md:py-10 dark:bg-custom-primary " id="aumento-de-mamas">
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="md:order-last  overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+
+                    <div class="p-5 text-center dark:text-white">
+                        <span class="title-main">Mamoplastia de Aumento</span>
+                        <h2 class="title-section">
+                            Aumento de mamas</h2>
+
+                        <p class="detail-description">
+                            La mamoplastia de aumento, como también se le conoce, es una operación destinada a
+                            incrementar el volumen de los pechos. Se lleva a cabo a través de la colocación de implantes
+                            mamarios, lo que brinda una silueta más estilizada y femenina.
+                            <br>
+                            Con una cirugía de aumento de senos puedes dar realce a esta zona de tu cuerpo, haciendo más
+                            atractivo tus pechos. Porque no solo se trata de tener un pecho con unas cuantas tallas más
+                            de sujetador, también implica que puedas tener un pecho mejor proporcionado para tu
+                            contextura corporal y que tenga una apariencia más atrayente.
+                            <br>
+                            La cirugía de aumento de pechos Marbella implica una valoración previa del caso, para
+                            determinar cuál es el tamaño deseado y que se adapta a la fisionomía de la mujer. Antes del
+                            procedimiento, ya se habrá decidido si se usarán implantes redondos o anatómicos, además de
+                            cuánto será el volumen en centímetros cúbicos de los mismos.
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Lograra un equilibrio armónico y proporcional en el cuerpo.</p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Si tus pechos son asimétricos, puedes corregirlos con esta cirugía
+                                        de aumento.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Miembro de Asociación de ex-alumnos Ivo Pitanguy (AEXPI).</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Siéntete bien contigo, gana seguridad y confianza en ti.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div
+                                class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div    class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit"
+                                    href="">Más información <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i></a>
+                            </div>
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reducción-de-mamas -->
+        <section class="py-10 bg-gray-50  dark:bg-custom-secondary" id="reduccion-de-mamas">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+                    <!-- box-detail -->
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Mamoplastia de Reducción</span>
+                        <h2 class="title-section">
+                            Reducción de mamas</h2>
+
+                        <p class="detail-description">
+                            La gran mayoría de las mujeres siempre desea aumentarse el pecho, se trata de una de las
+                            cirugías estéticas más comunes. Pero, existen algunos casos donde la reducción de senos es
+                            la prioridad, de este modo se obtienen unos pechos pequeños, ligeros y firmes, radicando en
+                            una mejor calidad de vida.
+                            <br>
+                            La cirugía de reducción de mamas consiste en un procedimiento quirúrgico donde se elimina el
+                            exceso tejido, de grasa y de piel de los pechos, se le conoce también como mamoplastia de
+                            reducción. El objetivo de esta cirugía se trata de aliviar la incomodidad y los problemas
+                            derivados al tamaño excesivo el busto, así como de poder lograr un tamaño de senos que sea
+                            proporcional al cuerpo.
+                            <br>
+                            Este tipo de cirugías también son muy útiles para ayudar a la paciente a mejorar su
+                            autoestima, tener mayor confianza y una mejor capacidad para desenvolverse en actividades
+                            físicas de todo tipo.
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Obtenemos un tamaño acorde y equilibrado con el resto de su cuerpo.
+                                    </p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Desaparición de los dolores en la espalda, cervical, cuello y
+                                        hombros.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Las erupciones e irritación también desaparecen luego de la cirugía.
+                                    </p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Notable en el aumento seguridad y la confianza de la paciente.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div
+                                class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div    class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit"
+                                    href="">Más información <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i></a>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- braquioplastia -->
+        <section class="py-10 dark:bg-custom-primary" id="braquioplastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="md:order-last  overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+                    <!-- box-detail -->
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">braquioplastia</span>
+                        <h2 class="title-section">
+                            Rejuvenecimientos de brazos</h2>
+
+                        <p class="detail-description">
+                            La braquioplástia o lifting de brazos es una intervención quirúrgica destinada a tratar la
+                            flacidez cutánea y el exceso de grasa de la cara interna de los brazos. Con esta cirugía se
+                            pretende conseguir unos brazos más estilizados y armónicos con el cuerpo.
+                            <br>
+                            La cirugía de braquioplastia consiste en realizar una incisión en la cara interna de la
+                            parte superior del brazo, para eliminar la piel sobrante. En los casos más graves, se puede
+                            necesitar incluso un corte desde la axila hasta el codo, siempre por la cara interna del
+                            brazo. A través de dicha incisión, se extirpa todo el exceso de piel. En los casos que el
+                            paciente también quiera eliminar el exceso de grasa de sus brazos, se puede combinar esta
+                            intervención con una Liposucción.
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Se remueve el exceso de piel y grasa.</p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Mejorar el contorno estético de los brazos.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Disminuir la incidencia de humedad y mal olor por el exceso de piel.
+                                    </p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Lucir tus brazos, usando camisetas de mangas estrechas.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div
+                                class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div    class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit"
+                                    href="">Más información <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i></a>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abdominoplastia -->
+        <section class="py-10 bg-gray-50  dark:bg-custom-secondary" id="abdominoplastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+                    <!-- box-detail -->
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Abdominoplastia</span>
+                        <h2 class="title-section">
+                            Reducción de abdomen</h2>
+
+                        <p class="detail-description">
+                            La reducción de abdomen, también conocida como abdominoplastia, es un procedimiento
+                            quirúrgico estético para mejorar la apariencia del abdomen. Durante una reducción de
+                            abdomen, se extrae el exceso de piel y grasa del abdomen.
+                            <br>
+                            Un abdomen flácido es el resultado no solo de la acumulación de grasa, sino también de la
+                            mala elasticidad de la piel, el exceso de piel y el estiramiento del cinturón interno del
+                            tejido conjuntivo (fascia abdominal) y los músculos abdominales que se extienden desde las
+                            costillas hasta el pubis.
+                            <br>
+                            En la mayoría de los casos, los tejidos conectivos del abdomen también se refuerzan con
+                            suturas. La piel restante se reubica para crear una apariencia más tonificada. Si tienes
+                            piel acumulada alrededor del área del ombligo y una pared abdominal inferior débil, puedes
+                            optar por someterte a una reducción de abdomen. Una reducción de abdomen también puede
+                            realzar tu imagen corporal.
+
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Podrás eliminar la flacidez de la piel y estirar los músculos de
+                                        esta zona.</p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Si eliminamos la grasa localizada hay menor riesgo de que el
+                                        paciente padezca enfermedades asociadas con la obesidad.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Quita el exceso de piel, sobre todo, en paciente que han perdido
+                                        mucho de peso, la piel queda estirada y flácida.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Reduce los dolores de espalda, el paciente mejorará su posición,
+                                        evitando así el riesgo de padecer otros problemas de salud.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
+
+                            <!-- button-tra -->
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
+                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
+                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
+                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Liposucción -->
+        <section class="py-10 dark:bg-custom-primary" id="liposuccion">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="md:order-last  overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+                    <!-- box-detail -->
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Liposucción - lipoescultura</span>
+                        <h2 class="title-section">
+                            Extracción de grasa</h2>
+
+                        <p class="detail-description">
+                            Con la lipoescultura se moldea la silueta del cuerpo, haciendo que su contorno se vea más
+                            estilizado. La Liposucción No es un tratamiento estético para bajar de peso, más bien, es un
+                            procedimiento
+                            que permite eliminar la grasa que se aloja en zonas específicas. Y, al quitar la grasa de
+                            forma precisa logras definir mejor curvas, reducir volumen de algunas áreas y definir
+                            contornos a la perfección.
+                            <br>
+                            Esté método consiste en la extracción de los depósitos grasos en los tejidos tratados, con
+                            el fin de esculpir el cuerpo y hacerlo estéticamente armonioso. Las regiones más comunes
+                            donde es aplicada la lipoescultura son: glúteos, piernas, caderas, flancos del abdomen y
+                            papada.
+                            <br>
+                            En algunas personas, la grasa acumulada en estas áreas suele ser rebelde y no desaparece por
+                            muchos esfuerzos que hagas. La lipoescultura es una opción que puede ofrecer los resultados
+                            que se desean.
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Brinda un mejor aspecto a la silueta corporal, pues elimina la grasa
+                                        que se resiste a las dietas y los ejercicios.</p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Al eliminar los depósitos de grasa en exceso se reduce la
+                                        probabilidad de sufrir enfermedades crónicas.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Sin mucho esfuerzo, puedes alisar tu piel y moldear la figura para
+                                        hacerla más estilizada.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Elimina la antiestética piel de naranja, permitiendo que puedas
+                                        lucir tu cuerpo en bikini sin avergonzarte.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
+
+                            <!-- button-tra -->
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
+                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
+                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
+                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- aumento-de-gluteos -->
+        <section class="py-10 bg-gray-50  dark:bg-custom-secondary" id="gluteo-plastia">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+                    <!-- box-detail -->
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Lipotransferencia</span>
+                        <h2 class="title-section">
+                            Aumento de Glúteos</h2>
+
+                        <p class="detail-description">
+                            Esta es una cirugía plástica estética que permite dar un mayor volumen al área glútea, con
+                            el fin de mejorar la silueta corporal. Con un aumento de glúteos ganas más que unas tallas
+                            más, pues este tipo de operación permite que se hagan más redondos los glúteos y
+                            más firmes.
+                            <br>
+                            Hay que reconocer que el aspecto que tengan los glúteos puede marcar la diferencia en la
+                            estética de una persona. Si estos se notan planos y flácidos, es posible que la persona se
+                            sienta inconforme y decida recurrir a una opción quirúrgica como el implante de glúteos para
+                            dar mayor volumen al área.
+                            <br>
+                            El aumento de glúteos usando tu propia grasa es un procedimiento complementario a una
+                            abdominoplastia o liposucción del abdomen, caderas y muslos. El aumento del tamaño de los
+                            glúteos es ideal para las mujeres que desean mejorar lo que ya tienen o para las que
+                            experimentan una pérdida de volumen, forma, sufren de flacidez y de problemas en la piel
+                            debido a una pérdida de peso durante un tiempo muy breve o simplemente, envejecen.
+
+
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Este procedimiento es totalmente fiable debido a que no existe posibilidad de rechazo del cuerpo ya que el injerto proviene del mismo.</p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Mejora de la proporción corporal, especialmente cuando se combina con una abdominoplastia o liposucción.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">La liposucción con lipotransferencia a los glúteos permite que en un solo procedimiento puedas conseguir un cambio radical en tu cuerpo.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">No se usan materiales artificiales o prótesis.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
+
+                            <!-- button-tra -->
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
+                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
+                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
+                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- intima -->
+        <section class="py-10 dark:bg-custom-primary" id="liposuccion">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
+
+                <div class="md:order-last  overflow-hidden">
+                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/4">
+                    <!-- box-detail -->
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Liposucción - lipoescultura</span>
+                        <h2 class="title-section">
+                            Extracción de grasa</h2>
+
+                        <p class="detail-description">
+                            Con la lipoescultura se moldea la silueta del cuerpo, haciendo que su contorno se vea más
+                            estilizado. La Liposucción No es un tratamiento estético para bajar de peso, más bien, es un
+                            procedimiento
+                            que permite eliminar la grasa que se aloja en zonas específicas. Y, al quitar la grasa de
+                            forma precisa logras definir mejor curvas, reducir volumen de algunas áreas y definir
+                            contornos a la perfección.
+                            <br>
+                            Esté método consiste en la extracción de los depósitos grasos en los tejidos tratados, con
+                            el fin de esculpir el cuerpo y hacerlo estéticamente armonioso. Las regiones más comunes
+                            donde es aplicada la lipoescultura son: glúteos, piernas, caderas, flancos del abdomen y
+                            papada.
+                            <br>
+                            En algunas personas, la grasa acumulada en estas áreas suele ser rebelde y no desaparece por
+                            muchos esfuerzos que hagas. La lipoescultura es una opción que puede ofrecer los resultados
+                            que se desean.
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Brinda un mejor aspecto a la silueta corporal, pues elimina la grasa
+                                        que se resiste a las dietas y los ejercicios.</p>
+                                </li>
+
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Al eliminar los depósitos de grasa en exceso se reduce la
+                                        probabilidad de sufrir enfermedades crónicas.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Sin mucho esfuerzo, puedes alisar tu piel y moldear la figura para
+                                        hacerla más estilizada.</p>
+                                </li>
+                                <li class="items-list"><i
+                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Elimina la antiestética piel de naranja, permitiendo que puedas
+                                        lucir tu cuerpo en bikini sin avergonzarte.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
+
+                            <!-- button-tra -->
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
+                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
+                            </div>
+
+                            <div
+                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
+                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
+                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- scroll-component -->
+    <div class="fixed bottom-16 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
+        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white">
+            <a href="#gotoup"><i class='bx bxs-chevron-up'></i></a>
+        </button>
+    </div>
+    <!-- end-scroll -->
+
+    <!-- swap-theme-component -->
+    <div class=" fixed bottom-5  right-5  bg-black rounded-lg z-50" id="btn-swap-theme">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  " id="moon">
+            <i class='bx bxs-moon '></i>
+        </button>
+
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  " id="sun">
+            <i class='bx bxs-sun'></i>
+        </button>
+    </div>
+    <!-- end-swap-theme -->
+
+    <!-- footer-component -->
+    <footer class="bg-custom-primary w-full ">
+        <div class="container">
+            <div class="h-auto grid  grid-cols-1  sm:grid-cols-3  content-center text-white">
+                <!-- copy -->
+                <div
+                    class="text-complement justify-self-center py-2 px-3  order-last sm:order-first sm:justify-self-start">
+                    <a href="https://www.facebook.com/brhyan.itusaca" target="_blank"><span>Copyright 2023 © - nbi</span></a>
+                </div>
+                <!-- messeg -->
+                <div class="text-complement justify-self-center p-2         order-first">
+                    <P>La vida es Bella <i class='bx bxs-heart text-red-500 align-middle text-xs'></i></P>
+                </div>
+                <!-- redes -->
+                <div class="justify-self-center sm:justify-self-end     px-1 my-auto">
+                    <ul class="flex text-base">
+                        <li class="mx-2"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i
+                                    class='bx bxl-instagram align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i
+                                    class='bx bxl-facebook   align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i
+                                    class='bx bxl-tiktok     align-middle'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end-footer -->
+
+    <!-- scrip -->
+    <script src="../js/app.js"></script>
+    <script src="../js/dark-mode.js"></script>
+
+</body>
+
+</html>
