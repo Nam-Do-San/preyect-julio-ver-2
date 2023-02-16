@@ -4158,6 +4158,14 @@ textarea.form-control.is-invalid{
   height: 24rem;
 }
 
+.h-5{
+  height: 1.25rem;
+}
+
+.h-screen\/50{
+  height: 50vh;
+}
+
 .w-full{
   width: 100%;
 }
