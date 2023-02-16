@@ -4178,6 +4178,10 @@ textarea.form-control.is-invalid{
   width: 13rem;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -4441,12 +4445,20 @@ textarea.form-control.is-invalid{
   background-size: cover;
 }
 
+.bg-fixed{
+  background-attachment: fixed;
+}
+
 .bg-center{
   background-position: center;
 }
 
 .bg-top{
   background-position: top;
+}
+
+.bg-left{
+  background-position: left;
 }
 
 .bg-no-repeat{
@@ -4456,6 +4468,11 @@ textarea.form-control.is-invalid{
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-4{
@@ -4582,10 +4599,6 @@ textarea.form-control.is-invalid{
 
 .pb-16{
   padding-bottom: 4rem;
-}
-
-.pb-2{
-  padding-bottom: 0.5rem;
 }
 
 .pb-3{
