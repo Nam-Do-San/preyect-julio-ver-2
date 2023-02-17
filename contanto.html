@@ -173,32 +173,32 @@
         <!-- end picture -->
 
         <!-- section-contact -->
-        <section class="py-10 dark:bg-custom-primary">
+        <section class="md:p-10 dark:bg-custom-primary">
             <div class="container">
                 <div class="grid md:grid-cols-2">
                     <div class="self-center dark:text-white">
                         <div class="p-5 text-center  ">
-                            <span class="detail-title-main">Contacta conmigo en cualquier momento y desde cualquier
+                            <span class="title-main">Contacta conmigo en cualquier momento y desde cualquier
                                 lugar</span>
-                            <h2 class="detail-title-sub">información de Contacto</h2>
+                            <h2 class="title-section">información de Contacto</h2>
 
-                            <div class="m-1.5 text-justify">
+                            <div class="mt-10 text-justify">
                                 
-                                <div    class="my-3">
-                                    <h3 class="uppercase text-sm font-manrope tracking-widest font-bold"><i class='bx bxl-whatsapp text-xl align-middle  mr-3'></i>WhatsApp</h3>
+                                <div    class="my-2">
+                                    <h3 class="title-list"><i class='bx bxl-whatsapp text-xl align-middle  mr-3'></i>WhatsApp</h3>
                                     <p class="ml-9 font-manrope tracking-wide">(+51) 986 860 332</p>
                                 </div>
-                                <div    class="my-3">
-                                    <h3 class="uppercase text-sm font-manrope tracking-widest font-bold"><i class='bx bx-envelope text-xl align-middle  mr-3'></i>Gmail</h3>
+                                <div    class="my-2">
+                                    <h3 class="title-list"><i class='bx bx-envelope text-xl align-middle  mr-3'></i>Gmail</h3>
                                     <p class="ml-9 font-manrope tracking-wide">Juliocsuca@gmail.com</p>
                                 </div>
-                                <div    class="my-3">
-                                    <h3 class="uppercase text-sm font-manrope tracking-widest font-bold"><i class='bx bx-map-pin text-xl align-middle  mr-3'></i>Ubicación</h3>
+                                <div    class="my-2">
+                                    <h3 class="title-list"><i class='bx bx-map-pin text-xl align-middle  mr-3'></i>Ubicación</h3>
                                     <p class="pl-9 font-manrope tracking-wide">Urbanización León XIII
                                         Av. Trinidad Morán i-3, Cayma - Arequipa</p>
                                 </div>
-                                <div    class="my-3">
-                                    <h3 class="uppercase text-sm font-manrope tracking-widest font-bold"><i class='bx bx-calendar-plus text-xl align-middle  mr-3'></i>Horario</h3>
+                                <div    class="my-2">
+                                    <h3 class="title-list"><i class='bx bx-calendar-plus text-xl align-middle  mr-3'></i>Horario</h3>
                                     <p class="ml-9 font-manrope tracking-wide">Lunes a Sábado: 9:00 am. a 1:00 pm.<p>
                                 </div>
                                 
@@ -214,17 +214,16 @@
         <!-- end-section-contact -->
 
         <!-- maps -->
-        <section class="pt-5 dark:bg-custom-secondary">
+        <section class="pb-5 dark:bg-custom-secondary">
             <div class="container">
 
-                <div class="text-center text-white">
-
-                    <h2 class="detail-title-main">Centro de Especialidades Estéticas</h2>
-                    <span class="detail-title-sub">Medic Majoor</span>
+                <div class="p-5 text-center dark:text-neutral-200">
+                    <h2 class="title-main">Centro de Especialidades Estéticas</h2>
+                    <h3 class="title-section">Medic Majoor</h3>
 
                 </div>
 
-                <div class="pt-5    contact-map saturate-0">
+                <div class="contact-map saturate-0">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15310.50652375506!2d-71.548917!3d-16.3929714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdd4c9448c6318311!2sMedic%20Majoor!5e0!3m2!1ses-419!2spe!4v1660235211981!5m2!1ses-419!2spe"
                         class="w-full h-screen/65" style="border:0;" allowfullscreen="" loading="lazy"
@@ -236,44 +235,48 @@
     </main>
     <!-- end-main -->
 
-    <!-- down-up -->
-    <div    class="fixed bottom-16 right-5 bg-black rounded-lg z-40 animate-bounce hidden" id="scroll-down">
-        <button  class="h-8 w-8 leading-9 rounded-full  text-xl text-white" >
-            <i class='bx bxs-chevron-up' ></i>
+    <!-- scroll-component -->
+    <div class="fixed bottom-16 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
+        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white">
+            <a href="#gotoup"><i class='bx bxs-chevron-up'></i></a>
         </button>
     </div>
-    <!-- end-down-up -->
+    <!-- end-scroll -->
 
-    <!-- button-theme -->
-    <div    class=" fixed bottom-5  right-5  bg-black rounded-lg z-40" id="btn-swap-theme">
-        <button  class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  "id="moon" >
+    <!-- swap-theme-component -->
+    <div class=" fixed bottom-5  right-5  bg-black rounded-lg z-50" id="btn-swap-theme">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  " id="moon">
             <i class='bx bxs-moon '></i>
         </button>
-    
-        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  "id="sun">
-            <i class='bx bxs-sun' ></i>
+
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  " id="sun">
+            <i class='bx bxs-sun'></i>
         </button>
     </div>
-    <!-- end-button-theme -->
+    <!-- end-swap-theme -->
 
-    <!-- footer -->
-    <footer class="bg-neutral-900 w-full ">
+    <!-- footer-component -->
+    <footer class="bg-custom-primary w-full ">
         <div class="container">
-            <div class="h-auto grid  grid-cols-1  md:grid-cols-3  content-center text-white">
+            <div class="h-auto grid  grid-cols-1  sm:grid-cols-3  content-center text-white">
                 <!-- copy -->
-                <div class="text-complement    justify-self-center md:justify-self-start my-auto px-3  py-2  order-last md:order-first">
-                    <a href=""><span>Copyright 2023 © - nrsn</span></a>
+                <div
+                    class="text-complement justify-self-center py-2 px-3  order-last sm:order-first sm:justify-self-start">
+                    <a href="https://www.facebook.com/brhyan.itusaca" target="_blank"><span>Copyright 2023 © - nbi</span></a>
                 </div>
                 <!-- messeg -->
-                <div class="justify-self-center detail-title-main my-auto   p-2         order-first">
-                    <P>La vida es Bella <i class='bx bxs-heart text-red-500 align-middle text-sm' ></i></P>
+                <div class="text-complement justify-self-center p-2         order-first">
+                    <P>La vida es Bella <i class='bx bxs-heart text-red-500 align-middle text-xs'></i></P>
                 </div>
                 <!-- redes -->
-                <div class="justify-self-center md:justify-self-end     px-1 my-auto">
+                <div class="justify-self-center sm:justify-self-end     px-1 my-auto">
                     <ul class="flex text-base">
-                        <li class="mx-2"><a href="#"><i class='bx bxl-instagram align-middle'></i></a></li>
-                        <li class="mx-2"><a href=""><i class='bx bxl-facebook   align-middle'></i></a></li>
-                        <li class="mx-2"><a href=""><i class='bx bxl-tiktok     align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i
+                                    class='bx bxl-instagram align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i
+                                    class='bx bxl-facebook   align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i
+                                    class='bx bxl-tiktok     align-middle'></i></a></li>
                     </ul>
                 </div>
             </div>
