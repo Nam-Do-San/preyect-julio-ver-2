@@ -4328,6 +4328,10 @@ textarea.form-control.is-invalid{
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
 }
 
+.bg-custom-primary\/90{
+  background-color: rgb(8 8 8 / 0.9);
+}
+
 .bg-gradient-to-t{
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -4917,6 +4921,10 @@ textarea.form-control.is-invalid{
     margin-top: 0.75rem;
   }
 
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -4988,6 +4996,14 @@ textarea.form-control.is-invalid{
 
   .md\:p-4{
     padding: 1rem;
+  }
+
+  .md\:p-1{
+    padding: 0.25rem;
+  }
+
+  .md\:p-3{
+    padding: 0.75rem;
   }
 
   .md\:py-10{

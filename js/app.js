@@ -5,7 +5,6 @@ let prevY = window.scrollY;
 // scroll var 
 const scroll_down = document.getElementById('scroll-down');
 
-
 window.addEventListener('scroll', function () {
   if (window.scrollY > 1) {
     header.classList.add('md:bg-custom-secondary');
@@ -52,4 +51,3 @@ btn_menu.addEventListener('click', function (params) {
   menu_drop.classList.toggle('block')
 
 })
-
