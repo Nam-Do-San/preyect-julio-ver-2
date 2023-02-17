@@ -3844,6 +3844,14 @@ textarea.form-control.is-invalid{
   bottom: 1rem;
 }
 
+.top-1\/2{
+  top: 50%;
+}
+
+.left-1\/2{
+  left: 50%;
+}
+
 .top-52{
   top: 13rem;
 }
@@ -3858,10 +3866,6 @@ textarea.form-control.is-invalid{
 
 .left-20{
   left: 5rem;
-}
-
-.top-1\/2{
-  top: 50%;
 }
 
 .-left-28{
@@ -3892,16 +3896,12 @@ textarea.form-control.is-invalid{
   top: 18rem;
 }
 
-.left-1\/2{
-  left: 50%;
-}
-
 .z-50{
   z-index: 50;
 }
 
-.z-40{
-  z-index: 40;
+.-z-10{
+  z-index: -10;
 }
 
 .order-last{
@@ -3910,10 +3910,6 @@ textarea.form-control.is-invalid{
 
 .order-first{
   order: -9999;
-}
-
-.col-span-2{
-  grid-column: span 2 / span 2;
 }
 
 .my-auto{
@@ -3988,10 +3984,6 @@ textarea.form-control.is-invalid{
 
 .ml-3{
   margin-left: 0.75rem;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .mb-2{
@@ -4096,6 +4088,16 @@ textarea.form-control.is-invalid{
 
 .w-52{
   width: 13rem;
+}
+
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform{
@@ -4302,6 +4304,15 @@ textarea.form-control.is-invalid{
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-red-600\/25{
+  background-color: rgb(220 38 38 / 0.25);
+}
+
 .bg-gray-50{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -4310,10 +4321,6 @@ textarea.form-control.is-invalid{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-600\/25{
-  background-color: rgb(220 38 38 / 0.25);
 }
 
 .bg-neutral-800{
@@ -4435,6 +4442,11 @@ textarea.form-control.is-invalid{
   padding-bottom: 2.5rem;
 }
 
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -4443,11 +4455,6 @@ textarea.form-control.is-invalid{
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .px-6{
@@ -4489,10 +4496,6 @@ textarea.form-control.is-invalid{
 
 .pb-3{
   padding-bottom: 0.75rem;
-}
-
-.text-left{
-  text-align: left;
 }
 
 .text-center{
@@ -4552,11 +4555,6 @@ textarea.form-control.is-invalid{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-semibold{
@@ -4726,11 +4724,6 @@ textarea.form-control.is-invalid{
   animation: bounce 1s infinite;
 }
 
-.hover\:bg-neutral-800:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4767,6 +4760,11 @@ textarea.form-control.is-invalid{
   display: block;
 }
 
+.group\/edit:hover .group-hover\/edit\:translate-x-1{
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group\/edit:hover .group-hover\/edit\:translate-x-0\.5{
   --tw-translate-x: 0.125rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4774,11 +4772,6 @@ textarea.form-control.is-invalid{
 
 .group\/edit:hover .group-hover\/edit\:translate-x-0{
   --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group\/edit:hover .group-hover\/edit\:translate-x-1{
-  --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -4790,11 +4783,6 @@ textarea.form-control.is-invalid{
 .group\/head:hover .group-hover\/head\:bg-custom-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(8 8 8 / var(--tw-bg-opacity));
-}
-
-.group\/head:hover .group-hover\/head\:bg-neutral-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:block{
@@ -4828,11 +4816,6 @@ textarea.form-control.is-invalid{
 .dark .dark\:text-neutral-100{
   --tw-text-opacity: 1;
   color: rgb(245 245 245 / var(--tw-text-opacity));
-}
-
-.dark .dark\:saturate-0{
-  --tw-saturate: saturate(0);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .dark .dark\:btn-white{
@@ -4891,10 +4874,6 @@ textarea.form-control.is-invalid{
   color: rgb(8 8 8 / var(--tw-text-opacity));
 }
 
-.dark .dark\:hover\:filter-none:hover{
-  filter: none;
-}
-
 @media (min-width: 640px){
   .sm\:order-first{
     order: -9999;
@@ -4930,10 +4909,6 @@ textarea.form-control.is-invalid{
     order: 9999;
   }
 
-  .md\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .md\:m-0{
     margin: 0px;
   }
@@ -4954,6 +4929,10 @@ textarea.form-control.is-invalid{
     height: auto;
   }
 
+  .md\:h-1\/4{
+    height: 25%;
+  }
+
   .md\:w-full{
     width: 100%;
   }
@@ -4966,6 +4945,10 @@ textarea.form-control.is-invalid{
     width: 50%;
   }
 
+  .md\:w-1\/4{
+    width: 25%;
+  }
+
   .md\:w-3\/4{
     width: 75%;
   }
@@ -4974,16 +4957,8 @@ textarea.form-control.is-invalid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:justify-center{
     justify-content: center;
-  }
-
-  .md\:gap-6{
-    gap: 1.5rem;
   }
 
   .md\:border-none{
@@ -5116,6 +5091,10 @@ textarea.form-control.is-invalid{
 }
 
 @media (min-width: 1280px){
+  .xl\:w-3\/5{
+    width: 60%;
+  }
+
   .xl\:w-3\/4{
     width: 75%;
   }
