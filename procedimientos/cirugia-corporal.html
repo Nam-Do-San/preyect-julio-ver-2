@@ -10,6 +10,8 @@
     <!-- tailwind -->
     <link rel="stylesheet" href="../css/tailwind.css">
 
+    <link rel="stylesheet" href="../dist/aos.css">
+
     <!-- box-icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -209,9 +211,9 @@
             </div>
 
             <div class="absolute bottom-0 w-full p-5 text-center text-white">
-                <h1 class="text-3xl font-bellefair uppercase my-1">Cirugías corporal</h1>
-                <span class="title-main">Elige el area de tu cuerpo</span>
-                <div class="mb-2.5 mt-6">
+                <h1 class="text-3xl font-bellefair uppercase my-1" data-aos="fade-right" data-aos-duration="1500">Cirugías corporal</h1>
+                <h2 class="title-main" data-aos="fade-left" data-aos-anchor=".other-element" data-aos-duration="1500">Elige el area de tu cuerpo</h2>
+                <div class="mb-2.5 mt-6" data-aos="fade-up" data-aos-anchor=".other-element" data-aos-duration="1500" >
                     <a  class="btn-white-line" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar Evaluación</a>
                 </div>
             </div>
@@ -219,16 +221,16 @@
         <!-- end-poster -->
 
         <!-- Mamoplastia-de-aumento -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="aumento-de-mamas">
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="aumento-de-mamas">
 
             <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
 
-                <div class="md:order-last  overflow-hidden">
+                <div class="md:order-last" data-aos="fade-left" data-aos-duration="1500">
                     <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-right" data-aos-duration="1500">
 
                     <div class="p-5 text-center dark:text-white">
                         <span class="title-main">Mamoplastia de Aumento</span>
@@ -304,13 +306,13 @@
         <section class="py-10 dark:bg-custom-secondary relative z-40" id="reduccion-de-mamas">
 
             <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
-
-                <div class="overflow-hidden">
+                <!-- grid img -->
+                <div class="overflow-hidden" data-aos="fade-right" data-aos-duration="1500">
                     <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-left" data-aos-duration="1500">
                     <!-- box-detail -->
                     <div class="p-5 text-center dark:text-white">
 
@@ -862,6 +864,11 @@
     <!-- scrip -->
     <script src="../js/app.js"></script>
     <script src="../js/dark-mode.js"></script>
+    <!-- aos -->
+    <script src="../dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 
 </body>
 
