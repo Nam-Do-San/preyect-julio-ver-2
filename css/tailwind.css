@@ -1646,10 +1646,6 @@ textarea.form-control.is-invalid{
   animation-name: _zoom-in;
 }
 
-.zoom-out{
-  animation-name: _zoom-out;
-}
-
 .ripple-surface{
   position: relative;
   overflow: hidden;
@@ -4909,6 +4905,20 @@ textarea.form-control.is-invalid{
 
   .md\:justify-center{
     justify-content: center;
+  }
+
+  .md\:rounded-lg{
+    border-radius: 0.5rem;
+  }
+
+  .md\:rounded-l-lg{
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md\:rounded-r-lg{
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
   .md\:border-none{
