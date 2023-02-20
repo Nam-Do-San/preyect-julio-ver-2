@@ -1642,6 +1642,14 @@ textarea.form-control.is-invalid{
   animation-name: _slide-out-right;
 }
 
+.zoom-in{
+  animation-name: _zoom-in;
+}
+
+.zoom-out{
+  animation-name: _zoom-out;
+}
+
 .ripple-surface{
   position: relative;
   overflow: hidden;
@@ -3536,35 +3544,6 @@ textarea.form-control.is-invalid{
 
 /* style buttons */
 
-.btn-white{
-  border-radius: 1rem;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  font-family: Manrope, sans-serif;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  --tw-text-opacity: 1;
-  color: rgb(23 23 23 / var(--tw-text-opacity));
-}
-
-.btn-white:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-  background-color: inherit;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .btn-dark{
   border-radius: 1rem;
   border-width: 1px;
@@ -3737,7 +3716,7 @@ textarea.form-control.is-invalid{
 }
 
 .team-bx-espe{
-  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
   font-family: Manrope, sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -3904,18 +3883,6 @@ textarea.form-control.is-invalid{
   z-index: -10;
 }
 
-.z-10{
-  z-index: 10;
-}
-
-.-z-20{
-  z-index: -20;
-}
-
-.z-20{
-  z-index: 20;
-}
-
 .z-40{
   z-index: 40;
 }
@@ -4022,10 +3989,6 @@ textarea.form-control.is-invalid{
   margin-top: 1.25rem;
 }
 
-.ml-10{
-  margin-left: 2.5rem;
-}
-
 .block{
   display: block;
 }
@@ -4110,10 +4073,6 @@ textarea.form-control.is-invalid{
   width: 13rem;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .-translate-x-1\/2{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -4160,10 +4119,6 @@ textarea.form-control.is-invalid{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row{
   flex-direction: row;
 }
@@ -4202,10 +4157,6 @@ textarea.form-control.is-invalid{
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .self-center{
@@ -4248,10 +4199,6 @@ textarea.form-control.is-invalid{
   border-radius: 9999px;
 }
 
-.rounded-3xl{
-  border-radius: 1.5rem;
-}
-
 .border-2{
   border-width: 2px;
 }
@@ -4280,26 +4227,6 @@ textarea.form-control.is-invalid{
 .border-neutral-900{
   --tw-border-opacity: 1;
   border-color: rgb(23 23 23 / var(--tw-border-opacity));
-}
-
-.border-neutral-800{
-  --tw-border-opacity: 1;
-  border-color: rgb(38 38 38 / var(--tw-border-opacity));
-}
-
-.border-b-neutral-500{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(115 115 115 / var(--tw-border-opacity));
-}
-
-.border-b-neutral-200{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(229 229 229 / var(--tw-border-opacity));
-}
-
-.border-b-neutral-400{
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(163 163 163 / var(--tw-border-opacity));
 }
 
 .bg-custom-primary{
@@ -4343,14 +4270,6 @@ textarea.form-control.is-invalid{
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-custom-primary\/80{
-  background-color: rgb(8 8 8 / 0.8);
-}
-
-.bg-custom-primary\/90{
-  background-color: rgb(8 8 8 / 0.9);
-}
-
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -4360,29 +4279,9 @@ textarea.form-control.is-invalid{
   background-color: rgb(220 38 38 / 0.25);
 }
 
-.bg-gray-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-orange-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
-}
-
-.bg-custom-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 10 10 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t{
@@ -4514,11 +4413,6 @@ textarea.form-control.is-invalid{
   padding-right: 2rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -4553,10 +4447,6 @@ textarea.form-control.is-invalid{
 
 .pb-3{
   padding-bottom: 0.75rem;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
 }
 
 .text-center{
@@ -4662,11 +4552,6 @@ textarea.form-control.is-invalid{
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-neutral-300{
-  --tw-text-opacity: 1;
-  color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
 .outline{
@@ -4864,44 +4749,6 @@ textarea.form-control.is-invalid{
   background-color: rgb(10 10 10 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-neutral-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-orange-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-gray-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-gray-50\/10{
-  background-color: rgb(249 250 251 / 0.1);
-}
-
-.dark .dark\:bg-gray-50\/25{
-  background-color: rgb(249 250 251 / 0.25);
-}
-
-.dark .dark\:bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-orange-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(154 52 18 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -5016,10 +4863,6 @@ textarea.form-control.is-invalid{
     margin-top: 0.75rem;
   }
 
-  .md\:mt-2{
-    margin-top: 0.5rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -5036,6 +4879,10 @@ textarea.form-control.is-invalid{
     height: 25%;
   }
 
+  .md\:h-full{
+    height: 100%;
+  }
+
   .md\:w-full{
     width: 100%;
   }
@@ -5050,10 +4897,6 @@ textarea.form-control.is-invalid{
 
   .md\:w-1\/4{
     width: 25%;
-  }
-
-  .md\:w-3\/4{
-    width: 75%;
   }
 
   .md\:w-2\/5{
@@ -5095,11 +4938,6 @@ textarea.form-control.is-invalid{
 
   .md\:p-4{
     padding: 1rem;
-  }
-
-  .md\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .md\:pr-0{
@@ -5161,10 +4999,6 @@ textarea.form-control.is-invalid{
 
   .lg\:block{
     display: block;
-  }
-
-  .lg\:flex{
-    display: flex;
   }
 
   .lg\:w-1\/2{

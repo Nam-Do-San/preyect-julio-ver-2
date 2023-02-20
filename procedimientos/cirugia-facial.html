@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind -->
     <link href="../css/tailwind.css" rel="stylesheet">
 
     <!-- boxicons  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- aos -->
+    <link rel="stylesheet" href="../css/aos.css">
 </head>
 
-<body>
+<body id="gotoup">
 
     <!-- no es el oficial -->
     <!-- header -->
@@ -150,7 +154,7 @@
 
     <main>
         <!-- post-facial -->
-        <section class=" bg-cover h-screen  bg-center  grid relative"
+        <section class=" bg-cover h-screen  bg-center  grid relative overflow-hidden"
             style="background-image: url(../img/bg-img/bg-facial-1900.jpg);">
 
             <!-- cuadro de puntos -->
@@ -158,7 +162,7 @@
 
                 <!-- ble -->
                 <div class="top-44 -left-5  lg:top-52  text-white  absolute  hover:animate-bounce p-2   group/surgy">
-                    <a href="#blefa" class="relative">
+                    <a href="#blefaroplastia" class="relative">
                         <i class='bx bx-plus-circle'></i>
                         <span class="tooltip-bx   invisible  group-hover/surgy:visible">Blefaroplastia</span>
                     </a>
@@ -167,7 +171,7 @@
                 <!-- rinoplastia -->
                 <div
                     class="-left-28 top-56 lg:top-72   lg:-left-36 text-white  absolute  hover:animate-bounce    group/surgy">
-                    <a href="#" class="relative">
+                    <a href="#rinoplastia" class="relative">
                         <i class='bx bx-plus-circle'></i>
                         <span class="tooltip-bx   invisible  group-hover/surgy:visible">Rinoplastia</span>
                     </a>
@@ -175,7 +179,7 @@
 
                 <!-- oto -->
                 <div class="left-28 top-80 lg:left-36  text-white  absolute hover:animate-bounce    group/surgy">
-                    <a href="#" class="relative">
+                    <a href="#otoplastia" class="relative">
                         <i class='bx bx-plus-circle'></i>
                         <span class="tooltip-bx   invisible  group-hover/surgy:visible">Otoplastia</span></a>
                 </div>
@@ -183,7 +187,7 @@
                 <!-- quie -->
                 <div
                     class="-left-28  top-80  lg:-left-36 lg:top-96  text-white  absolute    hover:animate-bounce    group/surgy">
-                    <a href="#" class="relative">
+                    <a href="#queiloplastia" class="relative">
                         <i class='bx bx-plus-circle'></i>
                         <span class="tooltip-bx   invisible  group-hover/surgy:visible">Quieplastia</span>
                     </a>
@@ -191,15 +195,15 @@
 
                 <!-- biche -->
                 <div class="top-72 left-1/2  text-white  absolute  hover:animate-bounce    group/surgy">
-                    <a href="#" class="relative">
+                    <a href="#bichectomia" class="relative">
                         <i class='bx bx-plus-circle'></i>
-                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Bicheptomia</span>
+                        <span class="tooltip-bx   invisible  group-hover/surgy:visible">Bichectomía</span>
                     </a>
                 </div>
 
                 <!-- Lev -->
                 <div class="left-1/2 top-1/2  text-white  absolute  hover:animate-bounce    group/surgy">
-                    <a href="#" class="relative">
+                    <a href="#lifting" class="relative">
                         <i class='bx bx-plus-circle'></i>
                         <span class="tooltip-bx   invisible  group-hover/surgy:visible">Lifting_Facial</span>
                     </a>
@@ -207,153 +211,142 @@
             </div>
 
             <div class="absolute bottom-0 w-full p-5 text-center text-white">
-                <h1 class="text-3xl font-bellefair uppercase my-1">Cirugías faciales</h1>
-                <span class="title-main">Elige el area de tu rostro</span>
-                <div class="mb-2.5 mt-6">
-                    <a  class="btn-white-line" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar Evaluación</a>
+                <h1 class="text-3xl font-bellefair uppercase my-1" data-aos="fade-right" data-aos-duration="1500">
+                    Cirugías faciales</h1>
+                <h2 class="title-main" data-aos="fade-left" data-aos-anchor=".other-element" data-aos-duration="1500">
+                    Elige el area de tu rostro</h2>
+                <div class="mb-2.5 mt-6" data-aos="fade-up" data-aos-anchor=".other-element" data-aos-duration="1500">
+                    <a class="btn-white-line" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar
+                        Evaluación</a>
                 </div>
             </div>
         </section>
         <!-- end-post -->
 
-        <!-- Mamoplastia-de-aumento -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="aumento-de-mamas">
+        <!-- Lifting facial -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="lifting">
 
             <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
 
-                <div class="md:order-last  overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                <div class="md:order-last overflow-hidden" data-aos="fade-left" data-aos-duration="1500">
+                    <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-right" data-aos-duration="1500">
 
                     <div class="p-5 text-center dark:text-white">
-                        <span class="title-main">Mamoplastia de Aumento</span>
-                        <h2 class="title-section">
-                            Aumento de mamas</h2>
+                        <span class="title-main">Lifting Facial</span>
+                        <h2 class="title-section">Rejuvenecimiento de rostro</h2>
 
                         <p class="text-justify">
-                            La mamoplastia de aumento, como también se le conoce, es una operación destinada a
-                            incrementar el volumen de los pechos. Se lleva a cabo a través de la colocación de implantes
-                            mamarios, lo que brinda una silueta más estilizada y femenina.
+                            Es uno de los procedimientos quirúrgicos que soluciona el problema del envejecimiento
+                            evidenciado en región facial es el Facelift. El objetivo es mejorar la relación entre la
+                            piel y los músculos faciales, con la eliminación del exceso de piel seca de una forma menos
+                            agresiva y más natural.
                             <br>
-                            Con una cirugía de aumento de senos puedes dar realce a esta zona de tu cuerpo, haciendo más
-                            atractivo tus pechos. Porque no solo se trata de tener un pecho con unas cuantas tallas más
-                            de sujetador, también implica que puedas tener un pecho mejor proporcionado para tu
-                            contextura corporal y que tenga una apariencia más atrayente.
+                            Este procedimiento reduce los cambios que la edad le da a nuestro rostro, tales como la
+                            flacidez de la piel, los pliegues en los pómulos y la línea mandibular.
+                            Para conseguir esto, se extrae un colgajo de piel de los dos lados de la cara y se
+                            intervienen quirúrgicamente los tejidos bajo la piel, dándole al rostro una forma
+                            rejuvenecida, simétrica y contorneada. Para terminar, antes de suturar la piel extraída, se
+                            extirpa el exceso de esta.
                             <br>
-                            La cirugía de aumento de pechos Marbella implica una valoración previa del caso, para
-                            determinar cuál es el tamaño deseado y que se adapta a la fisionomía de la mujer. Antes del
-                            procedimiento, ya se habrá decidido si se usarán implantes redondos o anatómicos, además de
-                            cuánto será el volumen en centímetros cúbicos de los mismos.
+                            Este proceso no reducirá las arrugas de la piel ni los daños que haya podido ocasionar el
+                            sol, para ello, el paciente puede recurrir después a otros procesos estéticos encargados de
+                            estos problemas.
                         </p>
                         <div class="text-justify">
                             <h3 class="title-list">¿Cuales son los beneficios?</h3>
                             <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Lograra un equilibrio armónico y proporcional en el cuerpo.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Eliminan las arrugas y signos de la edad.</p>
                                 </li>
 
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Si tus pechos son asimétricos, puedes corregirlos con esta cirugía
-                                        de aumento.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Rejuvenecen la piel del rostro.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Miembro de Asociación de ex-alumnos Ivo Pitanguy (AEXPI).</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Dan lugar a una piel más tersa y radiante.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Siéntete bien contigo, gana seguridad y confianza en ti.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">El efecto y resultados duran muchos años.</p>
                                 </li>
-
                             </ul>
                         </div>
-
                         <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
                             <!-- button-tra -->
-                            <div
-                                class="mt-6">
-                                <a class="btn-dark  dark:btn-white duration-1000" href="#">Agendar Evaluación</a>
+                            <div class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar Evaluación</a>
                             </div>
-
-                            <div    class="mt-6">
-                                <a class="btn-dark-line dark:btn-white-line  group/edit"
-                                    href="">Más información <i
-                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i></a>
+                            <div class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit" href="#">Más información
+                                    <i class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i>
+                                </a>
                             </div>
-                            
                         </div>                        
                     </div>
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10  right-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10  right-0">
             </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10  right-0">
-            </div>
-
         </section>
 
-        <!-- Reducción-de-mamas -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="reduccion-de-mamas">
+        <!-- Blefaroplastia -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40" id="blefaroplastia">
 
             <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
-
-                <div class="overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                <!-- grid img -->
+                <div class="overflow-hidden" data-aos="fade-right" data-aos-duration="1500">
+                    <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
-                    <!-- box-detail -->
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-left" data-aos-duration="1500">
+                    
                     <div class="p-5 text-center dark:text-white">
 
-                        <span class="title-main">Mamoplastia de Reducción</span>
-                        <h2 class="title-section">
-                            Reducción de mamas</h2>
+                        <span class="title-main">Blefaroplastia</span>
+                        <h2 class="title-section">Cirugía de parpados</h2>
 
                         <p class="text-justify">
-                            La gran mayoría de las mujeres siempre desea aumentarse el pecho, se trata de una de las
-                            cirugías estéticas más comunes. Pero, existen algunos casos donde la reducción de senos es
-                            la prioridad, de este modo se obtienen unos pechos pequeños, ligeros y firmes, radicando en
-                            una mejor calidad de vida.
+                            En el proceso de envejecimiento, los párpados son los más evidentes, haciendo que el
+                            paciente perciba el paso del tiempo con mayor claridad. Esto sucede debido a la aparición de
+                            flacidez y bolsas de grasa en los párpados superiores e inferiores, producto del inicio del
+                            envejecimiento facial.
                             <br>
-                            La cirugía de reducción de mamas consiste en un procedimiento quirúrgico donde se elimina el
-                            exceso tejido, de grasa y de piel de los pechos, se le conoce también como mamoplastia de
-                            reducción. El objetivo de esta cirugía se trata de aliviar la incomodidad y los problemas
-                            derivados al tamaño excesivo el busto, así como de poder lograr un tamaño de senos que sea
-                            proporcional al cuerpo.
-                            <br>
-                            Este tipo de cirugías también son muy útiles para ayudar a la paciente a mejorar su
-                            autoestima, tener mayor confianza y una mejor capacidad para desenvolverse en actividades
-                            físicas de todo tipo.
+                            La blefaroplastia aparece como una técnica importante para paliar este panorama, presentando
+                            resultados muy satisfactorios. Este procedimiento se puede realizar en el párpado superior,
+                            con la resección del exceso de piel y extracción de la grasa. En el párpado inferior, se
+                            suele realizar para eliminar las bolsas de grasa, teniendo mucho cuidado de no
+                            quitar demasiada piel.
+                            Por esta razón, a menudo es necesaria la blefaroplastia transconjuntival, que se realiza
+                            desde el interior del ojo, evitando una cicatriz externa y brindando excelentes resultados
+                            estéticos.
                         </p>
                         <div class="text-justify">
                             <h3 class="title-list">¿Cuales son los beneficios?</h3>
                             <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Obtenemos un tamaño acorde y equilibrado con el resto de su cuerpo.
-                                    </p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Rostro rejuvenecido y mejora la expresión en la mirada.</p>
                                 </li>
-
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Desaparición de los dolores en la espalda, cervical, cuello y
-                                        hombros.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Consigue aliviar problemas visuales en el paciente.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Las erupciones e irritación también desaparecen luego de la cirugía.
-                                    </p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Logrando un aspecto rejuvenecido y descansado.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Notable en el aumento seguridad y la confianza de la paciente.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Siéntete bien contigo, gana seguridad y confianza en ti.</p>
                                 </li>
 
                             </ul>
@@ -376,62 +369,115 @@
                 </div>
             </div>
             
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
-            </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10 left-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
             </div>
         </section>
 
-        <!-- braquioplastia -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="braquioplastia">
+        <!-- Rinoplastia -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="rinoplastia">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
 
-                <div class="md:order-last  overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                <div class="md:order-last overflow-hidden" data-aos="fade-left" data-aos-duration="1500">
+                    <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
-                    <!-- box-detail -->
-                    <div class="p-5 text-center dark:text-white">
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-right" data-aos-duration="1500">
 
-                        <span class="title-main">braquioplastia</span>
-                        <h2 class="title-section">
-                            Rejuvenecimientos de brazos</h2>
+                    <div class="p-5 text-center dark:text-white">
+                        <span class="title-main">Rinoplastia</span>
+                        <h2 class="title-section">Cirugía de nariz</h2>
 
                         <p class="text-justify">
-                            La braquioplástia o lifting de brazos es una intervención quirúrgica destinada a tratar la
-                            flacidez cutánea y el exceso de grasa de la cara interna de los brazos. Con esta cirugía se
-                            pretende conseguir unos brazos más estilizados y armónicos con el cuerpo.
+                            La nariz, por su ubicación central y expuesta, es la encargada de mantener la armonía del rostro. La rinoplastia se encarga de solucionar tanto los problemas estéticos como cambiar el tamaño, la forma o las proporciones de la nariz. Puede realizarse para reparar deformidades causadas por una lesión, corregir una anomalía congénita o mejorar ciertas dificultades respiratorias.
                             <br>
-                            La cirugía de braquioplastia consiste en realizar una incisión en la cara interna de la
-                            parte superior del brazo, para eliminar la piel sobrante. En los casos más graves, se puede
-                            necesitar incluso un corte desde la axila hasta el codo, siempre por la cara interna del
-                            brazo. A través de dicha incisión, se extirpa todo el exceso de piel. En los casos que el
-                            paciente también quiera eliminar el exceso de grasa de sus brazos, se puede combinar esta
-                            intervención con una Liposucción.
+                            La parte superior de la nariz esta conformada por hueso, la inferior por cartílago. Afortunadamente este procedimiento puede intervenir el cirujano puede cambiar la forma del cartílago o huesos de la nariz de diversos modos, según cuánto deba eliminarse o agregarse, la estructura de la nariz para darle forma, estilizar, y proporcionar la nariz para que luzca mucho mejor.
                         </p>
                         <div class="text-justify">
                             <h3 class="title-list">¿Cuales son los beneficios?</h3>
                             <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Se remueve el exceso de piel y grasa.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Luce un perfil armonioso de acuerdo a tus rasgos faciales</p>
                                 </li>
 
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Mejorar el contorno estético de los brazos.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Cambiar la forma de la punta nasal</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Disminuir la incidencia de humedad y mal olor por el exceso de piel.
-                                    </p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Suavizar los matices típicos de la nariz de cada etnia.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Lucir tus brazos, usando camisetas de mangas estrechas.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Modificar el tamaño y la posición de las fosas nasales.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar Evaluación</a>
+                            </div>
+                            <div class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit" href="#">Más información
+                                    <i class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10  right-0">
+            </div>
+        </section>
+
+        <!-- bichectomia -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40" id="bichectomia">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                <!-- grid img -->
+                <div class="overflow-hidden" data-aos="fade-right" data-aos-duration="1500">
+                    <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-left" data-aos-duration="1500">
+                    
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Bichectomía</span>
+                        <h2 class="title-section">Cirugía de mejillas</h2>
+
+                        <p class="text-justify">
+                            La bichectomía es un proceso quirúrgico de carácter estético. Consiste en la extirpación de los depósitos de grasa ubicados en la parte media de las mejillas, conocidas como bolas de Bichat.
+                            Este procedimiento es uno de los más demandados en las cirugías estéticas. Y es que ayuda a darle al rostro una apariencia más definida, reduciendo el volumen de grasa de las mejillas generada por la genética o el sobrepeso.
+                            <br>
+                            Es esta intervención quirúrgica que consiste en la extracción de las bolas o bolsas de Bichat. Como está comprobado que son solo grasa y no glándulas que solo dan volumen al rostro, puede hacerse esta operación. Es un procedimiento que puede forma ambulante. 
+                            <br>
+                            No quedan cicatrices visibles tras la bichectomía, ya que los cortes se hacen en la parte interna de la boca. Los candidatos a esta cirugía son personas delgadas que deseen mejorar la apariencia de su rostro. Por lo general, los cirujanos indican la bichectomía para pacientes con la cara redonda.
+                        </p>
+                        <div class="text-justify">
+                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
+                            <ul>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Armonía general de la cara con los otros elementos del rostro.</p>
+                                </li>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Contorno marcado y definido del rostro.</p>
+                                </li>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Recuperación rápida sin cicatrices y tiempo de recuperación corto.</p>
+                                </li>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Aumento de la confianza y seguridad en uno mismo.</p>
                                 </li>
 
                             </ul>
@@ -453,358 +499,144 @@
                     </div>
                 </div>
             </div>
-
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10  right-0">
-            </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10  right-0">
+            
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
             </div>
         </section>
 
-        <!-- Abdominoplastia -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="abdominoplastia">
+        <!-- Otoplastia -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="otoplastia">
 
             <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
 
-                <div class="overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+                <div class="md:order-last overflow-hidden" data-aos="fade-left" data-aos-duration="1500">
+                    <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
-                    <!-- box-detail -->
-                    <div class="p-5 text-center dark:text-white">
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-right" data-aos-duration="1500">
 
-                        <span class="title-main">Abdominoplastia</span>
-                        <h2 class="title-section">
-                            Reducción de abdomen</h2>
+                    <div class="p-5 text-center dark:text-white">
+                        <span class="title-main">Otoplastia</span>
+                        <h2 class="title-section">Cirugía estética de orejas</h2>
 
                         <p class="text-justify">
-                            La reducción de abdomen, también conocida como abdominoplastia, es un procedimiento
-                            quirúrgico estético para mejorar la apariencia del abdomen. Durante una reducción de
-                            abdomen, se extrae el exceso de piel y grasa del abdomen.
+                            En algunos pacientes hay una mayor apertura del ángulo entre la oreja y la cabeza, generando una impresión de orejas “abiertas”. La otoplastia es la cirugía que se encarga de corregir las orejas protuberantes conocidas como “orejas predominantes”.
                             <br>
-                            Un abdomen flácido es el resultado no solo de la acumulación de grasa, sino también de la
-                            mala elasticidad de la piel, el exceso de piel y el estiramiento del cinturón interno del
-                            tejido conjuntivo (fascia abdominal) y los músculos abdominales que se extienden desde las
-                            costillas hasta el pubis.
+                            La otoplastia, también conocida como cirugía estética de orejas, es un procedimiento que tiene como finalidad cambiar la forma, la posición o el tamaño de las orejas. Este proceso puede ser aplicado para personas de toda edad, siempre y cuando las orejas del paciente hallan alcanzado el tamaño máximo de desarrollo (naturalmente esto ocurre al alcanzar los 6 años).
                             <br>
-                            En la mayoría de los casos, los tejidos conectivos del abdomen también se refuerzan con
-                            suturas. La piel restante se reubica para crear una apariencia más tonificada. Si tienes
-                            piel acumulada alrededor del área del ombligo y una pared abdominal inferior débil, puedes
-                            optar por someterte a una reducción de abdomen. Una reducción de abdomen también puede
-                            realzar tu imagen corporal.
-
+                            Podrías considerar esta cirugía si te molesta que tus orejas estén demasiado separadas de tu cabeza. También la podrías considerar si solo uno o ambas tiene alguna malformación debido a una lesión o una defecto congénito.
                         </p>
                         <div class="text-justify">
                             <h3 class="title-list">¿Cuales son los beneficios?</h3>
                             <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Podrás eliminar la flacidez de la piel y estirar los músculos de
-                                        esta zona.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Armonizando su tamaño y posición con su rostro.</p>
                                 </li>
-
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Si eliminamos la grasa localizada hay menor riesgo de que el
-                                        paciente padezca enfermedades asociadas con la obesidad.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Puede corregir una amplia variedad de imperfecciones.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Quita el exceso de piel, sobre todo, en paciente que han perdido
-                                        mucho de peso, la piel queda estirada y flácida.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Las cicatrices de la otoplastia no son visibles incluso desde atrás.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Reduce los dolores de espalda, el paciente mejorará su posición,
-                                        evitando así el riesgo de padecer otros problemas de salud.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Tiempo de recuperación muy corto, tan solo una semana.</p>
                                 </li>
-
                             </ul>
                         </div>
-
-                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
-
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
                             <!-- button-tra -->
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
-                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
+                            <div class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="https://wa.me/message/Z3QOUY4CSM7AL1" target="_blank">Agendar Evaluación</a>
                             </div>
-
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
-                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
-                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
+                            <div class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit" href="#">Más información
+                                    <i class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i>
+                                </a>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
-            </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10 left-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10  right-0">
             </div>
         </section>
 
-        <!-- Liposucción -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="liposuccion">
+        <!-- bichectomia -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40" id="queiloplastia">
 
-            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
-
-                <div class="md:order-last  overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                <!-- grid img -->
+                <div class="overflow-hidden" data-aos="fade-right" data-aos-duration="1500">
+                    <img class=" h-full w-full object-cover" src="../img/IMG-03-facial-treatments.webp" alt="">
                 </div>
 
                 <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
-                    <!-- box-detail -->
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="fade-left" data-aos-duration="1500">
+                    
                     <div class="p-5 text-center dark:text-white">
 
-                        <span class="title-main">Liposucción - lipoescultura</span>
-                        <h2 class="title-section">
-                            Extracción de grasa</h2>
+                        <span class="title-main">Queiloplastia</span>
+                        <h2 class="title-section">Cirugía estética de labios</h2>
 
                         <p class="text-justify">
-                            Con la lipoescultura se moldea la silueta del cuerpo, haciendo que su contorno se vea más
-                            estilizado. La Liposucción No es un tratamiento estético para bajar de peso, más bien, es un
-                            procedimiento
-                            que permite eliminar la grasa que se aloja en zonas específicas. Y, al quitar la grasa de
-                            forma precisa logras definir mejor curvas, reducir volumen de algunas áreas y definir
-                            contornos a la perfección.
+                            La Queiloplastia o, también conocida, cirugía de los labios, es una intervención quirúrgica ambulatoria, cuyo objetivo es corregir la forma de los labios. Se trata de una cirugía mínimamente invasiva, que se realiza bajo la anestesia local y no requiere complejos cuidados posteriores.
                             <br>
-                            Esté método consiste en la extracción de los depósitos grasos en los tejidos tratados, con
-                            el fin de esculpir el cuerpo y hacerlo estéticamente armonioso. Las regiones más comunes
-                            donde es aplicada la lipoescultura son: glúteos, piernas, caderas, flancos del abdomen y
-                            papada.
+                            La Queiloplastia se clasifica en:
                             <br>
-                            En algunas personas, la grasa acumulada en estas áreas suele ser rebelde y no desaparece por
-                            muchos esfuerzos que hagas. La lipoescultura es una opción que puede ofrecer los resultados
-                            que se desean.
+                            <span class="font-semibold">Queiloplastia de aumento de labios</span> – es uno de los tratamientos más conocidos y populares y ofrece unos resultados excelentes, tanto si se realiza con el uso de productos de relleno como el ácido hialurónico, como si se utiliza la grasa propia del paciente. 
+                            <br>
+                            <span class="font-semibold">Queiloplastia de reducción</span> – es un procedimiento menos demandado que suelen solicitar pacientes con los labios muy desarrollados o que presentan el aspecto poco harmónico respecto al resto de las facciones de la cara.
+                            <br>
+                            <span class="font-semibold">Queiloplastia de corrección</span> – es la intervención para aquellos pacientes que presentan las alteraciones en los labios, producidos por tumores, traumatismos, quemaduras u otras lesiones, igual que alteraciones congénitas como, por ejemplo, el labio leporino.
                         </p>
                         <div class="text-justify">
                             <h3 class="title-list">¿Cuales son los beneficios?</h3>
                             <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Brinda un mejor aspecto a la silueta corporal, pues elimina la grasa
-                                        que se resiste a las dietas y los ejercicios.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Cambia la forma, tamaño y simetría de los labios.</p>
                                 </li>
-
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Al eliminar los depósitos de grasa en exceso se reduce la
-                                        probabilidad de sufrir enfermedades crónicas.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Consigue una sonrisa más joven y atractiva.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Sin mucho esfuerzo, puedes alisar tu piel y moldear la figura para
-                                        hacerla más estilizada.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Recuperación rápida y excelentes resultados.</p>
                                 </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Elimina la antiestética piel de naranja, permitiendo que puedas
-                                        lucir tu cuerpo en bikini sin avergonzarte.</p>
+                                <li class="items-list">
+                                    <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
+                                    <p class="ml-3">Mejora tu imagen y muestra seguridad.</p>
                                 </li>
 
                             </ul>
                         </div>
-
-                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
-
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
                             <!-- button-tra -->
                             <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
-                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
+                                class="mt-6">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="#">Agendar Evaluación</a>
                             </div>
 
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
-                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
-                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
+                            <div    class="mt-6">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit"
+                                    href="">Más información <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i></a>
                             </div>
-                        </div>
+                            
+                        </div> 
                     </div>
                 </div>
             </div>
-
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10  right-0">
+            
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
             </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10  right-0">
-            </div>
-        </section>
-
-        <!-- aumento-de-gluteos -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="gluteo-plastia">
-
-            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
-
-                <div class="overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
-                </div>
-
-                <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
-                    <!-- box-detail -->
-                    <div class="p-5 text-center dark:text-white">
-
-                        <span class="title-main">Lipotransferencia</span>
-                        <h2 class="title-section">
-                            Aumento de Glúteos</h2>
-
-                        <p class="text-justify">
-                            Esta es una cirugía plástica estética que permite dar un mayor volumen al área glútea, con
-                            el fin de mejorar la silueta corporal. Con un aumento de glúteos ganas más que unas tallas
-                            más, pues este tipo de operación permite que se hagan más redondos los glúteos y
-                            más firmes.
-                            <br>
-                            Hay que reconocer que el aspecto que tengan los glúteos puede marcar la diferencia en la
-                            estética de una persona. Si estos se notan planos y flácidos, es posible que la persona se
-                            sienta inconforme y decida recurrir a una opción quirúrgica como el implante de glúteos para
-                            dar mayor volumen al área.
-                            <br>
-                            El aumento de glúteos usando tu propia grasa es un procedimiento complementario a una
-                            abdominoplastia o liposucción del abdomen, caderas y muslos. El aumento del tamaño de los
-                            glúteos es ideal para las mujeres que desean mejorar lo que ya tienen o para las que
-                            experimentan una pérdida de volumen, forma, sufren de flacidez y de problemas en la piel
-                            debido a una pérdida de peso durante un tiempo muy breve o simplemente, envejecen.
-
-
-                        </p>
-                        <div class="text-justify">
-                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
-                            <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Este procedimiento es totalmente fiable debido a que no existe posibilidad de rechazo del cuerpo ya que el injerto proviene del mismo.</p>
-                                </li>
-
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Mejora de la proporción corporal, especialmente cuando se combina con una abdominoplastia o liposucción.</p>
-                                </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">La liposucción con lipotransferencia a los glúteos permite que en un solo procedimiento puedas conseguir un cambio radical en tu cuerpo.</p>
-                                </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">No se usan materiales artificiales o prótesis.</p>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
-
-                            <!-- button-tra -->
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
-                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
-                            </div>
-
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
-                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
-                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
-            </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10 left-0">
-            </div>
-        </section>
-
-        <!-- intima -->
-        <section class="py-10 dark:bg-custom-secondary relative z-40" id="liposuccion">
-
-            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
-
-                <div class="md:order-last  overflow-hidden">
-                    <img class=" h-full w-full object-cover" src="/public/img/IMG-03-facial-treatments.webp" alt="">
-                </div>
-
-                <!-- grid content -->
-                <div class="self-center md:w-11/12 xl:w-3/5">
-                    <!-- box-detail -->
-                    <div class="p-5 text-center dark:text-white">
-
-                        <span class="title-main">Liposucción - lipoescultura</span>
-                        <h2 class="title-section">
-                            Extracción de grasa</h2>
-
-                        <p class="text-justify">
-                            Con la lipoescultura se moldea la silueta del cuerpo, haciendo que su contorno se vea más
-                            estilizado. La Liposucción No es un tratamiento estético para bajar de peso, más bien, es un
-                            procedimiento
-                            que permite eliminar la grasa que se aloja en zonas específicas. Y, al quitar la grasa de
-                            forma precisa logras definir mejor curvas, reducir volumen de algunas áreas y definir
-                            contornos a la perfección.
-                            <br>
-                            Esté método consiste en la extracción de los depósitos grasos en los tejidos tratados, con
-                            el fin de esculpir el cuerpo y hacerlo estéticamente armonioso. Las regiones más comunes
-                            donde es aplicada la lipoescultura son: glúteos, piernas, caderas, flancos del abdomen y
-                            papada.
-                            <br>
-                            En algunas personas, la grasa acumulada en estas áreas suele ser rebelde y no desaparece por
-                            muchos esfuerzos que hagas. La lipoescultura es una opción que puede ofrecer los resultados
-                            que se desean.
-                        </p>
-                        <div class="text-justify">
-                            <h3 class="title-list">¿Cuales son los beneficios?</h3>
-                            <ul>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Brinda un mejor aspecto a la silueta corporal, pues elimina la grasa
-                                        que se resiste a las dietas y los ejercicios.</p>
-                                </li>
-
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Al eliminar los depósitos de grasa en exceso se reduce la
-                                        probabilidad de sufrir enfermedades crónicas.</p>
-                                </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Sin mucho esfuerzo, puedes alisar tu piel y moldear la figura para
-                                        hacerla más estilizada.</p>
-                                </li>
-                                <li class="items-list"><i
-                                        class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                    <p class="ml-3">Elimina la antiestética piel de naranja, permitiendo que puedas
-                                        lucir tu cuerpo en bikini sin avergonzarte.</p>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 mt-4">
-
-                            <!-- button-tra -->
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold  rounded-2xl border border-neutral-900 bg-neutral-900 text-white  font-manrope text-sm tracking-wider hover:animate-bounce ">
-                                <a class="flex pt-0.5 justify-center" href="#">Agendar Evaluación</a>
-                            </div>
-
-                            <div
-                                class="w-52 h-10 mt-5 p-2    uppercase font-bold   rounded-2xl border border-neutral-900 bg-white font-manrope text-sm tracking-wider group/edit">
-                                <a class=" flex pt-0.5 justify-center" href="#">Mostrar a detalle <i
-                                        class='bx bx-chevron-right text-xl align-middle font-semibold group-hover/edit:translate-x-0.5'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10  right-0">
-            </div>
-            <div class="md:w-2/5  md:h-1/4 bg-gray-100 dark:bg-custom-primary absolute bottom-0 -z-10  right-0">
-            </div>
-
         </section>
 
     </main>
@@ -836,7 +668,8 @@
                 <!-- copy -->
                 <div
                     class="text-complement justify-self-center py-2 px-3  order-last sm:order-first sm:justify-self-start">
-                    <a href="https://www.facebook.com/brhyan.itusaca" target="_blank"><span>Copyright 2023 © - nbi</span></a>
+                    <a href="https://www.facebook.com/brhyan.itusaca" target="_blank"><span>Copyright 2023 © -
+                            nbi</span></a>
                 </div>
                 <!-- messeg -->
                 <div class="text-complement justify-self-center p-2         order-first">
@@ -859,6 +692,14 @@
     <!-- end-footer -->
 
     <!-- scrip -->
+
+    <!-- aos -->
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
     <script src="../js/app.js"></script>
     <script src="../js/dark-mode.js"></script>
 
