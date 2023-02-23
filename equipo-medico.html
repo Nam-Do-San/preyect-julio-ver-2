@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="css/tailwind.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- boxicons -->
+    
+
+</head>
+<body>
+
+    <header class="fixed w-full z-50 group/header md:hover:bg-custom-primary" id="header">
+        <!-- primer -->
+        <div class="bg-custom-secondary  w-full text-white" id="sale">
+            <div class="container grid grid-cols-2 lg:grid-cols-3">
+                
+                <div class="text-complement my-auto px-3">
+                    <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9 am - 1 pm</p>
+                </div>
+
+                <div class="justify-self-center  uppercase text-xs font-manrope tracking-widest font-semibold    my-auto hidden lg:block">
+                    <P>30% dscto. en consultas por campaña <span class='bx bxs-discount align-middle'></span></P>
+                </div>
+                
+                <div class="justify-self-end my-auto px-3">
+                    <ul class="flex">
+                        <li class="ml-4"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i class='bx bxl-instagram align-middle'></i></a></li>
+                        <li class="ml-4"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i class='bx bxl-facebook   align-middle'></i></a></li>
+                        <li class="ml-4"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i class='bx bxl-tiktok     align-middle'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- logo -->
+        <div   class="bg-custom-primary md:bg-inherit">
+            <div class="container grid grid-cols-3">
+                
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-white md:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-white hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
+
+                <div class="py-4 justify-self-center">
+                    <a href="index.html"><img class="h-10"  src="img/logo-dr-julio.svg" alt="logo doctor julio suca"></a>
+                </div>
+
+                <div class="my-auto justify-self-end px-3 hidden md:block ">
+                    <a  class="btn-white-line" href="#">Agendar cita</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu -->
+        <nav    class="hidden bg-black h-screen w-3/4 md:w-full   md:h-auto md:block md:bg-inherit" id="menu-nav">
+            <ul class="container text-zinc-100 md:flex justify-center font-manrope tracking-wider uppercase text-xs font-bold">
+                <li class="p-5  md:px-2 md:py-1 group/submenu">
+                    <a class="md:after-line-r" href="#">Especialidad<i class='bx bx-chevron-down'></i></a>
+                    <!-- sub-menu -->
+                    <ul class="pl-5 md:p-2 relative md:absolute md:pt-3 bg-custom-primary/90 text-justify hidden group-hover/submenu:block ">
+                        <li class="pt-4 md:p-2"><a href="procedimientos/cirugia-facial.html">Cirugía Facial</a></li>
+                        <li class="pt-4 md:p-2"><a href="procedimientos/cirugia-corporal.html">Cirugía Corporal</a></li>
+                        <li class="pt-4 md:p-2"><a href="procedimientos/reconstructiva.html">Cirugía Reconstructiva</a></li>
+                    </ul>
+                </li>
+                <li class="p-5  md:px-2 md:py-1 group/submenu">
+                    <a class="md:after-line-r" href="#">Equipo<i class='bx bx-chevron-down'></i></a>
+                    <!-- sub-menu -->
+                    <ul class="pl-5 md:p-2 relative md:absolute md:pt-3 bg-custom-primary/90 text-justify hidden group-hover/submenu:block ">
+                        <li class="pt-4 md:p-2"><a href="#">Dr. Julio Suca</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dra. Melania Paredes</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dr. Alexander Flores</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dra. Patricia Bolaños</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dra. Gina Chavez</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dr. Harold Caceres</a></li>
+                    </ul>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="">Tour Virtual</a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="">Resultados<i class='bx bx-chevron-down'></i></a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="">Novedades<i class='bx bx-chevron-down'></i></a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="">Preguntas (FAQ)</a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a href="contanto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <!-- picture -->
+            <div class="h-screen relative overflow-hidden">
+                <picture>
+                    <source media="(min-width:1024px)" srcset="img/prueba-bg-alumno.jpg" class="bg-cover">
+                    <source media="(min-width:768px)" srcset="img/juliosuca-and-ivo.jpeg">
+                    <img src="img/drafilpo-826x1024.jpg" alt="Flowers" class="object-cover h-full w-full">
+                </picture>
+    
+                <div class="absolute bottom-0 w-full p-5 text-center text-white">
+                    <h1 class="title-big" data-aos="fade-right" data-aos-duration="1500">
+                        Equipo medico estético </h1>
+                    <h2 class="title-main" data-aos="fade-left" data-aos-anchor=".other-element" data-aos-duration="1500">
+                        Mas que un equipo, somos amigos y familia</h2>
+                    <div class="btn-white-line w-56 mx-auto  mt-5 duration-1000" data-aos="fade-up"
+                        data-aos-anchor=".other-element" data-aos-duration="1500">
+                        <a href="#carouselDarkVariant">Descubre más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- equipo medico  -->
+        <section class="py-10  dark:bg-custom-primary" id="equipo-medico">
+            <div class="container">
+
+                <!-- title seccion -->
+                <div class="text-center dark:text-neutral-200">
+                    <h2 class="title-main">Contamos con excelentes profesionales</h2>
+                    <h3 class="title-section">Equipo medico</h3>
+                </div>
+
+                <div class="pt-5 overflow-hidden">
+                    <div class="grid grid-cols-1  sm:grid-cols-3  lg:grid-cols-6 gap-5 ">
+
+                        <!-- bx 1 -->
+                        <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
+                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-down"
+                            data-aos-duration="1500">
+                            <div
+                                class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                                <h2 class="team-bx-title">Dr. Julio Suca</h2>
+                                <h3 class="team-bx-espe">Cirujano Plástico</h3>
+                            </div>
+                        </div>
+
+                        <!-- bx 2 -->
+                        <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m- rounded"
+                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-up"
+                            data-aos-duration="2000">
+
+                            <div
+                                class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                                <h2 class="font-bold uppercase text-xs font-manrope tracking-wider">Dra. Melania Paredes
+                                </h2>
+                                <p class="team-bx-espe">Medicina Estética</p>
+
+                            </div>
+                        </div>
+
+                        <!-- bx 3 -->
+                        <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
+                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-down"
+                            data-aos-duration="2000">
+                            <div
+                                class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                                <h2 class="team-bx-title">Dr. Alexander Flores</h2>
+                                <h3 class="team-bx-espe">Cirujano Plástico</h3>
+                            </div>
+                        </div>
+
+                        <!-- bx 4 -->
+                        <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
+                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <div
+                                class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                                <h2 class="team-bx-title">Dra. Patricia Bolaños</h2>
+                                <h3 class="team-bx-espe">Medicina Estética</h3>
+                            </div>
+                        </div>
+
+                        <!-- bx 5 -->
+                        <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
+                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-down"
+                            data-aos-duration="2000">
+                            <div
+                                class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                                <h2 class="team-bx-title">Dra. Gina Chavez</h2>
+                                <h3 class="team-bx-espe">Otorrinolaringología</h3>
+                            </div>
+                        </div>
+
+                        <!-- bx 6 -->
+                        <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
+                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <div
+                                class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
+                                <h2 class="team-bx-title">Dr. Harold Caceres</h2>
+                                <h3 class="team-bx-espe">Dermatología</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- scrip -->
+    <script src="js/action-app.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

@@ -17,140 +17,95 @@
 
 <body id="gotoup">
 
-    <!-- no es el oficial -->
-    <!-- header -->
-    <header
-        class="fixed z-50 w-full  bg-custom-primary md:bg-custom-secondary/0   md:hover:bg-custom-primary group/head"
-        id="header">
-        <!-- header top -->
-        <div class="bg-custom-primary hidden md:block">
+    <header class="fixed w-full z-50 group/header md:hover:bg-custom-primary" id="header">
+        <!-- primer -->
+        <div class="bg-custom-secondary  w-full text-white" id="sale">
+            <div class="container grid grid-cols-2 lg:grid-cols-3">
+                
+                <div class="text-complement my-auto px-3">
+                    <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9 am - 1 pm</p>
+                </div>
 
-            <div class="container">
-                <div class="grid grid-cols-2 lg:grid-cols-3  content-center   text-white">
-                    <!-- horario  -->
-                    <div class="text-complement   px-3   py-2   my-auto ">
-                        <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9:00 am - 1:00 pm</p>
-                    </div>
-                    <!-- end-horario -->
-
-                    <!-- promo -->
-                    <div class="text-complement   justify-self-center  my-auto   py-2   hidden lg:block align-bottom">
-                        <P>30% dscto. en consultas por campaña <span class='bx bxs-discount align-middle'></span></P>
-                    </div>
-                    <!-- end-promo -->
-
-                    <!-- rs -->
-                    <div class="justify-self-end my-auto px-1">
-                        <ul class="flex text-base">
-                            <li class="mx-2"><a href="#"><i class='bx bxl-instagram align-middle'></i></a></li>
-                            <li class="mx-2"><a href=""><i class='bx bxl-facebook   align-middle'></i></a></li>
-                            <li class="mx-2"><a href=""><i class='bx bxl-tiktok     align-middle'></i></a></li>
-                        </ul>
-                    </div>
-                    <!-- end-rs -->
+                <div class="justify-self-center  uppercase text-xs font-manrope tracking-widest font-semibold    my-auto hidden lg:block">
+                    <P>30% dscto. en consultas por campaña <span class='bx bxs-discount align-middle'></span></P>
+                </div>
+                
+                <div class="justify-self-end my-auto px-3">
+                    <ul class="flex">
+                        <li class="ml-4"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i class='bx bxl-instagram align-middle'></i></a></li>
+                        <li class="ml-4"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i class='bx bxl-facebook   align-middle'></i></a></li>
+                        <li class="ml-4"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i class='bx bxl-tiktok     align-middle'></i></a></li>
+                    </ul>
                 </div>
             </div>
-
         </div>
 
-        <!-- header center -->
-        <div class="container grid grid-cols-3 ">
-            <!-- boton -->
+        <!-- logo -->
+        <div   class="bg-custom-primary md:bg-inherit">
+            <div class="container grid grid-cols-3">
+                
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-white md:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-white hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
 
-            <div class="my-auto" id="btn-menu">
-                <button class=" justify-self-start ml-5   md:invisible" id="btn-open">
-                    <i class='bx bx-menu text-white text-3xl align-middle'></i>
-                </button>
+                <div class="py-4 justify-self-center">
+                    <a href="../index.html"><img class="h-10"  src="../img/logo-dr-julio.svg" alt="logo doctor julio suca"></a>
+                </div>
 
-                <button class=" justify-self-start ml-5 hidden" id="btn-close">
-                    <i class='bx bx-x       text-white text-3xl align-middle'></i>
-                </button>
-            </div>
+                <div class="my-auto justify-self-end px-3 hidden md:block ">
+                    <a  class="btn-white-line" href="#">Agendar cita</a>
+                </div>
 
-            <!-- logo  -->
-            <div class="justify-self-center py-3">
-                <a class="" href="../index.html">
-                    <img class="h-11" src="../img/logo-dr-julio.svg" alt="">
-                </a>
-            </div>
-            <!-- boton link -->
-            <div class=" justify-self-end my-auto hidden md:block" id="btn-nav">
-                <!-- <i class='text-white text-xl  bx bx-calendar-check align-middle'></i> -->
-                <a class="py-2.5 px-8 border-2 border-white   rounded-2xl text-white uppercase tracking-wider text-sm font-bold font-manrope hover:bg-white hover:text-custom-secondary duration-500  "
-                    href="">Agendar Cita</i></a>
-
-                <!-- <a class="text-white uppercase text-xs font-bold"  href="">Agendar cita</a> -->
             </div>
         </div>
 
-        <!-- head bot -->
-        <div class="group-hover/head:bg-custom-primary" id="head-bot">
-
-            <!-- lista de anclas -->
-            <nav class="container  hidden md:block  h-screen md:h-auto    " id="menu-drop">
-                <!--  bg-red-900  -->
-                <ul
-                    class="w-4/5 md:w-full  mx-auto    md:flex md:justify-center uppercase text-xs font-manrope tracking-wider font-bold text-white  text-center">
-
-                    <!-- items -->
-                    <li class="border-b md:border-none  py-4 md:p-2   group/cont">
-                        <a class="md:after-line-r" href="">Especialidad<i class='bx bx-chevron-down'></i>
-                        </a>
-                        <!-- items -->
-                        <ul
-                            class="pl-5 md:p-4   relative md:absolute md:mt-3   bg-custom-primary/75  border-neutral-900/20 border-2  rounded-md  text-justify    hidden  group-hover/cont:block ">
-                            <li class="p-2"><a href="">Cirugía Facial</a></li>
-                            <li class="p-2"><a href="">Cirugía Corporal</a></li>
-                            <li class="p-2"><a href="">Cirugía Reconstructiva</a></li>
-
-                        </ul>
-                    </li>
-
-                    <!-- items -->
-                    <li class="border-b md:border-none py-4 md:p-2  group/cont">
-                        <a class="md:after-line-r" href="">Equipo<i class='bx bx-chevron-down'></i>
-                        </a>
-                        <!-- items -->
-                        <ul
-                            class="pl-5 md:p-4   relative md:absolute md:mt-3  bg-custom-primary/75  border-neutral-900/20 border-2  rounded-md text-justify    hidden  group-hover/cont:block ">
-                            <li class="p-2"><a href="">Dr. Julio Suca</a></li>
-                            <li class="p-2"><a href="">Dra. Melania Paredes</a></li>
-                            <li class="p-2"><a href="">Dr. Alexander Flores</a></li>
-                            <li class="p-2"><a href="">Dra. Patricia Bolaños</a></li>
-                            <li class="p-2"><a href="">Dra. Gina Chavez</a></li>
-                            <li class="p-2"><a href="">Dr. Harold Caceres</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- items -->
-                    <li class="border-b md:border-none py-4 md:p-2">
-                        <a class="md:after-line-r" href="">Tour Virtual</a>
-                    </li>
-
-                    <!-- item -->
-                    <li class="border-b md:border-none py-4 md:p-2"><a class="md:after-line-r" href="#">Resultados<i
-                                class='bx bx-chevron-down'></i>
-                        </a>
-                    </li>
-
-                    <!-- items -->
-                    <li class="border-b md:border-none py-4 md:p-2 group/cont">
-                        <a class="md:after-line-r" href="#">Novedades<i class='bx bx-chevron-down'></i>
-                        </a>
-
-                    </li>
-
-                    <!-- item -->
-                    <li class="border-b md:border-none p-4 md:p-2"><a class="md:after-line-r" href="">Preguntas
-                            (FAQ)</a></li>
-                    <li class="p-4 md:p-2"><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
+        <!-- menu -->
+        <nav    class="hidden bg-black h-screen w-3/4 md:w-full   md:h-auto md:block md:bg-inherit" id="menu-nav">
+            <ul class="container text-zinc-100 md:flex justify-center font-manrope tracking-wider uppercase text-xs font-bold">
+                <li class="p-5  md:px-2 md:py-1 group/submenu">
+                    <a class="md:after-line-r" href="#">Especialidad<i class='bx bx-chevron-down'></i></a>
+                    <!-- sub-menu -->
+                    <ul class="pl-5 md:p-2 relative md:absolute md:pt-3 bg-custom-primary/90 text-justify hidden group-hover/submenu:block ">
+                        <li class="pt-4 md:p-2"><a href="./cirugia-facial.html">Cirugía Facial</a></li>
+                        <li class="pt-4 md:p-2"><a href="./cirugia-corporal.html">Cirugía Corporal</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Cirugía Reconstructiva</a></li>
+                    </ul>
+                </li>
+                <li class="p-5  md:px-2 md:py-1 group/submenu">
+                    <a class="md:after-line-r" href="#">Equipo<i class='bx bx-chevron-down'></i></a>
+                    <!-- sub-menu -->
+                    <ul class="pl-5 md:p-2 relative md:absolute md:pt-3 bg-custom-primary/90 text-justify hidden group-hover/submenu:block ">
+                        <li class="pt-4 md:p-2"><a href="../dr-julio-suca.html">Dr. Julio Suca</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dra. Melania Paredes</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dr. Alexander Flores</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dra. Patricia Bolaños</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dra. Gina Chavez</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Dr. Harold Caceres</a></li>
+                    </ul>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="tour-virtual.html">Tour Virtual</a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="#">Resultados<i class='bx bx-chevron-down'></i></a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="#">Novedades</a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a class="md:after-line-r" href="#">Preguntas (FAQ)</a>
+                </li>
+                <li class="p-5  md:px-2 md:py-1">
+                    <a href="contanto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <!-- end-header -->
 
     <main>
         <!-- post-facial -->
@@ -690,7 +645,7 @@
     </script>
 
 
-    <script src="../js/app.js"></script>
+    <script src="../js/action-app.js"></script>
     <script src="../js/dark-mode.js"></script>
 
 </body>
