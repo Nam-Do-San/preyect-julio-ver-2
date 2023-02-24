@@ -29,7 +29,7 @@ window.addEventListener( 'scroll' , function (params) {
     }
 
     // ADD show scroll
-    if (window.scrollY > 1500) {
+    if (window.scrollY > 1000) {
         scroll_down.classList.remove('hidden');
     }
     else{
