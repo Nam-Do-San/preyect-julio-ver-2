@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="../css/tailwind.css">
+
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- aos -->
+    <link rel="stylesheet" href="../css/aos.css">
+</head>
+
+<body id="gotoup">
+
+    <!-- fn -->
+    <header class="fixed w-full z-50 group/header md:hover:bg-custom-primary" id="header">
+        <!-- primer -->
+        <div class="bg-custom-secondary  w-full text-white" id="sale">
+            <div class="container grid grid-cols-2 lg:grid-cols-3">
+
+                <div class="text-complement my-auto px-3">
+                    <p><span class='bx bx-time-five align-middle'></span> Lun - Sab: 9 am - 1 pm</p>
+                </div>
+
+                <div
+                    class="justify-self-center  uppercase text-xs font-manrope tracking-widest font-semibold    my-auto hidden lg:block">
+                    <P>30% dscto. en consultas por campaña <span class='bx bxs-discount align-middle'></span></P>
+                </div>
+
+                <div class="justify-self-end my-auto px-3">
+                    <ul class="flex">
+                        <li class="ml-4"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i
+                                    class='bx bxl-instagram align-middle'></i></a></li>
+                        <li class="ml-4"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i
+                                    class='bx bxl-facebook   align-middle'></i></a></li>
+                        <li class="ml-4"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i
+                                    class='bx bxl-tiktok     align-middle'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- logo -->
+        <div class="bg-custom-primary md:bg-inherit">
+            <div class="container grid grid-cols-3">
+
+                <div class="my-auto justify-self-start px-3 text-white" id="btn-menu">
+                    <button class=" text-white md:hidden" id="open">
+                        <i class='bx bx-menu text-3xl'></i>
+                    </button>
+                    <button class=" text-white hidden" id="close">
+                        <i class='bx bx-x text-3xl'></i>
+                    </button>
+                </div>
+
+                <div class="py-4 justify-self-center">
+                    <a href="../index.html"><img class="h-10" src="../img/logo-dr-julio.svg"
+                            alt="logo doctor julio suca"></a>
+                </div>
+
+                <div class="my-auto justify-self-end px-3 hidden md:block ">
+                    <a class="btn-white-line" href="https://wa.link/0i0yxv" target="_blank">Agendar cita</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu -->
+        <nav class="hidden bg-black h-screen w-3/4 md:w-full   md:h-auto md:block md:bg-inherit" id="menu-nav">
+            <ul
+                class="container text-zinc-100 md:flex justify-center font-manrope tracking-wider uppercase text-xs font-bold">
+                <li class="p-5 md:px-2 md:py-2 group/submenu">
+                    <a class="md:after-line-r" href="#">Especialidad<i class='bx bx-chevron-down'></i></a>
+                    <!-- sub-menu -->
+                    <ul
+                        class="pl-5 md:p-2 relative md:absolute md:pt-3 bg-custom-primary/90 text-justify hidden group-hover/submenu:block ">
+                        <li class="pt-4 md:p-2"><a href="../procedimientos/cirugia-facial.html">Cirugía Facial</a></li>
+                        <li class="pt-4 md:p-2"><a href="../procedimientos/cirugia-corporal.html">Cirugía Corporal</a>
+                        </li>
+                        <li class="pt-4 md:p-2"><a href="../procedimientos/cirugia-reconstructiva.html">Cirugía
+                                Reconstructiva</a></li>
+                        <li class="pt-4 md:p-2"><a href="../procedimientos/tratamientos-esteticos.html">Tratamientos
+                                Estéticos</a></li>
+                    </ul>
+                </li>
+                <li class="p-5 md:px-2 md:py-2">
+                    <a class="md:after-line-r" href="../equipo-medico.html">Equipo</a>
+                </li>
+                <li class="p-5 md:px-2 md:py-2">
+                    <a class="md:after-line-r" href="../tour-virtual.html">Tour Virtual</a>
+                </li>
+                <li class="p-5 md:px-2 md:py-2 group/submenu">
+                    <a class="md:after-line-r" href="#">Resultados<i class='bx bx-chevron-down'></i></a>
+                    <!-- subitems -->
+                    <ul
+                        class="pl-5 md:p-2 relative md:absolute md:pt-3 bg-custom-primary/90 text-justify hidden group-hover/submenu:block ">
+                        <li class="pt-4 md:p-2"><a href="#">Testimonios</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Videos</a></li>
+                        <li class="pt-4 md:p-2"><a href="#">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="p-5 md:px-2 md:py-2">
+                    <a class="md:after-line-r" href="#">Novedades</a>
+                </li>
+                <li class="p-5 md:px-2 md:py-2">
+                    <a class="md:after-line-r" href="#">Preguntas (FAQ)</a>
+                </li>
+                <li class="p-5 md:px-2 md:py-2">
+                    <a href="../contanto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- post-facial -->
+        <section class=" bg-cover h-screen  bg-center  grid relative overflow-hidden"
+            style="background-image: url(../img/bg-img/bg-tratamientos-esteticos.jpg);">
+
+            <div class="absolute bottom-0 w-full p-5 text-center text-white">
+
+                <div class="pb-4">
+                    <ul class="md:flex justify-center">
+                        <li class="p-2"><a class="btn-tratamientos" href="#botox"><i class='bx bx-plus-circle mr-2'></i>Toxina botulínica</a></li>
+                        <li class="p-2"><a class="btn-tratamientos" href="#hialuronico"><i class='bx bx-plus-circle mr-2'></i>Ácido hialurónico</a></li>
+                        <li class="p-2"><a class="btn-tratamientos" href="#hilos"><i class='bx bx-plus-circle mr-2'></i>Hilos tensores</a></li>
+                    </ul>
+                </div>
+                <h1 class="text-3xl font-bellefair uppercase mb-1.5 lg:text-4xl" data-aos="fade-right"
+                    data-aos-duration="2000">
+                    Tratamientos Estéticos</h1>
+                    <h2 class="title-main" data-aos="fade-left" data-aos-anchor=".other-element" data-aos-duration="2000">
+                        Elige el tratamiento para más información</h2>
+                <div class="btn-white-line w-56 mx-auto  mt-5" data-aos="fade-up" data-aos-anchor=".other-element"
+                    data-aos-duration="2000">
+                    <a href="#">Agendar evaluación</a>
+                </div>
+            </div>
+        </section>
+        <!-- end-post -->
+
+        <!-- toxina botox -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="botox">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
+
+                <div class="md:order-last md:rounded-l-lg overflow-hidden" data-aos="fade-left"
+                    data-aos-duration="2000">
+                    <img class=" h-full w-full object-cover hover:scale-105 transition duration-1000 ease-in-out"
+                        src="../img/surgy/trat-botox.jpg" alt="toxina butolinica -  tratamiento facial dr julio suca Arequipa">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">toxina botulínica</span>
+                        <h2 class="title-section">tratamiento para arrugas</h2>
+
+                        <div>
+                            <h2 class="title-cert text-left">principales zonas de aplicación</h2>
+                            <ul class="py-2 font-manrope">
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>El entrecejo</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Las patas de gallo</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>La frente</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div    class=" text-left">
+                            <h2 class="title-cert">¿Qué es la toxina botulínica?</h2>
+                            <p class="text-justify">
+                                La toxina botulínica, conocida popularmente como “Botox” por la primera marca que la
+                                comercializó, es una sustancia que paraliza o disminuye la función del músculo sobre el
+                                que se aplica.
+                                <br>
+                                De esta forma, se consigue relajar, durante algunos meses, los músculos faciales,
+                                previniendo la formación de arrugas y suavizando las existentes, hasta ser casi
+                                inapreciables.
+                            </p>
+                            <h3 class="title-cert mt-4">¿En que casos se realiza la aplicación de toxina botulínica?</h3>
+                            <p class="text-justify">La toxina botilínica se utiliza para corregir arrugas dinámicas o de expresión.
+                                <br>
+                                Se aplica principalmente en la mitad superior del rostro, pero según el análisis
+                                clínico, puede utilizarse en todo el rostro.
+                            </p>
+                        </div>
+                        <div class="text-left mt-4">
+                            <h2 class="title-cert">Sus principales beneficios son:</h2>
+                            <ul class="pt-1">
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>El entrecejo</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Las patas de gallo</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>La frente</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div class="mt-6" data-aos="fade-right" data-aos-duration="2000">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="https://wa.link/0i0yxv"
+                                    target="_blank">Agendar Evaluación</a>
+                            </div>
+                            <!-- <div class="mt-6" data-aos="fade-left" data-aos-duration="2000">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit" href="#">Más información
+                                    <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10  right-0">
+            </div>
+        </section>
+
+        <!-- ácido hialuronico -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="hialuronico">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                <!-- grid img -->
+                <div class="overflow-hidden md:rounded-r-lg" data-aos="fade-right" data-aos-duration="2000">
+                    <img class=" h-full w-full object-cover hover:scale-105 transition duration-1000 ease-in-out"
+                        src="../img/surgy/trat-h-acido.jpg" alt="acido hialuronico - tratamiento facial dr julio suca Arequipa">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="zoom-in" data-aos-duration="2000">
+
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Ácido hialurónico</span>
+                        <h2 class="title-section">tratamiento para arrugas</h2>
+
+                        <div>
+                            <h2 class="title-cert text-left">principales zonas de aplicación</h2>
+                            <ul class="py-2 font-manrope">
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Nariz (Remodelación)</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Labios</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Pómulos</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Arrugas</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div    class=" text-left">
+                            <h3 class="title-cert">¿QUÉ ES EL ÁCIDO HIALURÓNICO?</h3>
+                            <p class="text-justify">
+                                El ácido hialurónico es una sustancia que se encuentra en distintas partes de nuestro
+                                organismo de forma natural.
+                                <br>
+                                Por lo que se refiere a nuestra piel y, generalmente, debido al paso de los años o a
+                                ciertas enfermedades, nuestros organismos dejan de producirlo naturalmente o lo producen
+                                en menor cantidad. En consecuencia, la piel pierde elasticidad, vitalidad y firmeza.
+                            </p>
+
+                            <h3 class="title-cert mt-4">¿En que casos se realiza la aplicación de ÁCIDO HIALURÓNICO?</h3>
+                            <p>
+                                El ácido hialurónico se utiliza para combatir estos signos, voluminizando zonas
+                                específicas mediante inyecciones con más o menos cantidad según el paciente.
+                                <br>
+                                Según el caso del paciente, el tratamiento con ácido hialurónico se puede complementar
+                                con otros tratamientos, como las inyecciones de toxina botulínica.
+                                <br>
+                                En ácido hiluronico puede utilizarse en pieles jóvenes y maduras, según la zona y las características de la paciente.
+                            </p>
+                        </div>
+                        <div class="text-left mt-4">
+                            <h2 class="title-cert">Sus principales beneficios son:</h2>
+                            <ul class="pt-1">
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Matiza o elimina las arrugas</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Aportar volumen</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Dotar a la piel de firmeza, elasticidad e hidratación</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div class="mt-6" data-aos="fade-right" data-aos-duration="2000">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="https://wa.link/0i0yxv"
+                                    target="_blank">Agendar Evaluación</a>
+                            </div>
+                            <!-- <div class="mt-6" data-aos="fade-left" data-aos-duration="2000">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit" href="#">Más información
+                                    <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
+            </div>
+        </section>
+
+        <!-- hilos tensores -->
+        <section class="py-10 dark:bg-custom-secondary relative z-40 overflow-hidden" id="hilos">
+
+            <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
+
+                <div class="md:order-last md:rounded-l-lg overflow-hidden" data-aos="fade-left"
+                    data-aos-duration="2000">
+                    <img class=" h-full w-full object-cover hover:scale-105 transition duration-1000 ease-in-out"
+                        src="../img/surgy/trat-h-tensores.jpg" alt="hilos tensores - tratamiento facial - dr julio suca arequipa">
+                </div>
+
+                <!-- grid content -->
+                <div class="self-center md:w-11/12 xl:w-3/5" data-aos="zoom-in" data-aos-duration="2000">
+
+                    <div class="p-5 text-center dark:text-white">
+
+                        <span class="title-main">Hilos Tensores</span>
+                        <h2 class="title-section">tratamiento para arrugas</h2>
+
+                        <div>
+                            <h2 class="title-cert text-left">principales zonas de aplicación</h2>
+                            <ul class="py-2 font-manrope">
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Elevar las mejillas</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Reafirmar la zona del cuello</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Elevar las cejas</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-chevron-right text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Arrugas</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="text-left">
+                            <h3 class="title-cert">¿QUÉ SON LOS HILOS TENSORES?</h3>
+                            <p>
+                                Los hilos tensores espiculados son filamentos biocompatibles (compatibles con el organismo humano) que se introducen en la dermis del rostro mediante una cánula muy fina, sin cortes ni cirugía.
+                                <br>
+                                Estos filamentos están elaborados de un material llamado Polidioxanona (DOP), que es absorbido por el cuerpo sin dejar alergias ni ningún tejido cicatrizado.
+                            </p>
+                            <h3 class="title-cert mt-4">¿Para quién es el lifting facial con hilos tensores?</h3>
+                            <p>
+                                En principio este procedimiento va dirigido a personas mayores de edad con una flacidez facial de leve a moderada, las personas que presenten flacidez con mucha pérdida de volumen podrían ser candidatas a otro tipo de tratamiento estético.
+                                <br>
+                                A diferencia de otras técnicas, estos hilos faciales no requieren de cirugía y consiguen unos resultados prácticamente inmediatos.
+                            </p>
+                        </div>
+                        <div class="text-left mt-4">
+                            <h2 class="title-cert">Beneficios de los hilos tensores</h2>
+                            <ul class="pt-1">
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Fomenta la producción de colágeno natural</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Tensa y redensifica la piel</h3>
+                                    </div>
+                                </li>
+                                <li class="pb-1 flex" data-aos="fade-left" data-aos-duration="2000">
+                                    <i class='bx bx-check text-2xl'></i>
+                                    <div class="ml-2">
+                                        <h3>Atenúa arrugas profundas</h3>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 pb-3">
+                            <!-- button-tra -->
+                            <div class="mt-6" data-aos="fade-right" data-aos-duration="2000">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="https://wa.link/0i0yxv"
+                                    target="_blank">Agendar Evaluación</a>
+                            </div>
+                            <!-- <div class="mt-6" data-aos="fade-left" data-aos-duration="2000">
+                                <a class="btn-dark-line dark:btn-white-line  group/edit" href="#">Más información
+                                    <i
+                                        class='bx bx-chevron-right text-lg align-middle  duration-1000  group-hover/edit:translate-x-1'></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10  right-0">
+            </div>
+        </section>
+    </main>
+
+    <!-- scroll-component -->
+    <div class="fixed bottom-16 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
+        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white">
+            <a href="#gotoup"><i class='bx bxs-chevron-up'></i></a>
+        </button>
+    </div>
+    <!-- end-scroll -->
+
+    <!-- swap-theme-component -->
+    <div class=" fixed bottom-5  right-5  bg-black rounded-lg z-50" id="btn-swap-theme">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  " id="moon">
+            <i class='bx bxs-moon '></i>
+        </button>
+
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  " id="sun">
+            <i class='bx bxs-sun'></i>
+        </button>
+    </div>
+    <!-- end-swap-theme -->
+
+    <!-- footer-component -->
+    <footer class="bg-custom-primary w-full ">
+        <div class="container">
+            <div class="h-auto grid  grid-cols-1  sm:grid-cols-3  content-center text-white">
+                <!-- copy -->
+                <div
+                    class="text-complement justify-self-center py-2 px-3  order-last sm:order-first sm:justify-self-start">
+                    <a href="https://www.facebook.com/brhyan.itusaca" target="_blank"><span>Copyright 2023 © -
+                            nbi</span></a>
+                </div>
+                <!-- messeg -->
+                <div class="text-complement justify-self-center p-2         order-first">
+                    <P>La vida es Bella <i class='bx bxs-heart text-red-500 align-middle text-xs'></i></P>
+                </div>
+                <!-- redes -->
+                <div class="justify-self-center sm:justify-self-end     px-1 my-auto">
+                    <ul class="flex text-base">
+                        <li class="mx-2"><a href="https://www.instagram.com/drjuliosucaperu/" target="_blank"><i
+                                    class='bx bxl-instagram align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.facebook.com/drjuliosuca/" target="_blank"><i
+                                    class='bx bxl-facebook   align-middle'></i></a></li>
+                        <li class="mx-2"><a href="https://www.tiktok.com/@drjuliosuca" target="_blank"><i
+                                    class='bx bxl-tiktok     align-middle'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end-footer -->
+
+    <!-- scrips -->
+    <script src="../js/action-app.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
