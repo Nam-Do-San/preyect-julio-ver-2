@@ -18,7 +18,7 @@
 
 </head>
 
-<body id="gotoup">
+<body class=" dark:bg-black" id="gotoup">
 
     <!-- fn -->
     <header class="fixed w-full z-50 group/header md:hover:bg-custom-primary" id="header">
@@ -109,7 +109,7 @@
                     <a class="md:after-line-r" href="#">Novedades</a>
                 </li>
                 <li class="p-5 md:px-2 md:py-2">
-                    <a class="md:after-line-r" href="#">Preguntas (FAQ)</a>
+                    <a class="md:after-line-r" href="#">Preguntas</a>
                 </li>
                 <li class="p-5 md:px-2 md:py-2">
                     <a href="contanto.html">Contacto</a>
@@ -121,10 +121,13 @@
     <main>
         <!-- main -->
         <div class="h-screen object-cover relative overflow-hidden">
-            <video class="w-full h-full object-cover " autoplay loop muted>
+            <video class="w-full h-full object-cover hidden md:block" autoplay loop muted>
                 <source src="img/indexble.mp4" type="video/mp4" />
             </video>
 
+            <video class="w-full h-full object-cover md:hidden" autoplay loop muted>
+                <source src="img/mobil.mp4" type="video/mp4" />
+            </video>
 
             <div class="absolute bottom-0 w-full p-5 text-center text-white">
                 <h1 class="title-big" data-aos="fade-right" data-aos-duration="2000">
@@ -139,59 +142,29 @@
         </div>
         <!-- end main -->
 
-        <!-- bienvenida -->
-        <section class="relative h-screen bg-cover bg-right-top md:bg-center  overflow-hidden bg-fixed"
-            style="background-image: url(img/prueba-bg-alumno.jpg);" id="start">
-
-
-            <div class="absolute inset-0 text-center flex justify-center">
-                <div class="text-center self-center text-white md:text-black">
-                    <span class="title-section">Mentorado por </span>
-                    <h2 class="uppercase font-bellefair text-4xl tracking-wide  my-4 font-medium">Ivo Pitanguy</h2>
-                </div>
-            </div> 
-
-
-            <div class="absolute  bottom-0 inset-x-0     mx-auto   flex justify-center px-5" data-aos="zoom-in"
-                data-aos-duration="2000">
-                <div class="text-center  text-white  lg:w-1/2 p-5 mb-5  self-center bg-black/70 rounded-lg">
-                    <span class="title-main">Estas apunto de iniciar un gran viaje</span>
-                    <h2 class="uppercase font-bellefair text-4xl tracking-wide  my-4 font-medium">bienvenidos</h2>
-                    <p>
-                        Estamos para ayudarte a mejorar y cambiar tu vida, uniendo la ética, pasión y el arte.   
-                        <br>
-                        <br>
-                        <span class="text-complement">Estas en el punto de partida hacia un viaje a tu mejor
-                            versión.</span>
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- end-bienvenida -->
-
         <!-- picture -->
-        <div class="h-screen relative overflow-hidden">
+        <div class="h-screen relative overflow-hidden" id="start">
             <picture>
                 <source media="(min-width:1024px)" srcset="img/prueba-bg-alumno.jpg" class="bg-cover">
                 <source media="(min-width:768px)" srcset="img/juliosuca-and-ivo.jpeg">
-                <img src="img/dr-julio/pho-brasil-js.jpg" alt="Flowers" class="object-cover h-full w-full">
+                <img src="img/ind-dr-juliosuca.jpg" alt="Flowers" class="object-cover h-full w-full">
             </picture>
 
             <div class="absolute inset-0 text-center flex justify-center">
-                <div class="text-center self-center text-white  md:text-black">
+                <div class="text-center self-center text-white  lg:text-black">
                     <span class="title-section">Mentorado por </span>
                     <h2 class="uppercase font-bellefair text-4xl tracking-wide  my-4 font-medium">Ivo Pitanguy</h2>
                 </div>
-            </div> 
+            </div>
 
 
             <div class="absolute  bottom-0 inset-x-0     mx-auto   flex justify-center px-5" data-aos="zoom-in"
                 data-aos-duration="2000">
-                <div class="text-center  text-white  lg:w-1/2 p-5 mb-5  self-center bg-black/70 rounded-lg">
+                <div class="text-center  text-white  lg:w-1/3 p-5 mb-10  self-center bg-black/70 rounded-lg">
                     <span class="title-main">Estas apunto de iniciar un gran viaje</span>
                     <h2 class="uppercase font-bellefair text-4xl tracking-wide  my-4 font-medium">bienvenidos</h2>
-                    <p>
-                        Estamos para ayudarte a mejorar y cambiar tu vida, uniendo la ética, pasión y el arte.   
+                    <p class="text-center">
+                        Estamos para ayudarte a mejorar y cambiar tu vida, uniendo la ética, pasión y el arte.
                         <br>
                         <br>
                         <span class="text-complement">Estas en el punto de partida hacia un viaje a tu mejor
@@ -203,7 +176,7 @@
 
 
         <!-- tu medico -->
-        <section class="py-10 dark:bg-custom-primary overflow-hidden relative">
+        <section class="md:py-10 overflow-hidden relative">
             <div class="container">
 
                 <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center overflow-hidden">
@@ -219,9 +192,9 @@
                             data-aos-duration="2000">
 
                             <h2 class="title-main">Cirujano Plástico Certificado & Experiencia</h2>
-                            <h3 class="mt-2 text-4xl font-bellefair text-center font-medium uppercase tracking-wide">Dr.
+                            <h3 class="title-section">Dr.
                                 Julio Suca</h3>
-                            <p class="mb-4 text-complement ">
+                            <p class="mb-4 text-complement text-center">
                                 CMP 21159 - RNE 020496</p>
                             <p class="text-justify">
                                 El Dr. Julio Suca se graduó como "Médico Cirujano" en la Universidad Nacional de San
@@ -238,28 +211,58 @@
                                 Pontificia
                                 Universidad Católica de Rio de Janeiro.
                             </p>
+
                             <div class="text-justify">
-                                <h3 class="title-list">
-                                    membrecía y Sociedades</h3>
+                                <h2 class="title-list" data-aos="zoom-in" data-aos-duration="2000">membrecía y sociedades</h2>
                                 <ul>
-                                    <li class="items-list" data-aos="fade-left" data-aos-duration="2000">
-                                        <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                        <p class="ml-3">Miembro del Colegio Médico del Perú (CMP).</p>
+                                    <li class="pb-3 flex" data-aos="fade-left" data-aos-duration="2000">
+                                        <i class='bx bx-certification text-2xl'></i>
+                                        <div class="ml-2.5">
+                                            <span>Miembro del Colegio Médico del Perú (CMP).</span>
+                                        </div>
                                     </li>
-                                    <li class="items-list" data-aos="fade-left" data-aos-duration="2000">
-                                        <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                        <p class="ml-3">Miembro de la Sociedad Brasileña de Cirugía Plástica (SBCP).</p>
+                                    <li class="pb-3 flex" data-aos="fade-left" data-aos-duration="2000">
+                                        <i class='bx bx-certification text-2xl'></i>
+                                        <div class="ml-2.5">
+                                            <span>Miembro de la Sociedad Brasileña de Cirugía Plástica (SBCP).</span>
+                                        </div>
                                     </li>
-                                    <li class="items-list" data-aos="fade-left" data-aos-duration="2000">
-                                        <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                        <p class="ml-3">Miembro de Asociación de ex-alumnos Ivo Pitanguy (AEXPI).</p>
+                                    <li class="pb-3 flex" data-aos="fade-left" data-aos-duration="2000">
+                                        <i class='bx bx-certification text-2xl'></i>
+                                        <div class="ml-2.5">
+                                            <span>Miembro de Asociación de ex-alumnos Ivo Pitanguy (AEXPI).</span>
+                                        </div>
                                     </li>
-                                    <li class="items-list" data-aos="fade-left" data-aos-duration="2000">
-                                        <i class='bx bx-check my-auto p-1.5 text-white bg-neutral-900 rounded-lg'></i>
-                                        <p class="ml-3">Más de 25 años de experiencia como Cirujano Plástico.</p>
+                                    <li class="pb-3 flex" data-aos="fade-left" data-aos-duration="2000">
+                                        <i class='bx bx-certification text-2xl'></i>
+                                        <div class="ml-2.5">
+                                            <span>Más de 25 años de experiencia como Cirujano Plástico.</span>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
+
+                            <div class="mt-5">
+                                <ul class="flex  justify-around saturate-0">
+                                    <li class="pb-3" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="ml-2.5 rounded-lg overflow-hidden">
+                                            <img src="img/sbcp.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="pb-3" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="ml-2.5 rounded-lg overflow-hidden">
+                                            <img src="img/cmp.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="pb-3" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="ml-2.5 rounded-lg overflow-hidden">
+                                            <img src="img/aexpi.jpg" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
                             <!-- btn-final -->
                             <div class="mt-10 mb-2" data-aos="fade-right" data-aos-duration="1500">
                                 <a class="btn-dark  dark:btn-white duration-1000   " href="dr-julio-suca.html">Más
@@ -270,9 +273,9 @@
                     </div>
                 </div>
 
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute top-0 -z-10  left-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute top-0 -z-10  left-28">
                 </div>
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute bottom-0 -z-10 right-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute bottom-0 -z-10 right-28">
                 </div>
             </div>
         </section>
@@ -357,7 +360,7 @@
         <!-- end-procedimiento -->
 
         <!-- reconocimiento -->
-        <section class="py-10 dark:bg-custom-secondary overflow-hidden relative">
+        <section class="py-10 overflow-hidden relative">
             <div class="container">
 
                 <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
@@ -384,64 +387,15 @@
                     </div>
                 </div>
 
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute top-0 -z-10  left-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute top-0 -z-10  left-28">
                 </div>
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute bottom-0 -z-10 right-28">
-                </div>
-            </div>
-        </section>
-
-        <!-- tour virtual -->
-        <section class="py-10 dark:bg-custom-primary overflow-hidden relative">
-            <div class="container">
-
-                <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
-
-                    <div class="overflow-hidden md:rounded" data-aos="fade-up" data-aos-duration="2000">
-                        <img class=" h-full w-full object-cover hover:scale-105 transition duration-1000 ease-in-out"
-                            src="img/in-tour.jpg" alt="dr julio suca rio de janeiro">
-                    </div>
-
-                    <!-- text -->
-                    <div class="self-center md:w-11/12 lg:w-3/4" data-aos="fade-left" data-aos-duration="2000">
-                        <div class="p-5  md:pr-0 text-center dark:text-zinc-200">
-
-                            <h2 class="title-main">Método de trabajo</h2>
-                            <h3 class="title-section">Tour virtual</h3>
-                            <p class="text-justify">
-                                El Dr. Julio Suca se graduó como "Médico Cirujano" en la Universidad Nacional de San
-                                Agustín
-                                de
-                                Arequipa, Perú. Su pasión por la cirugía plástica lo llevó a emigrar a Brasil, donde se
-                                incorporó en el
-                                curso de especialización en cirugía general en el Servicio de Cirugía General 17va
-                                Enfemaria
-                                del
-                                Hospital Geral da Santa Casa da Misericordia do Rio de Janeiro por un período de 3 años,
-                                luego ingreso
-                                al curso de Postgrado en Cirugía Plástica del servicio del Prof. Ivo Pitanguy de la
-                                Pontificia
-                                Universidad Católica de Rio de Janeiro.
-                            </p>
-                            <div class="mt-10 mb-2" data-aos="fade-right" data-aos-duration="2000">
-                                <a class="btn-dark  dark:btn-white duration-1000" href="tour-virtual.html">Más
-                                    información <i class='bx bx-chevron-right text-base align-middle'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute top-0 -z-10  left-28">
-                </div>
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute bottom-0 -z-10 right-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute bottom-0 -z-10 right-28">
                 </div>
             </div>
         </section>
-
-
 
         <!-- informarte -->
-        <section class="py-10  dark:bg-custom-secondary overflow-hidden relative">
+        <section class="md:py-10 overflow-hidden relative">
             <div class="container">
 
                 <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center content-center">
@@ -469,16 +423,55 @@
                     </div>
                 </div>
 
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute top-0 -z-10  left-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute top-0 -z-10  left-28">
                 </div>
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute bottom-0 -z-10 right-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute bottom-0 -z-10 right-28">
                 </div>
 
             </div>
         </section>
 
+        <!-- tour virtual -->
+        <section class="md:py-10 overflow-hidden relative">
+            <div class="container">
+
+                <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
+
+                    <div class="md:order-last overflow-hidden md:rounded" data-aos="fade-up" data-aos-duration="2000">
+                        <img class=" h-full w-full object-cover hover:scale-105 transition duration-1000 ease-in-out"
+                            src="img/in-tour.jpg" alt="dr julio suca rio de janeiro">
+                    </div>
+
+                    <!-- text -->
+                    <div class="self-center md:w-11/12 lg:w-3/4" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="p-5  md:pl-0 text-center dark:text-zinc-200">
+
+                            <h2 class="title-main">Método de trabajo</h2>
+                            <h3 class="title-section">Tour virtual</h3>
+                            <p class="text-justify">
+                                Consideramos de vital importancia que nuestros pacientes estén
+                                bien informados en cada etapa de su vieja con nosotros y de nuestros procedimientos
+                                (Cirugías), ¡El primer paso está aquí!
+                                <br>
+                                Te detallamos el paso a paso realizado por cada paciente, desde su primera visita a nuestro sitio web, hasta el final de su viaje con nosotros.
+                            </p>
+                            <div class="mt-10 mb-2" data-aos="fade-right" data-aos-duration="2000">
+                                <a class="btn-dark  dark:btn-white duration-1000" href="tour-virtual.html">Más
+                                    información <i class='bx bx-chevron-right text-base align-middle'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute top-0 -z-10  left-28">
+                </div>
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-secondary rounded-md absolute bottom-0 -z-10 right-28">
+                </div>
+            </div>
+        </section>
+
         <!-- equipo medico  -->
-        <section class="py-10  dark:bg-custom-primary" id="equipo-medico">
+        <section class="py-10 dark:saturate-0" id="equipo-medico">
             <div class="container">
 
                 <!-- title seccion -->
@@ -492,7 +485,7 @@
 
                         <!-- bx 1 -->
                         <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
-                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-right"
+                            style="background-image: url(img/equipo-medico/julio.jpg)" data-aos="fade-right"
                             data-aos-duration="1500">
                             <div
                                 class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
@@ -503,21 +496,21 @@
 
                         <!-- bx 2 -->
                         <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
-                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-up"
+                            style="background-image: url(img/equipo-medico/melania.jpg)" data-aos="fade-up"
                             data-aos-duration="2000">
 
                             <div
                                 class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
                                 <h2 class="font-bold uppercase text-xs font-manrope tracking-wider">Dra. Melania Paredes
                                 </h2>
-                                <p class="team-bx-espe">Medicina Estética</p>
+                                <h3 class="team-bx-espe">Medicina Estética</h3>
 
                             </div>
                         </div>
 
                         <!-- bx 3 -->
                         <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
-                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-down"
+                            style="background-image: url(img/equipo-medico/alex.jpg)" data-aos="fade-down"
                             data-aos-duration="2000">
                             <div
                                 class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
@@ -528,7 +521,7 @@
 
                         <!-- bx 4 -->
                         <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
-                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-up"
+                            style="background-image: url(img/equipo-medico/patricia.jpg)" data-aos="fade-up"
                             data-aos-duration="2000">
                             <div
                                 class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
@@ -539,7 +532,7 @@
 
                         <!-- bx 5 -->
                         <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
-                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-down"
+                            style="background-image: url(img/equipo-medico/gina.jpg)" data-aos="fade-down"
                             data-aos-duration="2000">
                             <div
                                 class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
@@ -550,7 +543,7 @@
 
                         <!-- bx 6 -->
                         <div class="relative h-96 bg-no-repeat bg-top bg-cover mx-5 md:m-0 rounded"
-                            style="background-image: url(img/drafilpo-826x1024.jpg)" data-aos="fade-left"
+                            style="background-image: url(img/equipo-medico/harold.jpg)" data-aos="fade-left"
                             data-aos-duration="2000">
                             <div
                                 class="text-white text-center bg-neutral-900/75 absolute inset-x-0 bottom-4 h-auto py-2">
@@ -564,9 +557,9 @@
         </section>
 
         <!-- comunícate conmigo -->
-        <section class="py-10  dark:bg-custom-secondary overflow-hidden relative">
+        <section class="py-10 overflow-hidden relative">
             <div class="container">
-                <div class="h-screen/50 bg-cover bg-top relative bg-fixed md:rounded"
+                <div class="h-80 bg-cover bg-center relative md:rounded shadow-lg"
                     style="background-image: url(img/young-caucasian-smile-girl-woman-bedroom-sofa-smile-camera.jpg);">
 
                     <div class="absolute inset-0 md:w-1/2 mx-auto flex justify-center p-5" data-aos="fade-left">
@@ -584,26 +577,28 @@
                     </div>
 
                 </div>
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute top-0 -z-10  left-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary rounded-md  absolute top-0 -z-10  left-28">
                 </div>
-                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary  absolute bottom-0 -z-10 right-28">
+                <div class="md:w-40  md:h-40 bg-zinc-100 dark:bg-custom-primary rounded-md  absolute bottom-0 -z-10 right-28">
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- idiomas -->
-    <div
-        class="bg-black fixed bottom-8 text-white list-none uppercase text-sm tracking-wider font-manrope p-2 font-bold w-28">
-        <li class="group/idioma">
-            <a href="#"><i class='bx bx-world'></i>Idiomas</a>
-            <ul class="hidden group-hover/idioma:block">
-                <li><a href="#">Español</a></li>
-                <li><a href="#">Portugués</a></li>
-                <li><a href="#">Ingles</a></li>
-            </ul>
-        </li>
-    </div>
+    <!-- help -->
+    <section class="overflow-hidden relative">
+        
+            <div class="h-screen/50 bg-cover bg-center relative"
+                style="background-image: url(img/help.jpg);">
+
+                <div class="absolute inset-0 text-center flex justify-center">
+                    <div class="text-center self-center text-white md:w-3/4">
+                        <h2 class="uppercase font-bellefair text-4xl tracking-wide  my-4 font-medium">este donde este, no dude en escribirnos para evaluar su caso, nosotros estaremos encabados de ayudarte</h2>
+                    </div>
+                </div>
+            </div>      
+    </section>
+
+    </main>
 
     <!-- scroll-component -->
     <div class="fixed bottom-16 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
@@ -626,7 +621,7 @@
     <!-- end-swap-theme -->
 
     <!-- footer-component -->
-    <footer class="bg-custom-primary w-full ">
+    <footer class="bg-black w-full">
         <div class="container">
             <div class="h-auto grid  grid-cols-1  sm:grid-cols-3  content-center text-white">
                 <!-- copy -->
@@ -655,6 +650,15 @@
     </footer>
     <!-- end-footer -->
 
+
+    <!-- button traductor -->
+    <div class=" fixed bottom-5 left-5  bg-black rounded-lg z-50  group/leng">
+        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white dark:hidden">
+            <i class='bx bx-world'></i>
+        </button>
+        <div class=" bottom-12 left-5 fixed hidden group-hover/leng:block bg-custom-primary p-1" id="google_translate_element"></div>
+    </div>
+
     <!-- scrips -->
     <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
     <script src="js/action-app.js"></script>
@@ -663,6 +667,18 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- google traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'es,en,pt', 
+            layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
+        }, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>

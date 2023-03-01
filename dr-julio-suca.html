@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/aos.css">
 </head>
 
-<body class="dark:bg-custom-primary" id="gotoup">
+<body class="bg-gray-50 dark:bg-custom-primary" id="gotoup">
 
     <!-- fn -->
     <header class="fixed w-full z-50 group/header md:hover:bg-custom-primary" id="header">
@@ -99,7 +99,7 @@
                     <a class="md:after-line-r" href="#">Novedades</a>
                 </li>
                 <li class="p-5 md:px-2 md:py-2">
-                    <a class="md:after-line-r" href="#">Preguntas (FAQ)</a>
+                    <a class="md:after-line-r" href="#">Preguntas</a>
                 </li>
                 <li class="p-5 md:px-2 md:py-2">
                     <a href="contanto.html">Contacto</a>
@@ -112,10 +112,16 @@
         <!-- picture -->
         <div class="h-screen relative overflow-hidden">
             <picture>
-                <source media="(min-width:1024px)" srcset="img/prueba-bg-alumno.jpg" class="bg-cover">
-                <source media="(min-width:768px)" srcset="img/juliosuca-and-ivo.jpeg">
-                <img src="img/dr-julio/pho-brasil-js.jpg" alt="Flowers" class="object-cover h-full w-full">
+                <source media="(min-width:1024px)" srcset="img/prueba-bg-alumno.jpg">
+                <img src="img/juliosuca-and-ivo.jpeg" alt="Flowers" class="object-cover h-full w-full">
             </picture>
+
+            <div class="absolute inset-0 text-center flex justify-center">
+                <div class="text-center self-center text-white  lg:text-black">
+                    <span class="title-section">Mentorado por </span>
+                    <h2 class="uppercase font-bellefair text-4xl tracking-wide  my-4 font-medium">Ivo Pitanguy</h2>
+                </div>
+            </div>
 
             <div class="absolute bottom-0 w-full p-5 text-center text-white">
                 <h1 class="title-big" data-aos="fade-right" data-aos-duration="1500">
@@ -134,7 +140,7 @@
 
                 <div class="grid  grid-cols-1  md:grid-cols-2   justify-items-center">
                     <!-- box details -->
-                    <div class="md:w-11/12 lg:w-4/5" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="self-center md:w-11/12 lg:w-4/5" data-aos="fade-right" data-aos-duration="2000">
 
                         <div class="p-5  md:pl-0 text-center dark:text-neutral-100">
                             <h2 class="title-main pb-4">Conoce a tu medico</h2>
@@ -169,6 +175,26 @@
                                 conciliando la ética con el arte en su oficio, manteniendo los más altos estándares de
                                 calidad y seguridad.
                             </p>
+
+                            <div class="mt-5">
+                                <ul class="flex  justify-around saturate-0">
+                                    <li class="pb-3" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="ml-2.5 rounded-lg overflow-hidden">
+                                            <img src="img/sbcp.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="pb-3" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="ml-2.5 rounded-lg overflow-hidden">
+                                            <img src="img/cmp.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li class="pb-3" data-aos="fade-up" data-aos-duration="2000">
+                                        <div class="ml-2.5 rounded-lg overflow-hidden">
+                                            <img src="img/aexpi.jpg" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
                         </div>
                     </div>
