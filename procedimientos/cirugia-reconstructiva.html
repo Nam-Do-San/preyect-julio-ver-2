@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/aos.css">
 </head>
 
-<body class="bg-gray-50 dark:bg-custom-primary" id="gotoup">
+<body class="bg-gray-50 dark:bg-black" id="gotoup">
 
     <!-- fn -->
     <header class="fixed w-full z-50 group/header md:hover:bg-custom-primary" id="header">
@@ -293,7 +293,7 @@
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-black  absolute top-0 -z-10 left-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10 left-0">
             </div>
         </section>
 
@@ -377,7 +377,7 @@
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-black absolute top-0 -z-10 right-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 right-0">
             </div>
         </section>
 
@@ -455,7 +455,7 @@
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-black  absolute top-0 -z-10 left-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10 left-0">
             </div>
         </section>
 
@@ -548,7 +548,7 @@
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-black  absolute top-0 -z-10 right-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary  absolute top-0 -z-10 right-0">
             </div>
         </section>
 
@@ -608,7 +608,7 @@
                 </div>
             </div>
 
-            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-black absolute top-0 -z-10 left-0">
+            <div class="md:w-2/5  md:h-full bg-gray-100 dark:bg-custom-primary absolute top-0 -z-10 left-0">
             </div>
         </section>
     </main>
@@ -663,6 +663,15 @@
     </footer>
     <!-- end-footer -->
 
+    <!-- button traductor -->
+    <div class=" fixed bottom-5 left-5  bg-black rounded-lg z-50  group/leng">
+        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white">
+            <i class='bx bx-world'></i>
+        </button>
+        <div class=" bottom-12 left-5 fixed hidden group-hover/leng:block bg-custom-primary p-1" id="google_translate_element"></div>
+    </div>
+    <!-- end traductor -->
+
     <!-- scrips -->
     <script src="../js/action-app.js"></script>
     <script src="../js/dark-mode.js"></script>
@@ -670,6 +679,16 @@
     <script>
         AOS.init();
     </script>
-</body>
 
+    <!-- google traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'es,en,pt', 
+            layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
+        }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
 </html>

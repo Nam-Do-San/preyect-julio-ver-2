@@ -653,14 +653,16 @@
 
     <!-- button traductor -->
     <div class=" fixed bottom-5 left-5  bg-black rounded-lg z-50  group/leng">
-        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white dark:hidden">
+        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white">
             <i class='bx bx-world'></i>
         </button>
         <div class=" bottom-12 left-5 fixed hidden group-hover/leng:block bg-custom-primary p-1" id="google_translate_element"></div>
     </div>
+    <!-- end traductor -->
 
     <!-- scrips -->
-    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+    <script src="js/index.min.js"></script>
+    <!-- <script src="/node_modules/tw-elements/dist/js/index.min.js"></script> -->
     <script src="js/action-app.js"></script>
     <script src="js/dark-mode.js"></script>
     <script src="js/aos.js"></script>
@@ -675,9 +677,8 @@
             layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
         }, 'google_translate_element');
         }
-        </script>
-        
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
