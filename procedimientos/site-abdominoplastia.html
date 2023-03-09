@@ -628,7 +628,6 @@
     </main>
 
     <section class="overflow-hidden relative">
-
         <div class="h-screen/50 bg-cover bg-top relative bg-fixed" style="background-image: url(../img/help.jpg);">
 
             <div class="absolute inset-0 text-center flex justify-center">
@@ -641,14 +640,23 @@
         </div>
     </section>
 
-
     <!-- scroll-component -->
-    <div class="fixed bottom-5 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
-        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white">
+    <div class="fixed bottom-16 right-5 bg-white rounded-lg z-50 animate-bounce hidden" id="scroll-down">
+        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-black">
             <a href="#gotoup"><i class='bx bxs-chevron-up'></i></a>
         </button>
     </div>
     <!-- end-scroll -->
+
+    <!-- button traductor -->
+    <div class=" fixed bottom-1/2 right-5 bg-white rounded-lg z-50  group/leng">
+        <button class="h-8 w-8 leading-9 rounded-full text-lg text-black">
+            <i class='bx bx-world'></i>
+        </button>
+        <div class=" right-5 fixed hidden group-hover/leng:block bg-custom-primary p-1"
+            id="google_translate_element"></div>
+    </div>
+    <!-- end traductor -->
 
     <!-- footer-component -->
     <footer class="bg-black w-full">
@@ -681,7 +689,6 @@
     <!-- end-footer -->
 
     <!-- scrip -->
-
     <script src="../js/action-app.js"></script>
     <script src="../js/aos.js"></script>
     <script>

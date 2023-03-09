@@ -503,24 +503,33 @@
     </main>
 
     <!-- scroll-component -->
-    <div class="fixed bottom-16 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
-        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white">
+    <div class="fixed bottom-16 right-5 bg-black dark:bg-white rounded-lg z-50 animate-bounce hidden" id="scroll-down">
+        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white dark:text-black">
             <a href="#gotoup"><i class='bx bxs-chevron-up'></i></a>
         </button>
     </div>
     <!-- end-scroll -->
 
     <!-- swap-theme-component -->
-    <div class=" fixed bottom-5  right-5  bg-black rounded-lg z-50" id="btn-swap-theme">
-        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  " id="moon">
+    <div class=" fixed bottom-5 right-5 bg-custom-secondary dark:bg-white rounded-lg z-50" id="btn-swap-theme">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white dark:text-black    dark:hidden  " id="moon">
             <i class='bx bxs-moon '></i>
         </button>
-
-        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  " id="sun">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white dark:text-black   hidden  dark:block  " id="sun">
             <i class='bx bxs-sun'></i>
         </button>
     </div>
     <!-- end-swap-theme -->
+
+    <!-- button traductor -->
+    <div class=" fixed bottom-1/2 right-5 bg-custom-secondary dark:bg-white rounded-lg z-50  group/leng">
+        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white dark:text-black">
+            <i class='bx bx-world'></i>
+        </button>
+        <div class=" right-5 fixed hidden group-hover/leng:block bg-custom-primary p-1"
+            id="google_translate_element"></div>
+    </div>
+    <!-- end traductor -->
 
     <!-- footer-component -->
     <footer class="bg-custom-primary dark:bg-black w-full ">
@@ -551,15 +560,6 @@
         </div>
     </footer>
     <!-- end-footer -->
-
-    <!-- button traductor -->
-    <div class=" fixed bottom-5 left-5  bg-black rounded-lg z-50  group/leng">
-        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white">
-            <i class='bx bx-world'></i>
-        </button>
-        <div class=" bottom-12 left-5 fixed hidden group-hover/leng:block bg-custom-primary p-1" id="google_translate_element"></div>
-    </div>
-    <!-- end traductor -->
 
     <!-- scrips -->
     <script src="js/action-app.js"></script>

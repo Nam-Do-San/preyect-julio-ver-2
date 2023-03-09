@@ -223,24 +223,33 @@
     </main>
 
     <!-- scroll-component -->
-    <div class="fixed bottom-16 right-5 bg-black rounded-lg z-50 animate-bounce hidden" id="scroll-down">
-        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white">
+    <div class="fixed bottom-16 right-5 bg-black dark:bg-white rounded-lg z-50 animate-bounce hidden" id="scroll-down">
+        <button class="h-8 w-8 leading-9 rounded-full  text-xl text-white dark:text-black">
             <a href="#gotoup"><i class='bx bxs-chevron-up'></i></a>
         </button>
     </div>
     <!-- end-scroll -->
 
     <!-- swap-theme-component -->
-    <div class=" fixed bottom-5  right-5  bg-black rounded-lg z-50" id="btn-swap-theme">
-        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white    dark:hidden  " id="moon">
+    <div class=" fixed bottom-5 right-5 bg-custom-secondary dark:bg-white rounded-lg z-50" id="btn-swap-theme">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white dark:text-black    dark:hidden  " id="moon">
             <i class='bx bxs-moon '></i>
         </button>
-
-        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white   hidden  dark:block  " id="sun">
+        <button class="h-8 w-8 leading-9 rounded-full  text-lg  text-white dark:text-black   hidden  dark:block  " id="sun">
             <i class='bx bxs-sun'></i>
         </button>
     </div>
     <!-- end-swap-theme -->
+
+    <!-- button traductor -->
+    <div class=" fixed bottom-1/2 right-5 bg-custom-secondary dark:bg-white rounded-lg z-50  group/leng">
+        <button class="h-8 w-8 leading-9 rounded-full text-lg text-white dark:text-black">
+            <i class='bx bx-world'></i>
+        </button>
+        <div class=" right-5 fixed hidden group-hover/leng:block bg-custom-primary p-1"
+            id="google_translate_element"></div>
+    </div>
+    <!-- end traductor -->
 
     <!-- footer-component -->
     <footer class="bg-custom-primary dark:bg-black w-full ">
@@ -279,6 +288,16 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- google traductor -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'es,en,pt', 
+            layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
+        }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
