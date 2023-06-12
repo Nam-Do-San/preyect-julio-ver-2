@@ -21,11 +21,11 @@ window.addEventListener( 'scroll' , function (params) {
     // si scroll < 100 - mostrar sale
     if (window.scrollY < 100) {
         sale.classList.remove('hidden');
-        header.classList.remove('md:bg-custom-primary'); 
+        // header.classList.remove('md:bg-custom-primary'); 
     }
     else{
         sale.classList.add('hidden');
-        header.classList.add('md:bg-custom-primary');
+        // header.classList.add('md:bg-custom-primary');
     }
 
     // ADD show scroll
