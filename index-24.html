@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- link css 2024 -->
+    <link rel="stylesheet" href="css/tailwind-ver-24.css">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="32px">
+
+    <!-- swiper-plugin -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- plugin animate -->
+    <link rel="stylesheet" href="css/aos.css">
+
+</head>
+
+<body>
+
+    <header class="fixed top-0 z-50 w-full border-gold-julio group/header md:hover:bg-main-black" id="header">
+
+        <div class="text-white/90 lg:justify-between py-2 text-xs bg-main-black" id="sale">
+
+            <div class="container flex justify-center  md:justify-between items-center md:px-10">
+
+                <div class="text-center hover:text-gold-julio flex items-center">
+                    <i class='bx bxs-map'></i>
+                    <p class="ml-2">Av. Trinidad & Morán Cayma - Arequipa, Perú</p>
+                </div>
+
+                <ul class="hidden  md:flex text-base">
+                    <li class="ml-4 hover:text-gold-julio">
+                        <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+                    </li>
+                    <li class="ml-4 hover:text-gold-julio">
+                        <a href="#" target="_blank"><i class="bx bxl-facebook  "></i></a>
+                    </li>
+                    <li class="ml-4 hover:text-gold-julio">
+                        <a href="#" target="_blank"><i class="bx bxl-tiktok    "></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-between py-4 content-center  lg:py-7 border-t-white/10 border-t md:border-t-0">
+
+            <div class="items-center flex">
+                <a href="https://wa.link/go3i1i">
+                    <div class="flex items-center text-white shadow-md px-4 rounded-lg">
+                        <i class='bx bxl-instagram text-2xl'></i>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <img class="h-10 lg:h-16" src="img/logo-24.svg" alt="">
+            </div>
+
+            <div class="items-center flex">
+                <a href="https://wa.link/go3i1i">
+                    <div class="flex items-center text-white shadow-md px-4 rounded-lg">
+                        <i class='bx bx-menu-alt-right text-3xl'></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <nav class=" relative h-screen lg:h-auto text-zinc-200  hidden lg:block bg-main-black/95 lg:bg-inherit"
+            id="menu-nav">
+            <ul
+                class="container lg:px-10 lg:flex justify-between uppercase font-semibold text-xs md:tracking-wider md:w-full">
+
+                <li class="px-6 py-3.5 lg:p-2 hover:text-white">
+                    <a href="#">Sobre mi</a>
+                </li>
+
+                <li class="px-6 py-3.5 lg:p-2 hover:text-white group/item">
+                    <a href="#">Cirugías Estéticas<i class='bx bx-chevron-down'></i></a>
+
+                    <div class="bg-black/90 absolute w-1/2 right-0 top-0 lg:top-auto  lg:w-full lg:mt-2
+                    overflow-y-auto h-full lg:h-auto
+                    invisible group-hover/item:visible border-l border-l-white/30
+                    ">
+
+                        <ul class="container mb-20 md:mb-0 lg:px-36 lg:flex lg:justify-evenly lg:gap-10
+                        p-4 lg:p-0 
+                        ">
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold mb-5 lg:my-5">
+                                        Cirugía Estética Facial
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Rinoplastia</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Blefaroplastia</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Otoplastia</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Lifting facial</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Mini-Lifting facial</a>
+                                            </li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Lifting facial</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Bichectomía</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold my-5">
+                                        Cirugía Estética Mamaria
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Aumento de pecho</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Reducción mamaria</a>
+                                            </li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Reconstruction de
+                                                    mamas</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Ginecomastia</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold my-5">
+                                        Cirugía Estética Corporal
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Liposucción HD</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Abdominoplastia</a></li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Mini-Abdominoplastia</a>
+                                            </li>
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">lipotransferencia</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold my-5">
+                                        Cirugía Estética Íntima
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Labioplastia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="md:py-3 hidden lg:block">
+                                <div class="my-5">
+
+                                    <img src="img/nav-corporal.jpg" alt="">
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="px-6 py-3.5 lg:p-2 hover:text-white group/item">
+                    <a href="#">Medicina Estética<i class='bx bx-chevron-down'></i></a>
+
+                    <div class="bg-black/90 absolute w-1/2 right-0 top-0 lg:top-auto  lg:w-full lg:mt-2
+                    overflow-y-auto h-full lg:h-auto
+                    invisible group-hover/item:visible
+                    border-l border-l-white/30
+                    ">
+
+                        <ul class="container lg:px-36 lg:flex lg:justify-evenly lg:gap-10
+                        p-4 lg:p-0 
+                        ">
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold mb-5 lg:my-5">
+                                        Bótox
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Toxina botulínica</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold my-5">
+                                        Rellenos faciales
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Remodelación</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="md:py-3">
+                                <div>
+                                    <div class="font-bold my-5">
+                                        Rejuvenecimiento facial
+                                    </div>
+
+                                    <div>
+                                        <ul class="capitalize text-sm font-normal">
+                                            <li class="py-1.5 hover:text-white/70"><a href="#">Hilos tensores</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="md:py-3 hidden lg:block">
+                                <div class="my-5">
+
+                                    <img src="img/nav-corporal.jpg" alt="">
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li class="px-6 py-3.5 lg:p-2 hover:text-white">
+                    <a href="#">Equipo medico</a>
+                </li>
+
+                <!-- <li class="px-6 py-3.5 lg:p-2">
+                    <a href="tour-virtual.html">Tour Virtual</a>
+                </li> -->
+
+                <!-- <li class="px-6 py-3.5 lg:p-2 opacity-50"><a href="../nosotros.html">Resultados</a>
+                </li> -->
+
+                <li class="px-6 py-3.5 lg:p-2 hover:text-gold-julio"><a
+                        href="https://www.instagram.com/drjuliosucah/">Novedades</a></li>
+                <li class="px-6 py-3.5 lg:p-2 hover:text-white"><a href="../contacto.html">Contacto</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="h-screen/85 lg:h-screen bg-red-500">
+
+            <div class="swiper swiper-index h-full w-full">
+                <div class="swiper-wrapper relative">
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/03-idx-dk.jpg">
+                            <img src="img/01-idx.jpg" class="w-full h-full object-cover" alt="cirugía plástica Dr. Julio Suca Arequipa Perú, Rio de Janeiro Brasil">
+                        </picture>
+
+                        <div
+                            class="absolute container lg:px-20  bottom-1 lg:bottom-10 xl:bottom-5  2xl:mx-36  2xl:bottom-52 w-full md:w-4/6 lg:w-3/4  xl:w-1/2 ">
+                            <div class="m-4 lg:m-0 p-3 lg:p-16 lg:w-fit text-white text-center md:text-left">
+
+                                <p class="uppercase text-xs font-medium tracking-wider lg:mb-4" data-aos="fade-left"
+                                    data-aos-duration="2000">
+                                    Descubre tu mejor
+                                    versión</p>
+                                <p class="font-bold uppercase tracking-wider text-xl md:text-4xl lg:text-5xl py-3"
+                                    data-aos="fade-right" data-aos-duration="2000">
+                                    Cirugía Estética & Reconstructiva
+                                </p>
+                                <h1 class="text-sm lg:mt-4" data-aos="zoom-in" data-aos-duration="2000">
+                                    El Dr. Julio Suca es un Cirujano Plástico Especialista de la
+                                    SBCP</h1>
+
+                                <div class="flex justify-center md:justify-start  mt-8" data-aos="fade-up"
+                                    data-aos-duration="2000">
+                                    <a class="duration-500 bg-gold-julio border border-gold-julio hover:bg-inherit text-white hover:text-white py-1.5 px-6 rounded-full mb-4 inline-flex font-semibold text-sm" target="_blank"
+                                        href="https://api.whatsapp.com/send?phone=51991908694&text=Buenos%20d%C3%ADas%20%F0%9F%91%8B%2C%20quisiera%20agendar%20una%20Evaluaci%C3%B3n%20Personal%2C%20estoy%20interesado%20en%20(indique%20la%20cirug%C3%ADa)">Solicitar una evaluación</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/02-idx-dk.jpg">
+                            <img src="img/02-idx.jpg" class="w-full h-full object-cover" alt="">
+                        </picture>
+
+                        <div
+                            class="absolute container lg:px-20  bottom-1 lg:bottom-10 xl:bottom-5  2xl:mx-36  2xl:bottom-52 w-full md:w-4/6 lg:w-3/4  xl:w-4/6 2xl:w-1/2">
+                            <div class="m-4 lg:m-0 p-3 lg:p-16 lg:w-fit text-white text-center md:text-left">
+                                <p class="uppercase text-xs font-medium tracking-wider lg:mb-4">
+                                    Procedimientos Faciales
+                                </p>
+                                <h2 class="font-bold uppercase tracking-wide text-xl md:text-4xl  lg:text-5xl py-3">
+                                    un rostro armonioso y equilibrado
+                                </h2>
+                                <p class="text-sm lg:mt-4">Acude a un médico especialista certificado y experiencia</p>
+                                <div class="flex justify-center md:justify-start  mt-8">
+                                    <a class="duration-500 bg-gold-julio border border-gold-julio hover:bg-inherit text-white hover:text-white py-1.5 px-6 rounded-full mb-4 inline-flex font-semibold text-sm"
+                                        href="#procedimiento">Principales procedimientos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/03-idx-dk.jpg">
+                            <img src="img/03-idx.jpg" class="w-full h-full object-cover" alt="">
+                        </picture>
+
+                        <div
+                            class="absolute container lg:px-20  bottom-1 lg:bottom-10 xl:bottom-5  2xl:mx-36  2xl:bottom-52 w-full md:w-4/6 lg:w-4/5  xl:w-4/6 2xl:w-1/2">
+
+                            <div class="m-4 lg:m-0 p-3 lg:p-16 lg:w-fit text-white text-center md:text-left">
+                                <p class="uppercase text-xs font-medium tracking-wider lg:mb-4">
+                                    Procedimientos Corporales
+                                </p>
+                                <h2
+                                    class="font-DM-Sans font-bold uppercase tracking-wider text-xl md:text-4xl lg:text-5xl py-3">
+                                    Define y esculpe tu contorno corporal
+                                </h2>
+                                <p class="text-sm lg:mt-4">Acude a un médico especialista certificado y experiencia</p>
+
+                                <div class="flex justify-center md:justify-start  mt-8">
+                                    <a class="duration-500 bg-gold-julio border border-gold-julio hover:bg-inherit text-white hover:text-white py-1.5 px-6 rounded-full mb-4 inline-flex font-semibold text-sm"
+                                        href="#procedimiento">Principales procedimientos</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <div class="bg-main-black">
+            <div class="text-center text-gray-200 px-7 py-10">
+
+                <p class="font-semibold text-xs text-gold-julio uppercase tracking-wider">Te espera un viaje
+                    extraordinario</p>
+                <h2 class="font-extrabold uppercase text-lg lg:text-2xl tracking-wider mt-2 mb-10">¡Bienvenido/a! </h2>
+                <P class="text-sm">Estamos aquí para guiarte y contribuir a transformar tu vida, fusionando la ética,
+                    nuestra pasión y
+                    el
+                    arte.
+                </P>
+                <br>
+                <p class="text-sm font-medium"> Te encuentras en el umbral de un viaje hacia tu mejor versión.</p>
+            </div>
+        </div>
+
+        <!-- tu medico -->
+        <section class="bg-gray-50 md:pb-10">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <div class="bg-fixed bg-left bg-no-repeat"
+                    style="background-image: url(img/bg-procedimientos/bg-drjulio.jpg)">
+                    <img class="w-full h-full object-cover xl:hidden" src="img/tu-medico.JPEG" alt="">
+                </div>
+
+                <div class="bg-gray-50 flex content-center h-full">
+
+
+                    <div
+                        class="self-center px-7 py-10               lg:py-20 xl:p-24 xl:w-full 2xl:w-4/5 text-main-black">
+
+                        <div class="text-center mb-10">
+
+                            <p class="font-semibold text-xs md:text-sm  text-gold-julio uppercase tracking-wider">
+                                Cirujano plástico
+                                certificado</p>
+                            <h2 class="font-extrabold uppercase text-2xl lg:text-4xl tracking-wider mt-2 lg:mt-4">
+                                Dr. Julio Suca
+                            </h2>
+                            <p class="tracking-wide font-light text-sm">CMP 21159 - RNE 020496</p>
+                        </div>
+
+                        <p class="text-sm text-justify text-gray-600 lg:my-10">Con más de 25 años en el sector, el Dr.
+                            Julio Suca se destaca por ser un médico con ética, humano y empático,
+                            Realizó su especialización en cirugía plástica, estética y reconstructiva en Río de Janeiro,
+                            Brasil con el renombrado padre de la cirugía plástica el Dr. Ivo Pitanguy.
+                            <br>
+                            <br>
+                            Siempre apuesta por la naturalidad anatómica, la eficacia y seguridad en cada una de sus
+                            procedimientos. Se atreve con los tratamientos más exigentes y complejos pero, sobre todo,
+                            con los que funcionan y cumplen lo que anhelan sus pacientes. “Mi misión es brindar un
+                            servicio en cirugía plástica con estándares altos y a su vez preservar siempre
+                            principios éticos, y de seguridad cuidando siempre la anatomía única de cada paciente.”
+                        </p>
+
+                        <div class="list-none mt-10 lg:mx-5 text-sm">
+
+                            <li class="pb-5 flex items-center border-b border-b-main-black/10">
+                                <i class='bx bx-check-circle text-xl text-gold-julio'></i>
+                                <div class="ml-5">
+                                    <p class="text-justify">
+                                        Miembro de la Sociedad Brasilera de Cirugía Plástica (SBCP).
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="py-5 flex items-center border-b border-b-main-black/10">
+                                <i class='bx bx-check-circle text-xl text-gold-julio'></i>
+                                <div class="ml-5">
+                                    <p class="text-justify">
+                                        Reconocido en Brasil por obtener resultados totalmente naturales.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="py-5 flex items-center border-b border-b-main-black/10">
+                                <i class='bx bx-check-circle text-xl text-gold-julio'></i>
+                                <div class="ml-5">
+                                    <p class="text-justify">
+                                        Cuenta con +25 años de experiencia como Cirujano Plástico.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="py-5 flex items-center">
+                                <i class='bx bx-check-circle text-xl text-gold-julio'></i>
+                                <div class="ml-5">
+                                    <p class="text-justify">
+                                        Miembro de la Asociación de Ex-alumnos Ivo Pitanguy
+                                    </p>
+                                </div>
+                            </li>
+
+                        </div>
+
+                        <div class="text-center my-10">
+                            <a class="bg-gold-julio py-2.5 px-6 rounded-full text-white uppercase font-bold text-xs font-Onest  tracking-wider"
+                                href="#">Tu medico a detalle</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- entrevista -->
+        <section class="bg-gray-50 md:pt-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <div class=" md:order-last">
+
+                    <video class="w-full object-cover overflow-hidden" poster="img/bg-rio.webp" height=""
+                        src="img/entrevista-conver.mp4" controls></video>
+
+                </div>
+
+                <div class="flex justify-end">
+
+                    <div class="self-center px-7 py-10                  lg:p-20  xl:p-24 xl:w-full 2xl:w-4/5">
+
+                        <div class="text-center pb-10">
+
+                            <p class="font-semibold text-xs md:text-sm  text-gold-julio uppercase tracking-wider">
+                                entrevista desde
+                                Brasil</p>
+                            <h2
+                                class="uppercase font-extrabold text-main-black text-lg leading-6 tracking-wider mt-2 lg:text-3xl lg:mt-4 2xl:text-3xl">
+                                Reconocido internacionalmente
+                            </h2>
+                        </div>
+
+                        <p class="text-sm text-justify text-gray-600">Antes de someterse a cualquier
+                            procedimiento
+                            quirúrgico, es esencial estar plenamente informado sobre el proceso y elegir a un Cirujano
+                            Plástico certificado y con experiencia.
+                            <br>
+                            <br>
+                            La transparencia es fundamental para nosotros. Proporcionamos información detallada sobre
+                            cada procedimiento y trabajamos en estrecha colaboración con usted para garantizar su
+                            completa preparación y comodidad a lo largo de su viaje hacia la transformación. Su salud y
+                            confianza son nuestra principal prioridad.
+                            <br>
+                            <br>
+                            Confíe en nosotros para brindarle una experiencia segura y satisfactoria en el camino hacia
+                            su mejor versión.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- procedimientos -->
+        <section class="bg-main-black md:py-10 -scroll-m-16 lg:scroll-m-36" id="procedimiento">
+
+            <div class="text-center text-gray-200 px-7 py-10 md:pb-20 lg:w-3/4 mx-auto">
+
+                <p class="font-semibold text-xs md:text-sm  text-gold-julio uppercase tracking-wider">Procedimiento</p>
+                <h2 class="uppercase font-extrabold text-lg leading-6 tracking-wider mt-2 pb-10 lg:text-2xl lg:mt-4">
+                    Cirugía Plástica Estética & Reconstructiva
+                </h2>
+
+                <p class=" text-sm">
+                    Conoce los principales procedimientos que ofrece el Dr. Julio Suca para que puedas lograr
+                    la imagen de tus sueños con seguridad e innovación.
+                </p>
+            </div>
+
+            <div class="swiper swiper-procedimiento">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/lifting-facial/site-lifting-facial.html">
+                            <div class=" bg-white relative">
+                                <img src="img/pcd-01-lifting-facial.webp"
+                                    alt="lifting facial rejuvenecimiento facial  Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Lifting facial</h2>
+                                    <p class="text-xs font-medium">Luce un rostro definido</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://www.drjuliosuca.com/procedimientos/site-aumento-de-mamas.html">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-02-aumento-de-mamas.webp"
+                                    alt="mamoplastia aumento de mamas Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Aumento de mamas</h2>
+                                    <p class="text-xs font-medium">Transforma tu figura</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/site-abdominoplastia">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-03-abdominoplastia.webp"
+                                    alt="abdominoplastia Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Abdominoplastia</h2>
+                                    <p class="text-xs font-medium">Tonifica tu abdomen</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/site-liposuccion.html">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-04-liposuccion.webp"
+                                    alt="Liposucción Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Liposucción</h2>
+                                    <p class="text-xs font-medium">Define tu contorno corporal</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/site-blefaroplastia.html">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-05-blefaroplastia.webp"
+                                    alt="blefaroplastia Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold tracking-wider uppercase">Blefaroplastia</h2>
+                                    <p class="text-xs font-medium">Rejuvenece tu mirada</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/site-lipoabdominoplastia.html">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-06-lipoabdominoplastia.webp"
+                                    alt="lipoabdominoplastia Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Lipoabdominoplastia</h2>
+                                    <p class="text-xs font-medium">Obtén una figura definida</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/site-rinoplastia.html">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-07-rinoplastia.webp"
+                                    alt="rinoplastia Dr. Julio Suca Cirujano Plástico certificado Arequipa, Perú">
+
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Rinoplastia</h2>
+                                    <p class="text-xs font-medium">Luce un perfil armonioso</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://drjuliosuca.com/procedimientos/site-lipotransferencia.html">
+                            <div class="bg-white relative">
+                                <img src="img/pcd-08-lipotransferencia.webp"
+                                    alt="lipotransferencia Dr. Julio Suca Cirujano Plástico certificado  Arequipa, Perú">
+
+                                <div class="absolute bottom-20 left-5 md:left-10 text-white tracking-wider uppercase">
+                                    <h2 class="text-xl font-bold">Lipotransferencia</h2>
+                                    <p class="text-xs font-medium">Más armonía y volumen</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!-- información -->
+        <section class="bg-main-black md:pt-10 md:pb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <div class="bg-fixed bg-left bg-no-repeat" style="background-image: url(img/section-033.jpg)">
+                </div>
+
+                <div class="flex content-center h-full">
+
+
+                    <div class="self-center px-7 py-10 lg:p-20 xl:p-24 xl:w-full 2xl:w-4/5 text-gray-200">
+
+                        <div class="text-center pb-10">
+
+                            <p class="font-semibold text-xs  md:text-sm  text-gold-julio uppercase tracking-wider">
+                                Nuestra prioridad
+                                es informarte</p>
+                            <h2
+                                class="uppercase font-extrabold text-lg leading-6 tracking-widest mt-2 lg:text-2xl lg:mt-4">
+                                Cuidar tu salud & bienestar
+                            </h2>
+                        </div>
+
+                        <p class="text-sm text-justify">Antes de someterse a cualquier procedimiento
+                            quirúrgico, es esencial estar plenamente informado sobre el proceso y elegir a un Cirujano
+                            Plástico certificado y con experiencia.
+                            <br>
+                            <br>
+                            La transparencia es fundamental para nosotros. Proporcionamos información detallada sobre
+                            cada procedimiento y trabajamos en estrecha colaboración con usted para garantizar su
+                            completa preparación y comodidad a lo largo de su viaje hacia la transformación. Su salud y
+                            confianza son nuestra principal prioridad.
+                            <br>
+                            <br>
+                            Confíe en nosotros para brindarle una experiencia segura y satisfactoria en el camino hacia
+                            su mejor versión.
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Equipo medico -->
+        <section class="bg-gray-50 py-10 md:py-20">
+
+            <div class="text-center pb-10 lg:pb-20 lg:w-3/5 mx-auto">
+
+                <p class="font-semibold text-xs md:text-sm  text-gold-julio uppercase tracking-wider">Equipo medico
+                </p>
+                <h1
+                    class="uppercase font-extrabold text-main-black text-lg leading-6 tracking-wider mt-2 lg:text-2xl lg:mt-4">
+                    Contamos con profesionales excepcionales
+                </h1>
+            </div>
+
+
+            <div class="px-5  xl:px-48">
+
+                <div class="swiper swiper-medico">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="relative h-96 bg-cover bg-center"
+                                style="background-image: url(img/equipo-medico/julio.jpg)">
+
+                                <div
+                                    class="absolute bottom-0 text-center py-2 bg-black/80 text-white w-full tracking-wide">
+                                    <h2 class="font-semibold">Dr. Julio Suca</h2>
+                                    <p class="mb-0.5 text-xs">CMP 021159 - RNE 020496</p>
+                                    <p class="text-xs font-medium">Cirugía Plástica Estética & Reconstructiva</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="relative h-96 bg-cover bg-center"
+                                style="background-image: url(img/equipo-medico/melania.jpg)">
+
+                                <div
+                                    class="absolute bottom-0 text-center py-2 bg-black/80 text-white w-full tracking-wide">
+                                    <h2 class="font-semibold">Dra. Melania</h2>
+                                    <p class="mb-0.5 text-xs">CMP 051547</p>
+                                    <p class="text-xs font-medium">Medicina Estética</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="relative h-96 bg-cover bg-center"
+                                style="background-image: url(img/equipo-medico/alex.jpg)">
+
+                                <div
+                                    class="absolute bottom-0 text-center py-2 bg-black/80 text-white w-full tracking-wide">
+                                    <h2 class="font-semibold">Dr. Alexander Flores</h2>
+                                    <p class="mb-0.5 text-xs">CMP 041078 - RNE 025738</p>
+                                    <p class="text-xs font-medium">Cirugía Plástica Estética & Reconstructiva</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="relative h-96 bg-cover bg-center"
+                                style="background-image: url(img/equipo-medico/patricia.jpg)">
+                                <div
+                                    class="absolute bottom-0 text-center py-2 bg-black/80 text-white w-full tracking-wide">
+                                    <h2 class="font-semibold">Dra. Patricia Bolaños</h2>
+                                    <p class="mb-0.5 text-xs">CMP 035757</p>
+                                    <p class="text-xs font-medium">Medicina Estética</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="relative h-96 bg-cover bg-center"
+                                style="background-image: url(img/equipo-medico/gina.jpg)">
+
+                                <div
+                                    class="absolute bottom-0 text-center py-2 bg-black/80 text-white w-full tracking-wide">
+                                    <h2 class="font-semibold">Dra. Gina Chavez</h2>
+                                    <p class="mb-0.5 text-xs">CMP 019936 - RNE 015586</p>
+                                    <p class="text-xs font-medium">Otorrinolaringología</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- center doctor -->
+        <div class="bg-main-black flex justify-center md:py-10">
+
+            <div class="lg:w-3/4 inset-x-0 text-center text-gray-200 py-10 px-7">
+
+                <div class="text-center pb-10">
+
+                    <p class="font-semibold text-xs  md:text-sm  text-gold-julio uppercase tracking-wider">Acude con un
+                        médico
+                        especialista certificado</p>
+                    <h2 class="uppercase font-extrabold text-lg leading-6 tracking-wider mt-2 lg:text-2xl lg:mt-4">
+                        Cirugía Plástica Estética & Reconstructiva
+                    </h2>
+                </div>
+
+                <p class=" text-sm">
+                    Esta página web tiene como objetivo principal proporcionar información educativa sobre el
+                    procedimiento de cirugía plástica estética. No obstante, es esencial tener en cuenta que la
+                    información presentada aquí no debe sustituir la consulta con un cirujano plástico certificado.
+                    <br>
+                    <br>
+                    Cada procedimiento es único y personalizado, por lo que se recomienda encarecidamente que los
+                    pacientes busquen la guía y evaluación de un cirujano plástico experimentado para abordar sus
+                    preguntas y necesidades específicas.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- testimonio -->
+        <!-- <section class="bg-gray-50 py-10 md:py-20">
+            <div class="container lg:px-36">
+
+                <div class="px-5 lg:px-0 ">
+                    <p class="title-section pb-10 md:pb-20 text-center">Nuestros pacientes hablan por nosotros</p>
+                </div>
+
+                <div class="swiper swiper-testimonio">
+                    <div class="swiper-wrapper pb-14">
+                        <div class="swiper-slide">
+                            <div class=" bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/unnamed.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Magaly Luque</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Super recomendado, me hice una variedad de tratamientos y obtuve los mejores
+                                            resultados. No los cambiaría por nada. La atención es de primera.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/userpac.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Nadia Mejia</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Me hice depilación láser,entre otros tratamientos.. excelente, súper
+                                            recomendado,buen trato.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/userpac.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Helen Viviana Barrios Vizcarra</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Llevo con ellos sesiones de depilación láser y desde la primera sesión note
+                                            los cambios, siempre salgo feliz!! son muy profesionales, atentos y amables!
+                                            Recomendado al 100%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/userpac.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Magaly Gissel</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            La atención en todos sus tratamientos es A1, me hice la depilación y los
+                                            resultados son increíbles, el personal es muy atento y calificado
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/angie.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Anyela Gahona Hurtado</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Excelente experiencia 👍 en resultados y atención, siempre están al
+                                            pendiente de como avanza mí tratamiento y comodidad
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/stefany.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Stefany Mercado</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            La atención en todos sus tratamientos es A1, me hice la depilación y los
+                                            resultados son increíbles, el personal es muy atento y calificado
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/milagrosgaldos.png" class="rounded-full"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Milagros Galdos vizcarra</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Super recomendada, el trato muy amable y son especialistas 😍
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/userpac.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Marjorie Peñaloza</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Me hice depilación láser y los resultados fueron excelentes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/adrianaj.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Adriana J Rivaños</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Tratamientos muy top! La depilación láser es excelente, desde la primera
+                                            sesión ya ves resultados y sin lastimar tu piel...Au revoir vellitos!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/userpac.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Silvia Rodríguez</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Mantengo un tratamiento para melasma, y realmente tengo grandes cambios, me
+                                            gusta ver reflejado ello, la atención y cuidado son muy buenos. Aproveché a
+                                            hacerme depilación por primera vez y el resultado es asombroso. Me encanta,
+                                            el cuidado y recomendaciones son muy buenos. Recomendadisimo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/khaterinesrodriguez.png"
+                                            class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Katherine Rodríguez</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Excelente servicio :)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/adrianaj.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Paula Castañeda</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Súper amables, desde la primera cita la mejor info y lo mejor, increíbles
+                                            resultados!!!!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/yulyguerra.png" class="rounded-full" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Yuly Guerra</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Profesionales calificados, muy buena atención..!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-md flex p-5 font-Opensans">
+                                <div>
+                                    <div class=" w-20 h-20">
+                                        <img src="img/testimonios-pacientes/nadiaperalta.png" class="rounded-full"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-5">
+                                    <div class="star text-yellow-400">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="my-2 font-semibold text-maior-primary">
+                                        <p>Nadia Peralta</p>
+                                    </div>
+                                    <div class="mb-2">
+                                        <p class="text-sm">
+                                            Recomiendo a la clínica Medic Majoor, Doctores muy calificados, recomiendo
+                                            al Dr. Alexander y Dra. Melania también a la fisioterapeuta Karina; mi
+                                            experiencia fue muy satisfactoria y satisfecha.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!-- btn WhatsApp -->
+    <div class="fixed bottom-5 right-10 lg:bottom-20  lg:right-20 animate-bounce z-10 hidden" id="btn-whatsapp"
+        style="display: block;">
+        <a href="https://wa.link/go3i1i">
+            <div class="flex items-center bg-white text-green-500 shadow-md px-4 rounded-lg">
+                <i class="bx bxl-whatsapp text-3xl"></i>
+                <p class=" p-2 font-semibold">
+                    Escríbenos por WhatsApp
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-main-black">
+
+        <!-- contacto -->
+        <section class="bg-center bg-cover bg-fixed bg-no-repeat h-fit flex content-center"
+            style="background-image: url(img/bg-footer.webp)">
+
+            <div class="grid  sm:grid-cols-2 items-center bg-main-black/60">
+
+                <div class="flex content-cente h-full justify-end">
+
+                    <div class="self-center px-5 py-20  lg:pl-10 xl:pl-12 xl:pr-0  xl:w-4/5 text-white">
+
+                        <p
+                            class="text-2xl lg:text-3xl xl:text-4xl  font-normal mb-3  border-l-4 border-l-gold-julio pl-8">
+                            Programa tu evaluación hoy, <span class="font-semibold">e inicia el viaje hacia
+                                tu
+                                mejor version.</span>
+                        </p>
+                        <p class="font-normal pl-8">Transforma tu vida de forma segura y confiable, con altos
+                            estándares.</p>
+                    </div>
+
+                </div>
+
+                <div class="flex mx-auto lg:mx-0  content-center h-fit">
+
+                    <div class="self-center px-2.5 pb-20 sm:py-20 lg:px-10 xl:pl-20 xl:w-full  2xl:w-4/5">
+
+                        <div class="px-5 py-10 lg:p-8 bg-white w-fit rounded xl:mx-10  right-0 bottom-0">
+
+                            <div class="mb-6 lg:mb-10 text-center ">
+                                <h2
+                                    class="uppercase font-extrabold text-main-black text-lg lg:text-2xl tracking-wider mt-1 lg:mt-4 mb-10">
+                                    Contacta con nosotros
+                                </h2>
+                            </div>
+
+                            <div class="pb-7 border-b text-sm lg:text-base">
+
+                                <div class="flex items-center font-bold text-gold-julio mb-2">
+                                    <i class="bx bx-calendar text-xl mr-3"></i>
+                                    <p class="font-bold">Nuestro horario de atención</p>
+                                </div>
+
+                                <div class="ml-8 flex justify-between text-gray-600">
+                                    <div>
+                                        <p>Lunes - Viernes</p>
+                                    </div>
+                                    <div class="flex items-center">
+
+                                        <p>3:00 am - 6:30 pm</p>
+                                    </div>
+                                </div>
+                                <div class="ml-8 flex justify-between text-gray-600">
+                                    <div>
+                                        <p>Sábados</p>
+                                    </div>
+                                    <div class="flex items-center">
+
+                                        <p>9:30 am - 1:30 pm</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="py-7 border-b text-sm lg:text-base">
+                                <div class="flex items-center font-bold text-gold-julio mb-2">
+                                    <i class="bx bx-map text-xl mr-3"></i>
+                                    <p class="font-bold">Ubicación de consultorio</p>
+                                </div>
+                                <div class="ml-8 text-gray-600">
+                                    <p>Av. Trinidad Moran i-3, Urb. León XIII Cayma - Arequipa</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-7 text-sm lg:text-base">
+                                <div class="flex items-center font-bold text-gold-julio mb-2">
+                                    <i class="bx bxl-whatsapp text-xl mr-3"></i>
+                                    <p class="font-bold">WhatsApp</p>
+                                </div>
+
+                                <div class="ml-8 text-gray-600">
+                                    <p>(+51) 991 908 694</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center my-10 ">
+
+
+
+                                <a class="duration-500 bg-main-black border border-main-black hover:bg-white  px-6 py-2 text-white hover:text-main-black rounded-full font-semibold text-sm"
+                                    href="https://wa.link/go3i1i" target="_blank">Solicitar programar
+                                    una
+                                    cita</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="text-center lg:container lg:px-10 xl:px-28">
+
+            <div class="text-sm lg:flex justify-between container text-white/90 tracking-wide">
+                <div class="py-2">
+                    <p><strong>© 2024 Dr. Julio Suca</strong> - Especialista en Cirugía Plástica Estética &
+                        Reconstructiva</p>
+                </div>
+
+                <div class="py-2 border-t border-t-white/10">
+                    <p>Desarrollo web <strong><a href="#">brhyn</a></strong></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- scrip -->
+    <script src="js/main-24.js"></script>
+
+    <!-- extension swiper-bundle  -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <!-- animate -->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
